@@ -1,0 +1,47 @@
+﻿<MList Dense
+       Expand
+       Nav
+       Linkage>
+    @foreach (var item in Items)
+    {
+        if (item.HasChildren)
+        {
+            <NavigationListGroup Item="item" />
+        }
+        else
+        {
+            <NavigationListItem Item="item" />
+        }
+    }
+
+</MList>
+
+@code {
+
+    [Parameter]
+    public List<Nav> Items { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        Items = new()
+        {
+            new Nav()
+            {
+                Title = "UI组件",
+                Icon = "mdi-palette",
+                Children = new List<Nav>()
+                {
+                    new Nav()
+                    {
+                        Title = "Alerts",
+                        Subtitle = "提示框",
+                        Href = "/components/alerts"
+                    }
+                }
+            }
+        };
+    }
+
+}

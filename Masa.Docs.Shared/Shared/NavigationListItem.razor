@@ -1,0 +1,22 @@
+﻿<MListItem Href="@Item.Href"
+           Class=""
+           Color="primary">
+    @if (Item.Icon is not null)
+    {
+        <MListItemIcon>
+            <MIcon>@Item.Icon</MIcon>
+        </MListItemIcon>
+    }
+
+    <MListItemContent>
+        <MListItemTitle>@Item.Title</MListItemTitle>
+        <MListItemSubtitle>@Item.Subtitle</MListItemSubtitle>
+    </MListItemContent>
+</MListItem>
+
+@code {
+
+    [Parameter]
+    public Nav Item { get; set; } = null!;
+
+}

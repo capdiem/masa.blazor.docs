@@ -1,0 +1,22 @@
+﻿@page "/components/{id}"
+@using System.Reflection
+
+<div>
+    @Id
+</div>
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        var basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        var fullPath = Path.Combine(basePath, $"Sources/Components/{Id}/index.en-US.md");
+        var mdSource = File.ReadAllText(fullPath);
+    }
+
+}

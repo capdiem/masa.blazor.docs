@@ -1,0 +1,54 @@
+﻿<MListGroup Group="@GenGroup(Item.Children)"
+            PrependIcon="@Item.Icon"
+            NoAction
+            AppendIcon="mdi-menu-down"
+            SubGroup="SubGroup">
+    <ActivatorContent>
+        <MListItemContent>
+            <MListItemTitle>
+                @Item.Title
+            </MListItemTitle>
+        </MListItemContent>
+    </ActivatorContent>
+    <ChildContent>
+        @foreach (var item in Item.Children!)
+        {
+            if (item.HasChildren)
+            {
+                <NavigationListGroup Item="@item" SubGroup />
+            }
+            else
+            {
+                <NavigationListItem Item="item" />
+            }
+        }
+    </ChildContent>
+</MListGroup>
+
+@code {
+
+    [Parameter]
+    public Nav Item { get; set; } = null!;
+
+    [Parameter]
+    public bool SubGroup { get; set; }
+
+    List<string> GenGroup(List<Nav>? items)
+    {
+        if (items == null || !items.Any()) return new List<string>();
+
+        var groups = new List<string>();
+
+        foreach (var item in items)
+        {
+            groups.AddRange(GenGroup(item.Children));
+
+            if (item.Href == null || groups.Contains(item.Href, StringComparer.OrdinalIgnoreCase)) continue;
+
+            groups.Add(item.Href);
+        }
+
+        return groups;
+    }
+
+}

@@ -1,0 +1,12 @@
+﻿.m-bar--underline {
+    border-width: 0 0 thin 0;
+    border-style: solid;
+}
+
+.m-bar--underline.theme--light {
+    border-bottom-color: #0000001F !important;
+}
+
+.m-bar--underline.theme--dark {
+    border-bottom-color: #FFFFFF1F !important;
+}
