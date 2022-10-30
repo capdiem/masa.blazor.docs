@@ -1,22 +1,37 @@
 ﻿@page "/components/{id}"
-@using System.Reflection
+@using Masa.Docs.Shared.Services
+@using System.Globalization
 
-<div>
-    @Id
+<div class="mb-6">
+    @Id <MButton OnClick="ChangeCulture">Toggle culture</MButton>
 </div>
+
+<MMarkdownIt Source="@_componentMd" Html></MMarkdownIt>
 
 @code {
 
+    [Inject]
+    private DocService DocService { get; set; } = null!;
+
     [Parameter]
     public string Id { get; set; }
+
+    private string? _componentMd;
 
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
 
-        var basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-        var fullPath = Path.Combine(basePath, $"Sources/Components/{Id}/index.en-US.md");
-        var mdSource = File.ReadAllText(fullPath);
+        _componentMd = await DocService.GetComponentAsync(Id);
+    }
+
+    private string _prevCulture = "en-US";
+    private async Task ChangeCulture()
+    {
+        var culture = _prevCulture == "en-US" ? "zh-CN" : "en-US";
+        _prevCulture = culture;
+        DocService.ChangeLanguage(new CultureInfo(culture));
+        _componentMd = await DocService.GetComponentAsync(Id);
     }
 
 }

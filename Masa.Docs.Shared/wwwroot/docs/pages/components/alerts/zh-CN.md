@@ -35,7 +35,7 @@ related:
 
 `Border` 属性支持将一个简单的边框添加到提示框的4个边。这个属性可以和例如： `Color`、`Dark`、`Type` 等这些属性一起来使用，共同为提示框组件呈现出独特的设计。
 
-<example file="" />
+<alerts-prop-border />
 
 #### 彩色边框
 

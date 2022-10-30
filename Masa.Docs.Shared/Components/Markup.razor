@@ -1,0 +1,16 @@
+﻿@namespace Masa.Docs.Shared.Components
+
+<AppCode Class="my-0" Rounded="Rounded">
+    @Code
+    <!-- TODO: prism component here -->
+</AppCode>
+
+@code {
+
+    [Parameter]
+    public string? Code { get; set; }
+
+    [Parameter]
+    public StringBoolean Rounded { get; set; } = true;
+
+}

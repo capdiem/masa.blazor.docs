@@ -1,0 +1,26 @@
+﻿@namespace Masa.Docs.Shared.Components
+
+<span class="m-app-tooltip-btn d-inline-block">
+    <MTooltip Bottom
+              ContentClass="m-app-tooltip-btn__content"
+              OpenDelay="200">
+        <ActivatorContent>
+            <MButton Icon @attributes="@context.Attrs">
+                <MIcon>@Icon</MIcon>
+            </MButton>
+        </ActivatorContent>
+        <ChildContent>
+            @ChildContent
+        </ChildContent>
+    </MTooltip>
+</span>
+
+@code {
+
+    [Parameter, EditorRequired]
+    public string Icon { get; set; } = null!;
+
+    [Parameter, EditorRequired]
+    public RenderFragment ChildContent { get; set; } = default!;
+
+}

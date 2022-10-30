@@ -19,7 +19,7 @@ which help represent different actions each type portrays. Many parts of an aler
 
 Alerts in their simplest form are flat sheets of paper that display a message.
 
-<usage name="">
+<alerts-usage />
 
 ## Anatomy
 
@@ -35,19 +35,19 @@ Alerts in their simplest form are flat sheets of paper that display a message.
 
 The **Border** prop adds a simple border to one of the 4 sides of the alert. This can be combined with props like **Color**, **Dark**, and **Type** to provide unique accents to the alert.
 
-<example file="" />
+<alerts-prop-border />
 
 #### Colored border
 
 The **ColoredBorder** prop removes the alert background in order to accent the **Border** prop. If a **Type** is set, it will use the type's default color. If no **Color** or **Type** is set, the color will default to the inverted color of the applied theme (black for light and white/gray for dark).
 
-<example file="" />
+[//]: # (<example file="" />)
 
 #### Dense
 
 The **Dense** prop decreases the height of the alert to create a simple and compact style. When combined with the **Border** prop, the border thickness will be decreased to stay consistent with the style.
 
-<example file="" />
+[//]: # (<example file="" />)
 
 #### Dismissible
 

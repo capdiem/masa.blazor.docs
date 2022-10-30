@@ -1,11 +1,10 @@
-using System.Reflection;
 using Masa.Docs.Shared;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Services;
-using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
+builder.Services.AddServerSideBlazor(options => { options.RootComponents.RegisterCustomElementsOfMasaDocs(); });
 
 builder.Services.AddScoped<LazyAssemblyLoader>();
 builder.Services.AddMasaBlazor(options =>
@@ -20,7 +19,7 @@ builder.Services.AddMasaBlazor(options =>
 
 // TODO: add i18n for server
 
-// TODO: add MasaBlazorDocs
+builder.Services.AddMasaDocs(builder.Configuration["ASPNETCORE_URLS"]?.Replace("0.0.0.0", "127.0.0.1") ?? "http://localhost:5000");
 
 var app = builder.Build();
 
@@ -33,13 +32,6 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-var executePath = Path.GetDirectoryName(Assembly.GetAssembly(typeof(App)).Location);
-var currentPath = Directory.GetCurrentDirectory();
-
-app.UseStaticFiles(new StaticFileOptions()
-{
-    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Sources")),
-});
 
 app.UseRouting();
 
