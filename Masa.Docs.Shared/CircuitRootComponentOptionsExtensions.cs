@@ -9,5 +9,6 @@ public static class CircuitRootComponentOptionsExtensions
     {
         options.RegisterCustomElement<Border>("alerts-prop-border");
         options.RegisterCustomElement<Usage>("alerts-usage");
+        options.RegisterCustomElement<Masa.Docs.Shared.Examples.avatars.Usage>("avatars-usage");
     }
 }
