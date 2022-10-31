@@ -17,9 +17,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0-rc.2.22476.2" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0-rc.2.22472.3" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ss\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
+    <ProjectReference Include="..\..\github\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
   </ItemGroup>
   
   <ItemGroup>
@@ -65,6 +65,10 @@
     <Content Update="Examples\alerts\Type.razor">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="wwwroot\docs\pages\components\avatars\" />
   </ItemGroup>
 
 </Project>
