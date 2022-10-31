@@ -10,3 +10,7 @@
 .m-bar--underline.theme--dark {
     border-bottom-color: #FFFFFF1F !important;
 }
+
+.m-application code {
+    background-color: unset !important;
+}

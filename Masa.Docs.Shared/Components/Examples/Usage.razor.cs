@@ -7,18 +7,21 @@ public partial class Usage
     private readonly ParameterList<CheckboxParameter> _checkboxParameters;
     private readonly ParameterList<SliderParameter> _sliderParameters;
     private readonly ParameterList<SelectParameter> _selectParameters;
+    private readonly RenderFragment? _childContent;
 
     protected Usage(Type type,
         ParameterList<bool>? toggleParameters = null,
         ParameterList<CheckboxParameter>? checkboxParameters = null,
         ParameterList<SliderParameter>? sliderParameters = null,
-        ParameterList<SelectParameter>? selectParameters = null)
+        ParameterList<SelectParameter>? selectParameters = null,
+        RenderFragment? childContent = null)
     {
         _type = type;
         _toggleParameters = toggleParameters ?? new ParameterList<bool>();
         _checkboxParameters = checkboxParameters ?? new ParameterList<CheckboxParameter>();
         _sliderParameters = sliderParameters ?? new ParameterList<SliderParameter>();
         _selectParameters = selectParameters ?? new ParameterList<SelectParameter>();
+        _childContent = childContent;
     }
 
     private Dictionary<string, object?> Parameters
@@ -30,8 +33,14 @@ public partial class Usage
             parameters.AddRange(_checkboxParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             parameters.AddRange(_sliderParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             parameters.AddRange(_selectParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
+
             var dict = parameters.ToDictionary(item => item.Key, CastValue);
-            dict.Add("ChildContent", (RenderFragment)(builder => builder.AddContent(0, "I'm an Alert Usage Example")));
+
+            if (_childContent is not null)
+            {
+                dict.Add("ChildContent", _childContent);
+            }
+
             return dict;
         }
     }
@@ -64,9 +73,11 @@ public partial class Usage
             parameterList.AddRange(ActiveSliderParameters.Select(item => $"{item.Key}=\"{FormatValue(item.Key, item.Value.Value)}\""));
             parameterList.AddRange(ActiveSelectParameters.Select(item => $"{item.Key}=\"{FormatValue(item.Key, item.Value.Value!)}\""));
 
-            var parameters = string.Join(" ", parameterList);
+            var parameters = string.Join($"{Environment.NewLine}\t", parameterList);
 
-            return $"<{componentName} {parameters}></{componentName}>";
+            return parameterList.Count == 0
+                ? $"<{componentName}></{componentName}>"
+                : $"<{componentName}{Environment.NewLine}\t{parameters}>{Environment.NewLine}</{componentName}>";
         }
     }
 }

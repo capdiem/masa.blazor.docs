@@ -29,7 +29,9 @@ public class Usage : Masa.Docs.Shared.Components.Usage
         { nameof(MAlert.Type), new SelectParameter(GetNames(AlertTypes.None)) }
     };
 
-    public Usage() : base(typeof(MAlert), ToggleParameters, CheckboxParameters, SliderParameters, SelectParameters)
+    private static readonly RenderFragment ChildContent = builder => builder.AddContent(0, "I'm an Alert Usage Example");
+
+    public Usage() : base(typeof(MAlert), ToggleParameters, CheckboxParameters, SliderParameters, SelectParameters, ChildContent)
     {
     }
 
