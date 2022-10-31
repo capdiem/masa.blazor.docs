@@ -8,7 +8,7 @@ public partial class Usage
     private readonly ParameterList<SliderParameter> _sliderParameters;
     private readonly ParameterList<SelectParameter> _selectParameters;
 
-    protected Usage(Type type,
+    public Usage(Type type,
         ParameterList<bool>? toggleParameters = null,
         ParameterList<CheckboxParameter>? checkboxParameters = null,
         ParameterList<SliderParameter>? sliderParameters = null,
@@ -31,7 +31,7 @@ public partial class Usage
             parameters.AddRange(_sliderParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             parameters.AddRange(_selectParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             var dict = parameters.ToDictionary(item => item.Key, CastValue);
-            dict.Add("ChildContent", (RenderFragment)(builder => builder.AddContent(0, "I'm an Alert Usage Example")));
+            // dict.Add("ChildContent", (RenderFragment)(builder => builder.AddContent(0, "I'm an Alert Usage Example")));
             return dict;
         }
     }

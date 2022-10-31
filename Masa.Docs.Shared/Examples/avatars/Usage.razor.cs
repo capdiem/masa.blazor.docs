@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Masa.Docs.Shared.Examples.avatars
+﻿namespace Masa.Docs.Shared.Examples.avatars
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
@@ -24,8 +18,7 @@ namespace Masa.Docs.Shared.Examples.avatars
             { nameof(MAvatar.Color), new SelectParameter(new List<string>() { "primary", "accent", "warning lighten-2", "teal", "grey lighten-2" }) },
         };
 
-
-        protected Usage() : base(typeof(MAvatar), ToggleParameters, null, SliderParameters, SelectParameters)
+        public Usage() : base(typeof(MAvatar), ToggleParameters, null, SliderParameters, SelectParameters)
         {
         }
 
