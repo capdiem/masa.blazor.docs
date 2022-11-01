@@ -16,5 +16,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Masa.Docs.Shared.Examples.toolbars.Usage>("toolbars-usage");
         options.RegisterCustomElement<Masa.Docs.Shared.Examples.system_bars.Usage>("system-bars-usage");
         options.RegisterCustomElement<Masa.Docs.Shared.Examples.bottom_navigation.Usage>("bottom-navigation-usage");
+        options.RegisterCustomElement<Masa.Docs.Shared.Examples.breadcrumbs.Usage>("breadcrumbs-usage");
     }
 }

@@ -18,6 +18,11 @@ namespace Masa.Docs.Shared.Examples.system_bars
             { nameof(MSystemBar.Height), new SliderParameter(30, 1, 60) }
         };
 
+        protected override ParameterList<CheckboxParameter> GenCheckboxParameters() => new()
+        {
+            { nameof(MSystemBar.LightsOut), new CheckboxParameter("false", true) }
+        };
+
         protected override RenderFragment GenChildContent() => builder =>
         {
             //builder.OpenComponent<UsageTemplate>(0);
