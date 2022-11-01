@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.badges
+namespace Masa.Docs.Shared.Examples.banners
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
         private static readonly ParameterList<bool> ToggleParameters = new()
         {
-            { nameof(MBadge.Bordered), false },
-            { nameof(MBadge.Inline), false },
-            { nameof(MBadge.Tile), false },
+            { nameof(MBanner.SingleLine), false },
+            { nameof(MBanner.Sticky), false },
+            { nameof(MBanner.Dark), false },
         };
 
         private static readonly ParameterList<CheckboxParameter> CheckboxParameters = new()

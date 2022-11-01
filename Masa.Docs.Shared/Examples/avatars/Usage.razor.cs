@@ -15,10 +15,18 @@
 
         private static readonly ParameterList<SelectParameter>? SelectParameters = new()
         {
-            { nameof(MAvatar.Color), new SelectParameter(new List<string>() { "primary", "accent", "warning lighten-2", "teal", "grey lighten-2" }) },
+            { nameof(MAvatar.Color), new SelectParameter(new List<string>() { "primary", "accent", "warning lighten-2", "teal", "grey lighten-2" },"primary") },
         };
 
-        public Usage() : base(typeof(MAvatar), ToggleParameters, null, SliderParameters, SelectParameters)
+        private static readonly RenderFragment ChildContent = builder =>
+        {
+            builder.OpenComponent<MIcon>(0);
+            builder.AddAttribute(1, nameof(MIcon.Dark), true);
+            builder.AddAttribute(2, "ChildContent", (RenderFragment)(b => b.AddContent(0, "mdi-heart")));
+            builder.CloseComponent();
+        };
+
+        public Usage() : base(typeof(MAvatar), ToggleParameters, null, SliderParameters, SelectParameters, ChildContent)
         {
         }
 
