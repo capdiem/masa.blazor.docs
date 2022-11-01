@@ -1,0 +1,19 @@
+[
+  {
+    "title": "ui-components",
+    "icon": "mdi-heart",
+    "group": "components",
+    "items": [
+      "alerts",
+      {
+        "title": "bars",
+        "group": "components",
+        "items": [
+          "app-bars",
+          "toolbars",
+          "system-bars"
+        ]
+      }
+    ]
+  }
+]
