@@ -14,15 +14,20 @@
     private DocService DocService { get; set; } = null!;
 
     [Parameter]
-    public string Id { get; set; }
+    public string Id { get; set; } = null!;
 
     private string? _componentMd;
+    private string? _prevComponentId;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
-        await base.OnInitializedAsync();
+        await base.OnParametersSetAsync();
 
-        _componentMd = await DocService.GetComponentAsync(Id);
+        if (Id != _prevComponentId)
+        {
+            _prevComponentId = Id;
+            _componentMd = await DocService.GetComponentAsync(Id);
+        }
     }
 
     private string _prevCulture = "en-US";

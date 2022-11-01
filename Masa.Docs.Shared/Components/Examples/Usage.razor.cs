@@ -9,7 +9,7 @@ public partial class Usage
     private readonly ParameterList<SelectParameter> _selectParameters;
     private readonly RenderFragment? _childContent;
 
-    protected Usage(Type type,
+    public Usage(Type type,
         ParameterList<bool>? toggleParameters = null,
         ParameterList<CheckboxParameter>? checkboxParameters = null,
         ParameterList<SliderParameter>? sliderParameters = null,

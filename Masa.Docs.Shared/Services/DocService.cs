@@ -4,7 +4,7 @@ namespace Masa.Docs.Shared.Services;
 
 public class DocService
 {
-    private static readonly ConcurrentCache<string, ValueTask<IDictionary<string, string>>> ComponentCache = new();
+    private static readonly ConcurrentCache<string, ValueTask<string>> ComponentCache = new();
 
     private readonly HttpClient _httpClient;
 
@@ -22,15 +22,14 @@ public class DocService
 
     public async Task<string> GetComponentAsync(string id)
     {
-        var value = await ComponentCache.GetOrAdd(_currentCulture, async _ =>
+        var key = $"{id}:{_currentCulture}";
+        return await ComponentCache.GetOrAdd(key, async _ =>
         {
             var md = await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/components/{id}/{_currentCulture}.md");
 
             // todo: if md is null, throw a exception?
 
-            return new Dictionary<string, string>() { { id, md } };
+            return md;
         });
-
-        return value[id];
     }
 }
