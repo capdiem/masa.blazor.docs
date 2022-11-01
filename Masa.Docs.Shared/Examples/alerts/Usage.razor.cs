@@ -2,7 +2,11 @@
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {
-    private static readonly ParameterList<bool> ToggleParameters = new()
+    public Usage() : base(typeof(MAlert))
+    {
+    }
+
+    protected override ParameterList<bool> GenToggleParameters() => new()
     {
         { nameof(MAlert.Dense), false },
         { nameof(MAlert.Prominent), false },
@@ -11,29 +15,25 @@ public class Usage : Masa.Docs.Shared.Components.Usage
         { nameof(MAlert.Shaped), false },
     };
 
-    private static readonly ParameterList<CheckboxParameter> CheckboxParameters = new()
+    protected override ParameterList<CheckboxParameter> GenCheckboxParameters() => new()
     {
         { nameof(MAlert.Dismissible), new CheckboxParameter("false", true) }
     };
 
-    private static readonly ParameterList<SliderParameter> SliderParameters = new()
+    protected override ParameterList<SliderParameter> GenSliderParameters() => new()
     {
         { nameof(MAlert.Elevation), new SliderParameter(0, 0, 24) }
     };
 
-    private static readonly ParameterList<SelectParameter>? SelectParameters = new()
+    protected override ParameterList<SelectParameter> GenSelectParameters() => new()
     {
         { nameof(MAlert.Color), new SelectParameter(new List<string>() { "red", "orange", "yellow", "green", "blue", "purple" }) },
         { nameof(MAlert.Icon), new SelectParameter(new List<string>() { "mdi-account", "mdi-heart" }) },
         { nameof(MAlert.Border), new SelectParameter(GetNames(Borders.None)) },
-        { nameof(MAlert.Type), new SelectParameter(GetNames(AlertTypes.None)) }
+        { nameof(MAlert.Type), new SelectParameter(GetNames(AlertTypes.None), AlertTypes.Success.ToString()) }
     };
 
-    private static readonly RenderFragment ChildContent = builder => builder.AddContent(0, "I'm an Alert Usage Example");
-
-    public Usage() : base(typeof(MAlert), ToggleParameters, CheckboxParameters, SliderParameters, SelectParameters, ChildContent)
-    {
-    }
+    protected override RenderFragment GenChildContent() => builder => builder.AddContent(0, "I'm an Alert Usage Example");
 
     protected override object? CastValue(ParameterItem<object?> parameter)
     {

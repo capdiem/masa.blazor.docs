@@ -19,7 +19,7 @@ which help represent different actions each type portrays. Many parts of an aler
 
 Alerts in their simplest form are flat sheets of paper that display a message.
 
-<alerts-usage />
+<alerts-usage></alerts-usage>
 
 ## Anatomy
 
@@ -35,7 +35,7 @@ Alerts in their simplest form are flat sheets of paper that display a message.
 
 The **Border** prop adds a simple border to one of the 4 sides of the alert. This can be combined with props like **Color**, **Dark**, and **Type** to provide unique accents to the alert.
 
-<alerts-prop-border />
+<alerts-prop-border></alerts-prop-border>
 
 #### Colored border
 

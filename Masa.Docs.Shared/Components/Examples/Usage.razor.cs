@@ -3,25 +3,27 @@
 public partial class Usage
 {
     private readonly Type _type;
-    private readonly ParameterList<bool> _toggleParameters;
-    private readonly ParameterList<CheckboxParameter> _checkboxParameters;
-    private readonly ParameterList<SliderParameter> _sliderParameters;
-    private readonly ParameterList<SelectParameter> _selectParameters;
-    private readonly RenderFragment? _childContent;
 
-    public Usage(Type type,
-        ParameterList<bool>? toggleParameters = null,
-        ParameterList<CheckboxParameter>? checkboxParameters = null,
-        ParameterList<SliderParameter>? sliderParameters = null,
-        ParameterList<SelectParameter>? selectParameters = null,
-        RenderFragment? childContent = null)
+    private ParameterList<bool> _toggleParameters;
+    private ParameterList<CheckboxParameter> _checkboxParameters;
+    private ParameterList<SliderParameter> _sliderParameters;
+    private ParameterList<SelectParameter> _selectParameters;
+    private RenderFragment? _childContent;
+
+    public Usage(Type type)
     {
         _type = type;
-        _toggleParameters = toggleParameters ?? new ParameterList<bool>();
-        _checkboxParameters = checkboxParameters ?? new ParameterList<CheckboxParameter>();
-        _sliderParameters = sliderParameters ?? new ParameterList<SliderParameter>();
-        _selectParameters = selectParameters ?? new ParameterList<SelectParameter>();
-        _childContent = childContent;
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        _toggleParameters = GenToggleParameters();
+        _checkboxParameters = GenCheckboxParameters();
+        _sliderParameters = GenSliderParameters();
+        _selectParameters = GenSelectParameters();
+        _childContent = GenChildContent();
     }
 
     private Dictionary<string, object?> Parameters
@@ -44,6 +46,12 @@ public partial class Usage
             return dict;
         }
     }
+
+    protected virtual ParameterList<bool> GenToggleParameters() => new();
+    protected virtual ParameterList<CheckboxParameter> GenCheckboxParameters() => new();
+    protected virtual ParameterList<SliderParameter> GenSliderParameters() => new();
+    protected virtual ParameterList<SelectParameter> GenSelectParameters() => new();
+    protected virtual RenderFragment? GenChildContent() => default;
 
     protected virtual object? CastValue(ParameterItem<object?> parameter)
     {
