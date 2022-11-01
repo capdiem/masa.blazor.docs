@@ -17,7 +17,7 @@ The component is used to send intermittent messages of 1-2 actions to the user. 
 
 Banners can have 1-2 lines of text, actions and icon.
 
-<usage name="">
+<banners-usage></banners-usage>
 
 ## Anatomy
 

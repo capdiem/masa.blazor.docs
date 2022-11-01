@@ -18,7 +18,7 @@ related:
 
 横幅可以有 1-2 行文本、动作和图标。
 
-<usage name="">
+<banners-usage></banners-usage>
 
 ## 解剖学
 

@@ -4,36 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.banners
+namespace Masa.Docs.Shared.Examples.toolbars
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
         protected override ParameterList<bool> GenToggleParameters() => new()
         {
-            { nameof(MBanner.SingleLine), false },
-            { nameof(MBanner.Sticky), false },
-            { nameof(MBanner.Dark), false },
+            { nameof(MToolbar.Dense), false },
+            { nameof(MToolbar.Flat), false },
+            { nameof(MToolbar.Outlined), false },
+            { nameof(MToolbar.Prominent), false },
+            { nameof(MToolbar.Rounded), false },
+            { nameof(MToolbar.Shaped), false },
         };
 
         protected override ParameterList<SliderParameter> GenSliderParameters() => new()
         {
-            { nameof(MBanner.Elevation), new SliderParameter(0, 0, 24) }
+            { nameof(MToolbar.Elevation), new SliderParameter(4, 0, 24) }
         };
 
         protected override ParameterList<SelectParameter> GenSelectParameters() => new()
         {
-            { nameof(MBanner.Color), new SelectParameter(new List<string>() { "accent", "primary","secondary"}) },
-            { nameof(MBanner.Icon), new SelectParameter(new List<string>() { "mdi-account", "mdi-heart" }) },
+           { nameof(MToolbar.Color), new SelectParameter(new List<string>() { "red", "orange", "yellow", "green", "blue", "purple" }) },
         };
 
         protected override RenderFragment GenChildContent() => builder =>
         {
-            builder.OpenElement(0,"span");
-            builder.AddContent(1, "A banner for use on desktop / mobile");
+            builder.OpenComponent<BAppBarNavIcon>(0);
             builder.CloseComponent();
         };
 
-        public Usage() : base(typeof(MBanner)) { }
+        public Usage() : base(typeof(MToolbar)) { }
 
         protected override object? CastValue(ParameterItem<object?> parameter)
         {
@@ -44,7 +45,8 @@ namespace Masa.Docs.Shared.Examples.banners
 
             return parameter.Key switch
             {
-                nameof(MBanner.Elevation) => (StringNumber)(double)parameter.Value,
+                nameof(MToolbar.Rounded) => (StringBoolean)(bool)parameter.Value,
+                nameof(MToolbar.Elevation) => (StringNumber)(double)parameter.Value,
                 _ => parameter.Value
             };
         }
