@@ -2,23 +2,23 @@
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
-        private static readonly ParameterList<bool> ToggleParameters = new()
+        protected override ParameterList<bool> GenToggleParameters() => new()
         {
             { nameof(MAvatar.Rounded), false },
             { nameof(MAvatar.Tile), false },
         };
 
-        private static readonly ParameterList<SliderParameter> SliderParameters = new()
+        protected override ParameterList<SliderParameter> GenSliderParameters() => new()
         {
             { nameof(MAvatar.Size), new SliderParameter(56, 25, 128) }
         };
 
-        private static readonly ParameterList<SelectParameter>? SelectParameters = new()
+        protected override ParameterList<SelectParameter> GenSelectParameters() => new()
         {
             { nameof(MAvatar.Color), new SelectParameter(new List<string>() { "primary", "accent", "warning lighten-2", "teal", "grey lighten-2" },"primary") },
         };
 
-        private static readonly RenderFragment ChildContent = builder =>
+        protected override RenderFragment GenChildContent() => builder =>
         {
             builder.OpenComponent<MIcon>(0);
             builder.AddAttribute(1, nameof(MIcon.Dark), true);

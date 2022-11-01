@@ -8,14 +8,14 @@ namespace Masa.Docs.Shared.Examples.badges
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
-        private static readonly ParameterList<bool> ToggleParameters = new()
+        protected override ParameterList<bool> GenToggleParameters() => new()
         {
             { nameof(MBadge.Bordered), false },
             { nameof(MBadge.Inline), false },
             { nameof(MBadge.Tile), false },
         };
 
-        private static readonly ParameterList<CheckboxParameter> CheckboxParameters = new()
+        protected override ParameterList<CheckboxParameter> GenCheckboxParameters() => new()
         {
             { nameof(MBadge.Bottom), new CheckboxParameter("false", true) },
             { nameof(MBadge.Dot), new CheckboxParameter("false", true) },
@@ -23,7 +23,7 @@ namespace Masa.Docs.Shared.Examples.badges
             { nameof(MBadge.OverLap), new CheckboxParameter("false", true) },
         };
 
-        private static readonly RenderFragment ChildContent = builder =>
+        protected override RenderFragment GenChildContent() => builder =>
         {
             builder.OpenComponent<MIcon>(0);
             builder.AddAttribute(1, nameof(MIcon.Size), (StringNumber)36);
