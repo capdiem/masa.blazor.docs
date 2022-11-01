@@ -32,6 +32,7 @@
             return parameter.Key switch
             {
                 nameof(MAvatar.Size) => (StringNumber)(double)parameter.Value,
+                nameof(MAvatar.Rounded) => (StringBoolean)(bool)parameter.Value,
                 _ => parameter.Value
             };
         }
