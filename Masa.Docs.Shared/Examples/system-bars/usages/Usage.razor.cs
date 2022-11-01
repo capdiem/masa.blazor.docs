@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Masa.Docs.Shared.Examples.system_bars
+﻿namespace Masa.Docs.Shared.Examples.system_bars
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
@@ -23,9 +17,10 @@ namespace Masa.Docs.Shared.Examples.system_bars
             { nameof(MSystemBar.LightsOut), new CheckboxParameter("false", true) }
         };
 
+        protected override Type UsageWrapperType => typeof(UsageWrapper);
+
         protected override RenderFragment GenChildContent() => builder =>
         {
-            //builder.OpenComponent<UsageTemplate>(0);
             builder.OpenComponent<MIcon>(0);
             builder.AddAttribute(1, "ChildContent", (RenderFragment)(b => b.AddContent(0, "mdi-message")));
             builder.CloseComponent();
@@ -54,7 +49,9 @@ namespace Masa.Docs.Shared.Examples.system_bars
             builder.CloseComponent();
         };
 
-        public Usage() : base(typeof(MToolbar)) { }
+        public Usage() : base(typeof(MToolbar))
+        {
+        }
 
         protected override object? CastValue(ParameterItem<object?> parameter)
         {

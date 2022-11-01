@@ -51,7 +51,9 @@ public partial class Usage
     protected virtual ParameterList<CheckboxParameter> GenCheckboxParameters() => new();
     protected virtual ParameterList<SliderParameter> GenSliderParameters() => new();
     protected virtual ParameterList<SelectParameter> GenSelectParameters() => new();
+    protected virtual Type? UsageWrapperType => null;
     protected virtual RenderFragment? GenChildContent() => default;
+
 
     protected virtual object? CastValue(ParameterItem<object?> parameter)
     {
