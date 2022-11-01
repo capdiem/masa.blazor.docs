@@ -26,7 +26,7 @@
             builder.CloseComponent();
         };
 
-        public Usage() : base(typeof(MAvatar), ToggleParameters, null, SliderParameters, SelectParameters, ChildContent)
+        public Usage() : base(typeof(MAvatar))
         {
         }
 

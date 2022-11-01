@@ -31,6 +31,6 @@ namespace Masa.Docs.Shared.Examples.badges
             builder.CloseComponent();
         };
 
-        public Usage() : base(typeof(MBadge), ToggleParameters, CheckboxParameters, null, null, ChildContent) { }
+        public Usage() : base(typeof(MBadge)) { }
     }
 }
