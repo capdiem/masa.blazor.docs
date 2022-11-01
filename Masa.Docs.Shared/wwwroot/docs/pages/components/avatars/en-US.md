@@ -17,7 +17,7 @@ The **MAvatar** component is usually used to display user profile pictures. This
 
 **MAvatar** in their simplest form display content within a circular container.
 
-<avatars-usage />
+<avatars-usage></avatars-usage>
 
 ## Anatomy
 

@@ -18,7 +18,7 @@ related:
 
 头像以最简单的形式在圆形容器中显示内容。
 
-<usage name="">
+<avatars-usage></avatars-usage>
 
 ## 解剖学
 

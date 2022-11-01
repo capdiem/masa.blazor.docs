@@ -19,7 +19,7 @@ related:
 
 最简单的警报形式是显示消息的平板纸。
 
-<usage name="">
+<alerts-usage />
 
 ## 解剖学
 
