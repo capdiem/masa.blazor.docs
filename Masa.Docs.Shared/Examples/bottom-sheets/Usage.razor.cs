@@ -20,7 +20,12 @@ public class Usage : Masa.Docs.Shared.Components.Usage
             childBuilder.OpenComponent<MButton>(0);
             childBuilder.AddAttribute(1, nameof(MButton.Class), "mt-6");
             childBuilder.AddAttribute(2, nameof(MButton.Color), "error");
-            childBuilder.AddAttribute(3, nameof(MButton.OnClick), EventCallback.Factory.Create<MouseEventArgs>(this, () => _sheet = !_sheet));
+            childBuilder.AddAttribute(3, nameof(MButton.OnClick), EventCallback.Factory.Create<MouseEventArgs>(this, () =>
+            {
+                Console.WriteLine($"_sheet1:{_sheet}");
+                _sheet = !_sheet;
+                Console.WriteLine($"_sheet2:{_sheet}");
+            }));
             childBuilder.AddChildContent(4, "Close");
             childBuilder.CloseComponent();
         }));
@@ -32,7 +37,11 @@ public class Usage : Masa.Docs.Shared.Components.Usage
         return new Dictionary<string, object>()
         {
             { nameof(MBottomSheet.Value), _sheet },
-            { nameof(MBottomSheet.ValueChanged), EventCallback.Factory.Create<bool>(this, val => _sheet = val) },
+            { nameof(MBottomSheet.ValueChanged), EventCallback.Factory.Create<bool>(this, val =>
+            {
+                _sheet = val;
+                Console.WriteLine($"val:{val},_sheet:{_sheet}");
+            }) },
             {
                 nameof(MBottomSheet.ActivatorContent), new RenderFragment<ActivatorProps>(context => builder =>
                 {
