@@ -22,5 +22,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.chips.Usage>("chips-usage");
         options.RegisterCustomElement<Examples.borders.Usage>("borders-usage");
         options.RegisterCustomElement<Examples.dialogs.Usage>("dialogs-usage");
+        options.RegisterCustomElement<Examples.dividers.Usage>("dividers-usage");
     }
 }

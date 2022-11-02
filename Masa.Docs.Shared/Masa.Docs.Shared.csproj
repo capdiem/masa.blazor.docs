@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\docs\pages\components\dividers\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\dividers\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
@@ -105,6 +110,11 @@
   
   <ItemGroup>
     <Folder Include="wwwroot\docs\pages\components\avatars\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\dividers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\dividers\zh-CN.md" />
   </ItemGroup>
 
 </Project>
