@@ -19,5 +19,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.breadcrumbs.Usage>("breadcrumbs-usage");
         options.RegisterCustomElement<Examples.buttons.Usage>("buttons-usage");
         options.RegisterCustomElement<Examples.cards.Usage>("cards-usage");
+        options.RegisterCustomElement<Examples.chips.Usage>("chips-usage");
     }
 }
