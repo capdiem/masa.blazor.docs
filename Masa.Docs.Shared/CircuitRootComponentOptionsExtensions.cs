@@ -17,5 +17,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.bottom_navigation.Usage>("bottom-navigation-usage");
         options.RegisterCustomElement<Examples.bottom_sheets.Usage>("bottom-sheets-usage");
         options.RegisterCustomElement<Examples.breadcrumbs.Usage>("breadcrumbs-usage");
+        options.RegisterCustomElement<Examples.buttons.Usage>("buttons-usage");
     }
 }
