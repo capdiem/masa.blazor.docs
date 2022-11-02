@@ -10,9 +10,9 @@ public class DocService
 
     private string _currentCulture = "en-us";
 
-    public DocService(HttpClient httpClient)
+    public DocService(IHttpClientFactory factory)
     {
-        _httpClient = httpClient;
+        _httpClient = factory.CreateClient("masa-docs");
     }
 
     public void ChangeLanguage(CultureInfo culture)
@@ -20,12 +20,12 @@ public class DocService
         _currentCulture = culture.Name;
     }
 
-    public async Task<string> GetComponentAsync(string id)
+    public async Task<string> ReadAsync(string group, string title)
     {
-        var key = $"{id}:{_currentCulture}";
+        var key = $"{group}/{title}:{_currentCulture}";
         return await ComponentCache.GetOrAdd(key, async _ =>
         {
-            var md = await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/components/{id}/{_currentCulture}.md");
+            var md = await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/{group}/{title}/{_currentCulture}.md");
 
             // todo: if md is null, throw a exception?
 

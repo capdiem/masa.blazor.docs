@@ -8,8 +8,10 @@ public class AppService
 {
     private readonly Lazy<Task<List<NavItem>>> _navs;
 
-    public AppService(HttpClient httpClient)
+    public AppService(IHttpClientFactory factory)
     {
+        var httpClient = factory.CreateClient("masa-docs");
+        
         _navs = new Lazy<Task<List<NavItem>>>(async () =>
         {
             var navs = await httpClient.GetFromJsonAsync<List<NavItem>>("_content/Masa.Docs.Shared/data/nav.json", new JsonSerializerOptions()

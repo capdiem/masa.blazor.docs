@@ -1,14 +1,3 @@
----
-category: Components
-type: Alerts
-title: Alerts
-cols: 1
-related:
- - /components/buttons
- - /components/icons
- - /components/dialogs
----
-
 # Alerts
 
 The component is used to convey important information to the user through the use contextual types icons and color.

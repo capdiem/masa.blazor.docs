@@ -1,8 +1,10 @@
-﻿<MList Dense
+﻿@inject AppService AppService
+
+<MList Dense
        Expand
        Nav
        Linkage>
-    @foreach (var item in Items)
+    @foreach (var item in Navs)
     {
         if (item.HasChildren)
         {
@@ -18,144 +20,17 @@
 
 @code {
 
-    [Parameter]
-    public List<Nav> Items { get; set; } = new();
+    private List<NavItem> Navs { get; set; } = new();
 
-    protected override void OnInitialized()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        base.OnInitialized();
+        await base.OnAfterRenderAsync(firstRender);
 
-        Items = new()
+        if (firstRender)
         {
-            new Nav()
-            {
-                Title = "UI组件",
-                Icon = "mdi-palette",
-                Children = new List<Nav>()
-                {
-                    new Nav()
-                    {
-                        Title = "Alerts",
-                        Subtitle = "提示框",
-                        Href = "/components/alerts"
-                    },
-                    new Nav()
-                    {
-                        Title = "Avatars",
-                        Subtitle = "头像",
-                        Href = "/components/avatars"
-                    },
-                    new Nav()
-                    {
-                        Title = "Badges",
-                        Subtitle = "徽章",
-                        Href = "/components/badges"
-                    },
-                    new Nav()
-                    {
-                        Title = "Banners",
-                        Subtitle = "橫幅",
-                        Href = "/components/banners"
-                    },
-                    new Nav()
-                    {
-                        Title = "App bars",
-                        Subtitle = "橫幅",
-                        Href = "/components/app-bars"
-                    },
-                    new Nav()
-                    {
-                        Title = "Toolbars",
-                        Subtitle = "工具栏",
-                        Href = "/components/toolbars"
-                    },
-                    new Nav()
-                    {
-                        Title = "System Bars",
-                        Subtitle = "系统栏",
-                        Href = "/components/system-bars"
-                    },
-                    new Nav()
-                    {
-                        Title = "Bottom navigation",
-                        Subtitle = "底部导航栏",
-                        Href = "/components/bottom-navigation"
-                    },
-                    new Nav()
-                    {
-                        Title = "Bottom sheets",
-                        Subtitle = "底部工作表",
-                        Href = "/components/bottom-sheets"
-                    },
-                    new Nav()
-                    {
-                        Title = "Breadcrumbs",
-                        Subtitle = "面包屑导航",
-                        Href = "/components/breadcrumbs"
-                    },
-                    new Nav()
-                    {
-                        Title = "Buttons",
-                        Subtitle = "按钮",
-                        Href = "/components/buttons"
-                    },
-                    new Nav()
-                    {
-                        Title = "Cards",
-                        Subtitle = "卡片",
-                        Href = "/components/cards"
-                    },
-                    new Nav()
-                    {
-                        Title = "Chips",
-                        Subtitle = "纸片",
-                        Href = "/components/chips"
-                    },
-                    new Nav()
-                    {
-                        Title = "Borders",
-                        Subtitle = "边框",
-                        Href = "/components/borders"
-                    },
-                    new Nav()
-                    {
-                        Title = "Dialogs",
-                        Subtitle = "对话框",
-                        Href = "/components/dialogs"
-                    },
-                    new Nav()
-                    {
-                        Title = "Dividers",
-                        Subtitle = "分隔线",
-                        Href = "/components/dividers"
-                    },
-                    new Nav()
-                    {
-                        Title = "DragZone",
-                        Subtitle = "拖放",
-                        Href = "/components/drag-zone"
-                    },
-                    new Nav()
-                    {
-                        Title = "ECharts",
-                        Subtitle = "图表",
-                        Href = "/components/echarts"
-                    },
-                    new Nav()
-                    {
-                        Title = "Editor",
-                        Subtitle = "富文本编辑器",
-                        Href = "/components/editor"
-                    },
-                    new Nav()
-                    {
-                        Title = "Error handler",
-                        Subtitle = "异常处理",
-                        Href = "/components/error-handler"
-                    }
-                }
-            }
-        };
+            Navs = await AppService.GetNavs();
+            StateHasChanged();
+        }
     }
 
 }

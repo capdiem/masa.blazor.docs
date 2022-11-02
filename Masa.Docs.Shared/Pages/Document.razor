@@ -1,0 +1,67 @@
+﻿@page "/{group}/{title}"
+@using System.Globalization
+@using System.Net
+
+<div class="mb-6">
+    <MButton OnClick="ChangeCulture">Toggle culture</MButton>
+</div>
+
+<MMarkdownIt Source="@_md" Html></MMarkdownIt>
+
+@code {
+
+    [Inject]
+    private DocService DocService { get; set; } = null!;
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = null!;
+
+    [Parameter]
+    public string Title { get; set; } = null!;
+
+    [Parameter]
+    public string Group { get; set; } = null!;
+
+    private string? _md;
+
+    private string? _prevGroup;
+    private string? _prevTitle;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await base.OnParametersSetAsync();
+
+        if (Title != _prevTitle || Group != _prevGroup)
+        {
+            _prevGroup = Group;
+            _prevTitle = Title;
+            await ReadMarkdownAsync();
+        }
+    }
+
+    private string _prevCulture = "en-US";
+
+    private async Task ChangeCulture()
+    {
+        var culture = _prevCulture == "en-US" ? "zh-CN" : "en-US";
+        _prevCulture = culture;
+        DocService.ChangeLanguage(new CultureInfo(culture));
+        await ReadMarkdownAsync();
+    }
+
+    private async Task ReadMarkdownAsync()
+    {
+        try
+        {
+            _md = await DocService.ReadAsync(Group, Title);
+        }
+        catch (HttpRequestException e)
+        {
+            if (e.StatusCode == HttpStatusCode.NotFound)
+            {
+                NavigationManager.NavigateTo("/404");
+            }
+        }
+    }
+
+}
