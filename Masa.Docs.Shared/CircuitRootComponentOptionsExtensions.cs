@@ -26,5 +26,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.drag_zone.Usage>("drag-zone-usage");
         options.RegisterCustomElement<Examples.echarts.Usage>("echarts-usage");
         options.RegisterCustomElement<Examples.editor.Usage>("editor-usage");
+        options.RegisterCustomElement<Examples.error_handler.Usage>("error-handler-usage");
     }
 }

@@ -11,15 +11,19 @@
     <Compile Remove="Examples\drag-zone\examples\**" />
     <Compile Remove="Examples\echarts\examples\**" />
     <Compile Remove="Examples\editor\examples\**" />
+    <Compile Remove="Examples\error-handler\examples\**" />
     <Content Remove="Examples\drag-zone\examples\**" />
     <Content Remove="Examples\echarts\examples\**" />
     <Content Remove="Examples\editor\examples\**" />
+    <Content Remove="Examples\error-handler\examples\**" />
     <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
     <EmbeddedResource Remove="Examples\echarts\examples\**" />
     <EmbeddedResource Remove="Examples\editor\examples\**" />
+    <EmbeddedResource Remove="Examples\error-handler\examples\**" />
     <None Remove="Examples\drag-zone\examples\**" />
     <None Remove="Examples\echarts\examples\**" />
     <None Remove="Examples\editor\examples\**" />
+    <None Remove="Examples\error-handler\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -83,6 +87,12 @@
     <None Include="wwwroot\docs\pages\components\editor\examples\UploadPicture.razor" />
     <None Include="wwwroot\docs\pages\components\editor\en-US.md" />
     <None Include="wwwroot\docs\pages\components\editor\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\OnErrorHandleAsync.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\ShowAlert.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\ShowDetail.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\error-handler\zh-CN.md" />
   </ItemGroup>
 
 </Project>
