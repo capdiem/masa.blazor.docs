@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\drag-zone\examples\**" />
+    <Content Remove="Examples\drag-zone\examples\**" />
+    <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
+    <None Remove="Examples\drag-zone\examples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\docs\pages\components\dividers\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\dividers\zh-CN.md" />
   </ItemGroup>
@@ -28,83 +35,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Content Update="Examples\borders\Border.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\borders\Offset.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Form.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Fullscreen.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Index.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Loader.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Nesting.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Overflowed.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Persistent.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Scrollable.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\Transitions.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\dialogs\examples\WithoutActivator.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
     <Content Update="wwwroot\docs\pages\components\alerts\en-US.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Border.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\ColoredBorder.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Dense.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Dismissible.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Icon.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Index.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Outlined.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Prominent.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Shaped.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Text.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Transition.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Twitter.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Examples\alerts\Type.razor">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
   
@@ -115,6 +47,14 @@
   <ItemGroup>
     <None Include="wwwroot\docs\pages\components\dividers\en-US.md" />
     <None Include="wwwroot\docs\pages\components\dividers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\ChildContent.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Inset.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\SubHeaders.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Vertical.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\View.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\zh-CN.md" />
   </ItemGroup>
 
 </Project>

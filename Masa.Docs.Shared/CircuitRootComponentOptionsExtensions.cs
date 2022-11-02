@@ -23,5 +23,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.borders.Usage>("borders-usage");
         options.RegisterCustomElement<Examples.dialogs.Usage>("dialogs-usage");
         options.RegisterCustomElement<Examples.dividers.Usage>("dividers-usage");
+        options.RegisterCustomElement<Examples.drag_zone.Usage>("drag-zone-usage");
     }
 }
