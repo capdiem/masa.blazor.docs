@@ -15,7 +15,7 @@ namespace Masa.Docs.Shared.Examples.breadcrumbs
 
         protected override ParameterList<SelectParameter> GenSelectParameters() => new()
         {
-            { nameof(MBreadcrumbs.Divider), new SelectParameter(new List<string>() { "/", "'\'",".",";",">","-"}) },
+            { nameof(MBreadcrumbs.Divider), new SelectParameter(new List<string>() { "/", "'\'",".",";",">","-"}, "/") },
         };
 
         protected override RenderFragment GenChildContent() => builder =>
