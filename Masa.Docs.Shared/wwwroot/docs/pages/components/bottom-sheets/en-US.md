@@ -17,7 +17,7 @@ The bottom sheet is a modified `MDialog` that slides from the bottom of the scre
 
 Here we display an example list of actions that could be present in an application.
 
-<usage name="">
+<bottom-sheets-usage></bottom-sheets-usage>
 
 ## API
 

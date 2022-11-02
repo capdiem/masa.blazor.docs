@@ -9,6 +9,7 @@ public partial class Usage
     private ParameterList<SliderParameter> _sliderParameters;
     private ParameterList<SelectParameter> _selectParameters;
     private RenderFragment? _childContent;
+    private Dictionary<string, object>? _additionalParameters;
 
     public Usage(Type type)
     {
@@ -24,6 +25,7 @@ public partial class Usage
         _sliderParameters = GenSliderParameters();
         _selectParameters = GenSelectParameters();
         _childContent = GenChildContent();
+        _additionalParameters = GenAdditionalParameters();
     }
 
     private Dictionary<string, object?> Parameters
@@ -43,6 +45,14 @@ public partial class Usage
                 dict.Add("ChildContent", _childContent);
             }
 
+            if (_additionalParameters is not null)
+            {
+                foreach (var (key, value) in _additionalParameters)
+                {
+                    dict.Add(key, value);
+                }
+            }
+
             return dict;
         }
     }
@@ -54,6 +64,7 @@ public partial class Usage
     protected virtual ParameterList<SliderParameter> GenSliderParameters() => new();
     protected virtual ParameterList<SelectParameter> GenSelectParameters() => new();
     protected virtual RenderFragment? GenChildContent() => default;
+    protected virtual Dictionary<string, object>? GenAdditionalParameters() => default;
 
     protected virtual object? CastValue(ParameterItem<object?> parameter)
     {
@@ -74,7 +85,7 @@ public partial class Usage
     {
         get
         {
-            var componentName = nameof(MAlert);
+            var componentName = _type.Name;
 
             var parameterList = new List<string>();
             parameterList.AddRange(ActiveToggleParameters.Select(item => item.Key));
