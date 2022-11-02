@@ -1,4 +1,6 @@
-﻿<MListItem Href="@Item.Href"
+﻿@inject I18n I18n
+
+<MListItem Href="@Href"
            Class=""
            Color="primary">
     @if (Item.Icon is not null)
@@ -10,13 +12,21 @@
 
     <MListItemContent>
         <MListItemTitle>@Item.Title</MListItemTitle>
-        <MListItemSubtitle>@Item.Subtitle</MListItemSubtitle>
+        @if (I18n.Culture.Name != "en-US")
+        {
+            <MListItemSubtitle>@I18n.T(Item.Title)</MListItemSubtitle>
+        }
     </MListItemContent>
 </MListItem>
 
 @code {
 
     [Parameter]
-    public Nav Item { get; set; } = null!;
+    public NavItem Item { get; set; } = null!;
+
+    [Parameter]
+    public string BaseSegment { get; set; } = null!;
+
+    private string Href => $"{BaseSegment}/{Item.Segment}";
 
 }

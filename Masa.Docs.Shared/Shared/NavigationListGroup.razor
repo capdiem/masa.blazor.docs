@@ -1,4 +1,5 @@
-﻿<MListGroup Group="@GenGroup(Item.Children)"
+﻿@using System.Text.Json
+<MListGroup Group="@GenGroup(Item.Items, Item.Segment)"
             PrependIcon="@Item.Icon"
             NoAction
             AppendIcon="mdi-menu-down"
@@ -11,7 +12,7 @@
         </MListItemContent>
     </ActivatorContent>
     <ChildContent>
-        @foreach (var item in Item.Children!)
+        @foreach (var item in Item.Items!)
         {
             if (item.HasChildren)
             {
@@ -19,7 +20,7 @@
             }
             else
             {
-                <NavigationListItem Item="item" />
+                <NavigationListItem Item="@item" BaseSegment="@Item.Segment" />
             }
         }
     </ChildContent>
@@ -28,12 +29,12 @@
 @code {
 
     [Parameter]
-    public Nav Item { get; set; } = null!;
+    public NavItem Item { get; set; } = null!;
 
     [Parameter]
     public bool SubGroup { get; set; }
 
-    List<string> GenGroup(List<Nav>? items)
+    List<string> GenGroup(List<NavItem>? items, string baseSegment)
     {
         if (items == null || !items.Any()) return new List<string>();
 
@@ -41,11 +42,9 @@
 
         foreach (var item in items)
         {
-            groups.AddRange(GenGroup(item.Children));
-
-            if (item.Href == null || groups.Contains(item.Href, StringComparer.OrdinalIgnoreCase)) continue;
-
-            groups.Add(item.Href);
+            groups.AddRange(GenGroup(item.Items, item.Segment));
+            if (item.HasChildren) continue;
+            groups.Add($"{baseSegment}/{item.Segment}");
         }
 
         return groups;

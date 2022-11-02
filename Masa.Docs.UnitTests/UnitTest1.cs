@@ -1,42 +1,66 @@
-﻿using System.Net.Http.Json;
+using System.Buffers;
+using System.Runtime.CompilerServices;
+using System.Security;
+using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using BlazorComponent;
+using Masa.Docs.Shared.Services;
+using Xunit.Sdk;
 
-namespace Masa.Docs.Shared.Services;
+namespace Masa.Docs.UnitTests;
 
-public class AppService
+public class UnitTest1
 {
-    private readonly Lazy<Task<List<NavItem>>> _navs;
-
-    public AppService(HttpClient httpClient)
+    [Fact]
+    public void Test1()
     {
-        _navs = new Lazy<Task<List<NavItem>>>(async () =>
+        var jsonString = @"
+[
+  {
+    ""title"": ""introduction"",
+    ""icon"": ""mdi-heart"",
+    ""items"": [
+        ""why-masa-blazor"",
+        ""roadmap""
+    ]
+  },
+  {
+    ""title"": ""ui-components"",
+    ""icon"": ""mdi-heart"",
+    ""group"": ""components"",
+    ""items"": [
+        ""alerts"",
         {
-            var navs = await httpClient.GetFromJsonAsync<List<NavItem>>("_content/Masa.Docs.Shared/data/nav.json", new JsonSerializerOptions()
-            {
-                Converters = { new NavItemsJsonConverter() }
-            });
+            ""title"": ""bars"",
+            ""group"": ""components"",
+            ""items"": [
+                ""app-bars"",
+                ""toolbars"",
+                ""system-bars""
+            ]
+        }
+    ]
+  }
+]";
 
-            return navs ?? new List<NavItem>();
-        });
-    }
+        // var result = JsonSerializer.Deserialize<List<NavItem>>(jsonString, new JsonSerializerOptions()
+        // {
+        //     Converters = { new NavItemsJsonConverter() }
+        // });
 
-    public async Task<List<NavItem>> GetNavs()
-    {
-        return await _navs.Value;
-    }
-}
+        var options = new JsonReaderOptions
+        {
+        };
 
-public class NavItemsJsonConverter : JsonConverter<List<NavItem>>
-{
-    public override List<NavItem>? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-    {
-        return ReadSubItems(ref reader);
-    }
+        var bytes = Encoding.UTF8.GetBytes(jsonString);
+        var stream = new MemoryStream(bytes);
+        var buffer = new byte[4096];
+        stream.Read(buffer);
+        var reader = new Utf8JsonReader(buffer);
 
-    public override void Write(Utf8JsonWriter writer, List<NavItem> value, JsonSerializerOptions options)
-    {
-        throw new NotImplementedException();
+        reader.Read();
+
+        var list = ReadSubItems(ref reader);
     }
 
     private List<NavItem> ReadSubItems(ref Utf8JsonReader reader)
@@ -101,28 +125,4 @@ public class NavItemsJsonConverter : JsonConverter<List<NavItem>>
 
         return list;
     }
-}
-
-public class NavItem
-{
-    public string Title { get; set; }
-
-    public string? Group { get; set; }
-
-    public string? Icon { get; set; }
-
-    public List<NavItem>? Items { get; set; }
-
-    public NavItem()
-    {
-    }
-
-    public NavItem(string title)
-    {
-        Title = title;
-    }
-
-    public bool HasChildren => Items is not null && Items.Any();
-
-    public string Segment => (Group ?? Title);
 }
