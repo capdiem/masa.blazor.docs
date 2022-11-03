@@ -49,7 +49,8 @@
           "cascaders",
           "checkboxes",
           "file-inputs",
-          "forms"
+          "forms",
+          "otp-input"
         ]
       }
     ]
