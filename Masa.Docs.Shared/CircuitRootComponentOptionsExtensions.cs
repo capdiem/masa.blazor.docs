@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
+using System;
 
 namespace Masa.Docs.Shared;
 
@@ -28,5 +29,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.editor.Usage>("editor-usage");
         options.RegisterCustomElement<Examples.error_handler.Usage>("error-handler-usage");
         options.RegisterCustomElement<Examples.expansion_panels.Usage>("expansion-panels-usage");
+        options.RegisterCustomElement<Examples.floating_action_button.Usage>("floating-action-button-usage");
     }
 }

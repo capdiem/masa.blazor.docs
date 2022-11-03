@@ -38,7 +38,8 @@
       "echarts",
       "editor",
       "error-handler",
-      "expansion-panels"
+      "expansion-panels",
+      "floating-action-button"
     ]
   }
 ]
