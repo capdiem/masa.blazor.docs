@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\autocomplete\examples\**" />
     <Compile Remove="Examples\drag-zone\examples\**" />
     <Compile Remove="Examples\echarts\examples\**" />
     <Compile Remove="Examples\editor\examples\**" />
@@ -15,7 +16,9 @@
     <Compile Remove="Examples\expansion-panels\examples\**" />
     <Compile Remove="Examples\floating-action-button\examples\**" />
     <Compile Remove="Examples\footer\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footer\examples\**" />
+    <Content Remove="Examples\autocomplete\examples\**" />
     <Content Remove="Examples\drag-zone\examples\**" />
     <Content Remove="Examples\echarts\examples\**" />
     <Content Remove="Examples\editor\examples\**" />
@@ -23,7 +26,9 @@
     <Content Remove="Examples\expansion-panels\examples\**" />
     <Content Remove="Examples\floating-action-button\examples\**" />
     <Content Remove="Examples\footer\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footer\examples\**" />
+    <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
     <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
     <EmbeddedResource Remove="Examples\echarts\examples\**" />
     <EmbeddedResource Remove="Examples\editor\examples\**" />
@@ -31,7 +36,9 @@
     <EmbeddedResource Remove="Examples\expansion-panels\examples\**" />
     <EmbeddedResource Remove="Examples\floating-action-button\examples\**" />
     <EmbeddedResource Remove="Examples\footer\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footer\examples\**" />
+    <None Remove="Examples\autocomplete\examples\**" />
     <None Remove="Examples\drag-zone\examples\**" />
     <None Remove="Examples\echarts\examples\**" />
     <None Remove="Examples\editor\examples\**" />
@@ -39,6 +46,7 @@
     <None Remove="Examples\expansion-panels\examples\**" />
     <None Remove="Examples\floating-action-button\examples\**" />
     <None Remove="Examples\footer\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footer\examples\**" />
   </ItemGroup>
 
@@ -73,6 +81,8 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\autocomplete\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\autocomplete\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\dividers\en-US.md" />
     <None Include="wwwroot\docs\pages\components\dividers\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\drag-zone\examples\ChildContent.razor" />

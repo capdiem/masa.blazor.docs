@@ -40,7 +40,14 @@
       "error-handler",
       "expansion-panels",
       "floating-action-button",
-      "footer"
+      "footer",
+      {
+        "title": "Form inputs & controls",
+        "group": "components",
+        "items": [
+          "autocomplete"
+        ]
+      }
     ]
   }
 ]
