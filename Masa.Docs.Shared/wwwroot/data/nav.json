@@ -13,6 +13,9 @@
     "group": "components",
     "items": [
       "alerts",
+      "avatars",
+      "badges",
+      "banners",
       {
         "title": "bars",
         "group": "components",
@@ -21,7 +24,21 @@
           "toolbars",
           "system-bars"
         ]
-      }
+      },
+      "borders",
+      "bottom-navigation",
+      "bottom-sheets",
+      "breadcrumbs",
+      "buttons",
+      "cards",
+      "chips",
+      "dialogs",
+      "dividers",
+      "drag-zone",
+      "echarts",
+      "editor",
+      "error-handler",
+      "expansion-panels"
     ]
   }
 ]
