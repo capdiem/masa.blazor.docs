@@ -39,7 +39,8 @@
       "editor",
       "error-handler",
       "expansion-panels",
-      "floating-action-button"
+      "floating-action-button",
+      "footer"
     ]
   }
 ]
