@@ -19,6 +19,7 @@
     <Compile Remove="Examples\file-inputs\examples\**" />
     <Compile Remove="Examples\floating-action-button\examples\**" />
     <Compile Remove="Examples\footers\examples\**" />
+    <Compile Remove="Examples\forms\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
@@ -32,6 +33,7 @@
     <Content Remove="Examples\file-inputs\examples\**" />
     <Content Remove="Examples\floating-action-button\examples\**" />
     <Content Remove="Examples\footers\examples\**" />
+    <Content Remove="Examples\forms\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
@@ -45,6 +47,7 @@
     <EmbeddedResource Remove="Examples\file-inputs\examples\**" />
     <EmbeddedResource Remove="Examples\floating-action-button\examples\**" />
     <EmbeddedResource Remove="Examples\footers\examples\**" />
+    <EmbeddedResource Remove="Examples\forms\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
@@ -58,6 +61,7 @@
     <None Remove="Examples\file-inputs\examples\**" />
     <None Remove="Examples\floating-action-button\examples\**" />
     <None Remove="Examples\footers\examples\**" />
+    <None Remove="Examples\forms\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
   </ItemGroup>
@@ -159,6 +163,8 @@
     <None Include="wwwroot\docs\pages\components\floating-action-button\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\footers\en-US.md" />
     <None Include="wwwroot\docs\pages\components\footers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\forms\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\forms\zh-CN.md" />
   </ItemGroup>
 
 </Project>

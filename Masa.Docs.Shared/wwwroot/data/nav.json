@@ -48,7 +48,8 @@
           "autocomplete",
           "cascaders",
           "checkboxes",
-          "file-inputs"
+          "file-inputs",
+          "forms"
         ]
       }
     ]

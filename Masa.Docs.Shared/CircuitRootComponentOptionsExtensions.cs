@@ -35,5 +35,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.cascaders.Usage>("cascaders-usage");
         options.RegisterCustomElement<Examples.checkboxes.Usage>("checkboxes-usage");
         options.RegisterCustomElement<Examples.file_inputs.Usage>("file-inputs-usage");
+        options.RegisterCustomElement<Examples.forms.Usage>("forms-usage");
     }
 }
