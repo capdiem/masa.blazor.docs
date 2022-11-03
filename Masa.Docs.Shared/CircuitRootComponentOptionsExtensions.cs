@@ -27,5 +27,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.echarts.Usage>("echarts-usage");
         options.RegisterCustomElement<Examples.editor.Usage>("editor-usage");
         options.RegisterCustomElement<Examples.error_handler.Usage>("error-handler-usage");
+        options.RegisterCustomElement<Examples.expansion_panels.Usage>("expansion-panels-usage");
     }
 }
