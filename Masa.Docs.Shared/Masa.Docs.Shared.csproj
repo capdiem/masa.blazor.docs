@@ -16,6 +16,7 @@
     <Compile Remove="Examples\editor\examples\**" />
     <Compile Remove="Examples\error-handler\examples\**" />
     <Compile Remove="Examples\expansion-panels\examples\**" />
+    <Compile Remove="Examples\file-inputs\examples\**" />
     <Compile Remove="Examples\floating-action-button\examples\**" />
     <Compile Remove="Examples\footers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
@@ -28,6 +29,7 @@
     <Content Remove="Examples\editor\examples\**" />
     <Content Remove="Examples\error-handler\examples\**" />
     <Content Remove="Examples\expansion-panels\examples\**" />
+    <Content Remove="Examples\file-inputs\examples\**" />
     <Content Remove="Examples\floating-action-button\examples\**" />
     <Content Remove="Examples\footers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
@@ -40,6 +42,7 @@
     <EmbeddedResource Remove="Examples\editor\examples\**" />
     <EmbeddedResource Remove="Examples\error-handler\examples\**" />
     <EmbeddedResource Remove="Examples\expansion-panels\examples\**" />
+    <EmbeddedResource Remove="Examples\file-inputs\examples\**" />
     <EmbeddedResource Remove="Examples\floating-action-button\examples\**" />
     <EmbeddedResource Remove="Examples\footers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
@@ -52,6 +55,7 @@
     <None Remove="Examples\editor\examples\**" />
     <None Remove="Examples\error-handler\examples\**" />
     <None Remove="Examples\expansion-panels\examples\**" />
+    <None Remove="Examples\file-inputs\examples\**" />
     <None Remove="Examples\floating-action-button\examples\**" />
     <None Remove="Examples\footers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
@@ -61,6 +65,8 @@
   <ItemGroup>
     <Content Remove="wwwroot\docs\pages\components\dividers\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\dividers\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\file-inputs\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\file-inputs\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -142,6 +148,8 @@
     <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Readonly.razor" />
     <None Include="wwwroot\docs\pages\components\expansion-panels\en-US.md" />
     <None Include="wwwroot\docs\pages\components\expansion-panels\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\file-inputs\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\file-inputs\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\floating-action-button\examples\Animation.razor" />
     <None Include="wwwroot\docs\pages\components\floating-action-button\examples\Index.razor" />
     <None Include="wwwroot\docs\pages\components\floating-action-button\examples\LateralScreens.razor" />

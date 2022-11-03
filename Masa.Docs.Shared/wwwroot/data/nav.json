@@ -47,7 +47,8 @@
         "items": [
           "autocomplete",
           "cascaders",
-          "checkboxes"
+          "checkboxes",
+          "file-inputs"
         ]
       }
     ]
