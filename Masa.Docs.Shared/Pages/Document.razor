@@ -6,7 +6,14 @@
     <MButton OnClick="ChangeCulture">Toggle culture</MButton>
 </div>
 
-<MMarkdownIt Source="@_md" Html></MMarkdownIt>
+<MContainer Class="pa-4 pa-sm-6 pa-md-8"
+            Fluid
+            Tag="section">
+    <MResponsive MaxWidth="960"
+                 Class="mx-auto overflow-visible">
+        <MMarkdownIt Source="@_md" Html></MMarkdownIt>
+    </MResponsive>
+</MContainer>
 
 @code {
 

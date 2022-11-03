@@ -10,6 +10,7 @@ builder.Services.AddMasaBlazor(options =>
 {
     options.ConfigureTheme(theme =>
     {
+        theme.Themes.Light.Primary = "#4318FF";
         theme.Themes.Light.Secondary = "#5CBBF6";
         theme.Themes.Light.Accent = "#005CAF";
         theme.Themes.Light.UserDefined["Tertiary"] = "#e57373";
