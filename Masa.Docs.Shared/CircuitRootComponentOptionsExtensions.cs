@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
+using System;
 
 namespace Masa.Docs.Shared;
 
@@ -29,5 +30,14 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.echarts.Usage>("echarts-usage");
         options.RegisterCustomElement<Examples.editor.Usage>("editor-usage");
         options.RegisterCustomElement<Examples.error_handler.Usage>("error-handler-usage");
+        options.RegisterCustomElement<Examples.expansion_panels.Usage>("expansion-panels-usage");
+        options.RegisterCustomElement<Examples.floating_action_button.Usage>("floating-action-button-usage");
+        options.RegisterCustomElement<Examples.footers.Usage>("footers-usage");
+        options.RegisterCustomElement<Examples.autocomplete.Usage>("autocomplete-usage");
+        options.RegisterCustomElement<Examples.cascaders.Usage>("cascaders-usage");
+        options.RegisterCustomElement<Examples.checkboxes.Usage>("checkboxes-usage");
+        options.RegisterCustomElement<Examples.file_inputs.Usage>("file-inputs-usage");
+        options.RegisterCustomElement<Examples.forms.Usage>("forms-usage");
+        options.RegisterCustomElement<Examples.otp_input.Usage>("otp-input-usage");
     }
 }
