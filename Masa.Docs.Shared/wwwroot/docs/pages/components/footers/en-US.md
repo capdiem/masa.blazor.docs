@@ -17,7 +17,7 @@ The **MFooter** component is used to display public information that users may w
 
 The **MFooter** component in its simplest form is a container.
 
-<footer-usage></footer-usage>
+<footers-usage></footers-usage>
 
 ## API
 

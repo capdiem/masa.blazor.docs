@@ -30,7 +30,8 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.error_handler.Usage>("error-handler-usage");
         options.RegisterCustomElement<Examples.expansion_panels.Usage>("expansion-panels-usage");
         options.RegisterCustomElement<Examples.floating_action_button.Usage>("floating-action-button-usage");
-        options.RegisterCustomElement<Examples.footer.Usage>("footer-usage");
+        options.RegisterCustomElement<Examples.footers.Usage>("footers-usage");
         options.RegisterCustomElement<Examples.autocomplete.Usage>("autocomplete-usage");
+        options.RegisterCustomElement<Examples.cascaders.Usage>("cascaders-usage");
     }
 }

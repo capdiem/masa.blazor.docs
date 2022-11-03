@@ -18,7 +18,7 @@ related:
 
 最简单形式的 **MFooter** 组件是一个容器。
 
-<footer-usage></footer-usage>
+<footers-usage></footers-usage>
 
 ## API
 
