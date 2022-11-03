@@ -220,4 +220,5 @@ packages/
 .vscode/
 
 # Masa.Docs
-Masa.Docs.Shared/wwwroot/docs/pages/components/*/examples
+Masa.Docs.Shared/wwwroot/docs/pages/components
+!Masa.Docs.Server/wwwroot/docs/pages/components/**/*.md
