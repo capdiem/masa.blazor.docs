@@ -6,6 +6,8 @@ public static class CircuitRootComponentOptionsExtensions
 {
     public static void RegisterCustomElementsOfMasaDocs(this IJSComponentConfiguration options)
     {
+        options.RegisterCustomElement<Masa.Docs.Shared.Components.Example>("masa-example");
+
         options.RegisterCustomElement<Examples.alerts.Border>("alerts-prop-border");
         options.RegisterCustomElement<Examples.alerts.Usage>("alerts-usage");
         options.RegisterCustomElement<Examples.avatars.Usage>("avatars-usage");
