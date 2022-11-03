@@ -33,5 +33,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.footers.Usage>("footers-usage");
         options.RegisterCustomElement<Examples.autocomplete.Usage>("autocomplete-usage");
         options.RegisterCustomElement<Examples.cascaders.Usage>("cascaders-usage");
+        options.RegisterCustomElement<Examples.checkboxes.Usage>("checkboxes-usage");
     }
 }

@@ -10,6 +10,7 @@
   <ItemGroup>
     <Compile Remove="Examples\autocomplete\examples\**" />
     <Compile Remove="Examples\cascaders\examples\**" />
+    <Compile Remove="Examples\checkboxes\examples\**" />
     <Compile Remove="Examples\drag-zone\examples\**" />
     <Compile Remove="Examples\echarts\examples\**" />
     <Compile Remove="Examples\editor\examples\**" />
@@ -21,6 +22,7 @@
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
     <Content Remove="Examples\cascaders\examples\**" />
+    <Content Remove="Examples\checkboxes\examples\**" />
     <Content Remove="Examples\drag-zone\examples\**" />
     <Content Remove="Examples\echarts\examples\**" />
     <Content Remove="Examples\editor\examples\**" />
@@ -32,6 +34,7 @@
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
     <EmbeddedResource Remove="Examples\cascaders\examples\**" />
+    <EmbeddedResource Remove="Examples\checkboxes\examples\**" />
     <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
     <EmbeddedResource Remove="Examples\echarts\examples\**" />
     <EmbeddedResource Remove="Examples\editor\examples\**" />
@@ -43,6 +46,7 @@
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
     <None Remove="Examples\cascaders\examples\**" />
+    <None Remove="Examples\checkboxes\examples\**" />
     <None Remove="Examples\drag-zone\examples\**" />
     <None Remove="Examples\echarts\examples\**" />
     <None Remove="Examples\editor\examples\**" />
@@ -89,6 +93,7 @@
     <None Include="wwwroot\docs\pages\components\autocomplete\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\cascaders\en-US.md" />
     <None Include="wwwroot\docs\pages\components\cascaders\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\checkboxes\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\dividers\en-US.md" />
     <None Include="wwwroot\docs\pages\components\dividers\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\drag-zone\examples\ChildContent.razor" />
