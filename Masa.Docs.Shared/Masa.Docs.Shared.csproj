@@ -175,4 +175,11 @@
     <None Include="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ExamplesSourceFile Include="Examples\**\*.razor" />
+  </ItemGroup>
+
+  <Target Name="CopyExmaplesToTxt" AfterTargets="Build">
+    <Copy SourceFiles="@(ExamplesSourceFile)" DestinationFiles="wwwroot\docs\pages\components\%(RecursiveDir)\examples\%(Filename).txt" />
+  </Target>
 </Project>
