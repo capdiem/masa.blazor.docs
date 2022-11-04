@@ -54,7 +54,18 @@
           "radio",
           "range-sliders",
           "selects",
-          "sliders"
+          "sliders",
+          "switches",
+          "textareas",
+          "text-fields"
+        ]
+      },
+      "grids",
+      {
+        "title": "Groups",
+        "group": "components",
+        "items": [
+          "button-groups"
         ]
       }
     ]
