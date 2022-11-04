@@ -1,6 +1,4 @@
 ﻿@page "/{group}/{title}"
-@using System.Globalization
-@using System.Net
 
 <div class="mb-6">
     <MButton OnClick="ChangeCulture">Toggle culture</MButton>
@@ -11,64 +9,25 @@
             Tag="section">
     <MResponsive MaxWidth="960"
                  Class="mx-auto overflow-visible">
-        <MMarkdownIt Source="@_md" Html></MMarkdownIt>
+        @if (_frontMatter is not null)
+        {
+            <FrontMatter Yaml="@_frontMatter"></FrontMatter>
+        }
+
+        <MTabs>
+            <MTab Href="@NavigationManager.GetUriWithQueryParameter("tab", "")">DEMO</MTab>
+            <MTab Href="@NavigationManager.GetUriWithQueryParameter("tab", "api")">API</MTab>
+        </MTabs>
+
+        <FadeTransition LeaveAbsolute>
+            <ShowTransitionElement Tag="div" Value="@IsApiTab">
+                <Apis Component="@ComponentName"></Apis>
+            </ShowTransitionElement>
+            <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
+                <MMarkdownIt Source="@_md" Html
+                             OnFrontMatterParsed="@(val => _frontMatter = val)" />
+            </ShowTransitionElement>
+        </FadeTransition>
+
     </MResponsive>
 </MContainer>
-
-@code {
-
-    [Inject]
-    private DocService DocService { get; set; } = null!;
-
-    [Inject]
-    private NavigationManager NavigationManager { get; set; } = null!;
-
-    [Parameter]
-    public string Title { get; set; } = null!;
-
-    [Parameter]
-    public string Group { get; set; } = null!;
-
-    private string? _md;
-
-    private string? _prevGroup;
-    private string? _prevTitle;
-
-    protected override async Task OnParametersSetAsync()
-    {
-        await base.OnParametersSetAsync();
-
-        if (Title != _prevTitle || Group != _prevGroup)
-        {
-            _prevGroup = Group;
-            _prevTitle = Title;
-            await ReadMarkdownAsync();
-        }
-    }
-
-    private string _prevCulture = "en-US";
-
-    private async Task ChangeCulture()
-    {
-        var culture = _prevCulture == "en-US" ? "zh-CN" : "en-US";
-        _prevCulture = culture;
-        DocService.ChangeLanguage(new CultureInfo(culture));
-        await ReadMarkdownAsync();
-    }
-
-    private async Task ReadMarkdownAsync()
-    {
-        try
-        {
-            _md = await DocService.ReadAsync(Group, Title);
-        }
-        catch (HttpRequestException e)
-        {
-            if (e.StatusCode == HttpStatusCode.NotFound)
-            {
-                NavigationManager.NavigateTo("/404");
-            }
-        }
-    }
-
-}

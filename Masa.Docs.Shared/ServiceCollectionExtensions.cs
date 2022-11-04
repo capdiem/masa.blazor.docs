@@ -17,6 +17,8 @@ public static class ServiceCollectionExtensions
         services.AddScoped<DocService>();
         services.AddScoped<AppService>();
 
+        ApiGenerator.ApiGenerator.Run();
+
         return services;
     }
 }

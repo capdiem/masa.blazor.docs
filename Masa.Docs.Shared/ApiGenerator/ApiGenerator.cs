@@ -1,18 +1,21 @@
-﻿namespace Masa.Docs.Shared.ApiGenerator;
+﻿using System.Reflection;
+using System.Text.RegularExpressions;
+using BlazorComponent.Attributes;
+using OneOf;
+
+namespace Masa.Docs.Shared.ApiGenerator;
 
 public static class ApiGenerator
 {
-    public static Dictionary<string, object> parametersCache = new();
+    public static Dictionary<string, Dictionary<string, List<ParameterInfo>>> parametersCache = new();
 
-    static ApiGenerator()
+    public static void Run()
     {
         var assembly = typeof(MApp).Assembly;
         var componentBaseType = typeof(ComponentBase);
-        var componentTypes = assembly.GetTypes().Where(type => componentBaseType.IsAssignableFrom(type));
-        var mComponentTypes = componentTypes.Where(type => type.Name.StartsWith("M"));
-        var pComponentTypes = componentTypes.Where(type => type.Name.StartsWith("P"));
+        var componentTypes = assembly.GetTypes().Where(type => componentBaseType.IsAssignableFrom(type) && Regex.IsMatch(type.Name, "^[A-Z]{2}"));
 
-        foreach (var type in mComponentTypes)
+        foreach (var type in componentTypes)
         {
             var parameterProps = type.GetProperties()
                                      .Where(prop => prop.CustomAttributes.Any(attr => attr.AttributeType == typeof(ParameterAttribute)));
@@ -24,32 +27,97 @@ public static class ApiGenerator
                 contentProps.Any(renderFragmentProp => renderFragmentProp == prop) is false &&
                 eventProps.Any(eventProps => eventProps == prop) is false);
 
-            var name = GetTypeName(type);
+            var typeName = GetTypeName(type, ignoreGenericTypeArguments: true);
 
-            if (!parametersCache.ContainsKey(name))
+            if (parametersCache.ContainsKey(typeName))
             {
                 continue;
             }
 
-            var parameters = defaultProps.Where(prop => IgnoreProps(prop.Name))
-                                         .Select(prop => new ParameterInfo()
-                                         {
-                                             Name = prop.Name,
-                                             Type = "TODO",
-                                         });
+            var parameters = defaultProps.Where(prop => !IsIgnoreProp(prop.Name)).Select(MapToParameterInfo).ToList();
+            var contentParameters = contentProps.Select(MapToParameterInfo).ToList();
+            var eventParameters = eventProps.Select(MapToParameterInfo).ToList();
+
+            var value = new Dictionary<string, List<ParameterInfo>>()
+            {
+                { "props", parameters },
+                { "event", eventParameters },
+                { "content", contentParameters },
+            };
+
+            parametersCache.Add(typeName, value);
         }
     }
 
-    static string GetTypeName(Type componentType)
+    static ParameterInfo MapToParameterInfo(PropertyInfo propertyInfo)
     {
-        return componentType.IsGenericType
-            ? componentType.Name.Remove(componentType.Name.IndexOf('`'))
-            : componentType.Name;
+        var instance = new ParameterInfo()
+        {
+            Name = propertyInfo.Name,
+            Type = GetTypeName(propertyInfo.PropertyType),
+        };
+
+        var defaultValueAttribute = propertyInfo.CustomAttributes.FirstOrDefault(attr => attr.AttributeType == typeof(DefaultValue));
+        instance.DefaultValue = defaultValueAttribute is not null
+            ? defaultValueAttribute.ConstructorArguments.First().Value?.ToString()
+            : GetDefaultValue(propertyInfo.PropertyType);
+
+        return instance;
     }
 
-    static bool IgnoreProps(string name)
+    static string GetTypeName(Type type, bool ignoreGenericTypeArguments = false)
     {
-        return name is not "Attributes" and not "RefBack";
+        if (type.IsGenericType)
+        {
+            var name = type.Name.Remove(type.Name.IndexOf('`'));
+            if (ignoreGenericTypeArguments)
+            {
+                return name;
+            }
+
+            var genericTypeNames = type.GenericTypeArguments.Select(t => Keyword(t.Name));
+            return $"{name}<{string.Join(", ", genericTypeNames)}>";
+        }
+
+        if (type.IsAssignableTo(typeof(IOneOf)))
+        {
+            return string.Join("|", type.BaseType.GenericTypeArguments.Select(t => Keyword(t.Name)));
+        }
+
+        return Keyword(type.Name);
+    }
+
+    static string? GetDefaultValue(Type type)
+    {
+        if (type.IsValueType && type.IsPrimitive)
+        {
+            return Activator.CreateInstance(type)?.ToString();
+        }
+
+        if (type.IsAssignableTo(typeof(IOneOf)))
+        {
+            return null;
+        }
+
+        return null; // TODO: check here
+    }
+
+    static bool IsIgnoreProp(string name)
+    {
+        return new[] { "Attributes", "RefBack" }.Contains(name);
+    }
+
+    static string Keyword(string typeName)
+    {
+        return typeName switch
+        {
+            nameof(String) => "string",
+            nameof(Boolean) => "bool",
+            nameof(Double) => "double",
+            nameof(Int32) => "int",
+            nameof(Int64) => "long",
+            _ => typeName
+        };
     }
 }
 
@@ -59,7 +127,7 @@ public class ParameterInfo
 
     public string Type { get; set; }
 
-    public string Default { get; set; }
+    public string? DefaultValue { get; set; }
 
     public string? Description { get; set; } // todo: description of api
 }

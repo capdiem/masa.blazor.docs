@@ -1,0 +1,44 @@
+﻿@using YamlDotNet.Serialization;
+
+@namespace Masa.Docs.Shared.Components
+
+@if (_meta is not null)
+{
+    <h1>@_meta.Title</h1>
+    <MMarkdownIt Source="@_meta.Description" Plain></MMarkdownIt>
+}
+
+@ChildContent
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public string Yaml { get; set; } = null!;
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private string? _prevYaml;
+
+    private FrontMatterMeta? _meta;
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        await base.SetParametersAsync(parameters);
+
+        ArgumentException.ThrowIfNullOrEmpty(Yaml);
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        if (_prevYaml != Yaml)
+        {
+            _prevYaml = Yaml;
+            _meta = new DeserializerBuilder().IgnoreUnmatchedProperties().Build().Deserialize<FrontMatterMeta>(Yaml);
+        }
+    }
+
+}

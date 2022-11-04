@@ -1,0 +1,19 @@
+﻿@using Masa.Docs.Shared.ApiGenerator
+@namespace Masa.Docs.Shared.Components
+
+@if (Data is not null && Data.Any())
+{
+    <ApiDatatable Name="@Name" Data="Data" />
+}
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public string Name { get; set; } = null!;
+
+    [Parameter]
+    [EditorRequired]
+    public List<ParameterInfo>? Data { get; set; }
+
+}

@@ -4,6 +4,7 @@ using System.Security;
 using System.Text;
 using System.Text.Json;
 using BlazorComponent;
+using Masa.Docs.Shared;
 using Masa.Docs.Shared.Services;
 using Xunit.Sdk;
 

@@ -1,0 +1,27 @@
+﻿@using Masa.Docs.Shared.ApiGenerator
+@namespace Masa.Docs.Shared.Components
+
+@foreach (var (name, data) in ParametersGroup)
+{
+    <ApiSection Name="@name" Data="@data" />
+}
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public string Component { get; set; } = null!;
+
+    private Dictionary<string, List<ParameterInfo>> ParametersGroup = new();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        if (ApiGenerator.parametersCache.ContainsKey(Component))
+        {
+            ParametersGroup = ApiGenerator.parametersCache[Component];
+        }
+    }
+
+}

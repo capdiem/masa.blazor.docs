@@ -1,0 +1,71 @@
+﻿@using Masa.Docs.Shared.ApiGenerator
+@namespace Masa.Docs.Shared.Components
+
+<AppSheet>
+    <MSimpleTable Class="api-table">
+        <thead>
+        <tr>
+            @foreach (var header in Headers)
+            {
+                <th class="@header">
+                    <div class="text-capitalize">@header</div>
+                </th>
+            }
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Data)
+        {
+            <tr>
+                @foreach (var header in Headers)
+                {
+                    if (header == "name")
+                    {
+                        <td>
+                            <span class="name-item text-mono ml-2">
+                                @item.Name
+                            </span>
+                        </td>
+                    }
+                    else if (header == "type")
+                    {
+                        <td>
+                            <span class="name-item text-mono ml-2">
+                                @item.Type
+                            </span>
+                        </td>
+                    }
+                    else if (header == "default")
+                    {
+                        <td>
+                            <span class="name-item text-mono ml-2">
+                                @item.DefaultValue
+                            </span>
+                        </td>
+                    }
+                }
+            </tr>
+        }
+        </tbody>
+    </MSimpleTable>
+</AppSheet>
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public string Name { get; set; } = null!;
+
+    [Parameter]
+    public List<ParameterInfo> Data { get; set; }
+
+    static readonly Dictionary<string, string[]> HeaderMaps = new()
+    {
+        { "props", new[] { "name", "type", "default" } },
+        { "events", new[] { "name", "type" } },
+        { "contents", new[] { "name", "type" } }
+    };
+
+    private string[] Headers => HeaderMaps[Name];
+
+}
