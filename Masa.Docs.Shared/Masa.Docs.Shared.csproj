@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Compile Remove="Examples\autocomplete\examples\**" />
+    <Compile Remove="Examples\button-groups\examples\**" />
     <Compile Remove="Examples\cascaders\examples\**" />
     <Compile Remove="Examples\checkboxes\examples\**" />
     <Compile Remove="Examples\drag-zone\examples\**" />
@@ -20,6 +21,7 @@
     <Compile Remove="Examples\floating-action-button\examples\**" />
     <Compile Remove="Examples\footers\examples\**" />
     <Compile Remove="Examples\forms\examples\**" />
+    <Compile Remove="Examples\grid\examples\**" />
     <Compile Remove="Examples\otp-input\examples\**" />
     <Compile Remove="Examples\radio\examples\**" />
     <Compile Remove="Examples\range-sliders\examples\**" />
@@ -33,6 +35,7 @@
     <Compile Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
+    <Content Remove="Examples\button-groups\examples\**" />
     <Content Remove="Examples\cascaders\examples\**" />
     <Content Remove="Examples\checkboxes\examples\**" />
     <Content Remove="Examples\drag-zone\examples\**" />
@@ -44,6 +47,7 @@
     <Content Remove="Examples\floating-action-button\examples\**" />
     <Content Remove="Examples\footers\examples\**" />
     <Content Remove="Examples\forms\examples\**" />
+    <Content Remove="Examples\grid\examples\**" />
     <Content Remove="Examples\otp-input\examples\**" />
     <Content Remove="Examples\radio\examples\**" />
     <Content Remove="Examples\range-sliders\examples\**" />
@@ -57,6 +61,7 @@
     <Content Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
+    <EmbeddedResource Remove="Examples\button-groups\examples\**" />
     <EmbeddedResource Remove="Examples\cascaders\examples\**" />
     <EmbeddedResource Remove="Examples\checkboxes\examples\**" />
     <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
@@ -68,6 +73,7 @@
     <EmbeddedResource Remove="Examples\floating-action-button\examples\**" />
     <EmbeddedResource Remove="Examples\footers\examples\**" />
     <EmbeddedResource Remove="Examples\forms\examples\**" />
+    <EmbeddedResource Remove="Examples\grid\examples\**" />
     <EmbeddedResource Remove="Examples\otp-input\examples\**" />
     <EmbeddedResource Remove="Examples\radio\examples\**" />
     <EmbeddedResource Remove="Examples\range-sliders\examples\**" />
@@ -81,6 +87,7 @@
     <EmbeddedResource Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
+    <None Remove="Examples\button-groups\examples\**" />
     <None Remove="Examples\cascaders\examples\**" />
     <None Remove="Examples\checkboxes\examples\**" />
     <None Remove="Examples\drag-zone\examples\**" />
@@ -92,6 +99,7 @@
     <None Remove="Examples\floating-action-button\examples\**" />
     <None Remove="Examples\footers\examples\**" />
     <None Remove="Examples\forms\examples\**" />
+    <None Remove="Examples\grid\examples\**" />
     <None Remove="Examples\otp-input\examples\**" />
     <None Remove="Examples\radio\examples\**" />
     <None Remove="Examples\range-sliders\examples\**" />
@@ -151,6 +159,8 @@
   <ItemGroup>
     <None Include="wwwroot\docs\pages\components\autocomplete\en-US.md" />
     <None Include="wwwroot\docs\pages\components\autocomplete\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\button-groups\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\button-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\cascaders\en-US.md" />
     <None Include="wwwroot\docs\pages\components\cascaders\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\checkboxes\zh-CN.md" />
@@ -215,6 +225,8 @@
     <None Include="wwwroot\docs\pages\components\footers\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\forms\en-US.md" />
     <None Include="wwwroot\docs\pages\components\forms\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\grids\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\grids\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\otp-input\en-US.md" />
     <None Include="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\radio\en-US.md" />

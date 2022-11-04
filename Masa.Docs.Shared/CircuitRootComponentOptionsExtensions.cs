@@ -46,5 +46,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.switches.Usage>("switches-usage");
         options.RegisterCustomElement<Examples.textareas.Usage>("textareas-usage");
         options.RegisterCustomElement<Examples.text_fields.Usage>("text-fields-usage");
+        options.RegisterCustomElement<Examples.button_groups.Usage>("button-groups-usage");
     }
 }

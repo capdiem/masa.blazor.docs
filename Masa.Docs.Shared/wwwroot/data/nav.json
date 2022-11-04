@@ -59,6 +59,14 @@
           "textareas",
           "text-fields"
         ]
+      },
+      "grids",
+      {
+        "title": "Groups",
+        "group": "components",
+        "items": [
+          "button-groups"
+        ]
       }
     ]
   }
