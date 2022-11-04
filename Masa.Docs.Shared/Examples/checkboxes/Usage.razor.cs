@@ -8,6 +8,11 @@ namespace Masa.Docs.Shared.Examples.checkboxes
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
+        protected override ParameterList<bool> GenToggleParameters() => new()
+        {
+            { nameof(MCheckbox.Dense), false },
+        };
+
         public Usage() : base(typeof(MCheckbox)) { }
 
         bool _checkbox = true;
