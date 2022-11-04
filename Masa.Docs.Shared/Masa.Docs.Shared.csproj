@@ -23,8 +23,10 @@
     <Compile Remove="Examples\otp-input\examples\**" />
     <Compile Remove="Examples\radio\examples\**" />
     <Compile Remove="Examples\range-sliders\examples\**" />
+    <Compile Remove="Examples\selects\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
     <Content Remove="Examples\cascaders\examples\**" />
     <Content Remove="Examples\checkboxes\examples\**" />
@@ -40,8 +42,10 @@
     <Content Remove="Examples\otp-input\examples\**" />
     <Content Remove="Examples\radio\examples\**" />
     <Content Remove="Examples\range-sliders\examples\**" />
+    <Content Remove="Examples\selects\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
     <EmbeddedResource Remove="Examples\cascaders\examples\**" />
     <EmbeddedResource Remove="Examples\checkboxes\examples\**" />
@@ -57,8 +61,10 @@
     <EmbeddedResource Remove="Examples\otp-input\examples\**" />
     <EmbeddedResource Remove="Examples\radio\examples\**" />
     <EmbeddedResource Remove="Examples\range-sliders\examples\**" />
+    <EmbeddedResource Remove="Examples\selects\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\selects\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
     <None Remove="Examples\cascaders\examples\**" />
     <None Remove="Examples\checkboxes\examples\**" />
@@ -74,8 +80,10 @@
     <None Remove="Examples\otp-input\examples\**" />
     <None Remove="Examples\radio\examples\**" />
     <None Remove="Examples\range-sliders\examples\**" />
+    <None Remove="Examples\selects\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\selects\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -87,6 +95,8 @@
     <Content Remove="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
     <Content Remove="wwwroot\docs\pages\components\radio\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\radio\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\selects\index.en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\selects\index.zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>

@@ -41,5 +41,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.otp_input.Usage>("otp-input-usage");
         options.RegisterCustomElement<Examples.radio.Usage>("radio-usage");
         options.RegisterCustomElement<Examples.range_sliders.Usage>("range-sliders-usage");
+        options.RegisterCustomElement<Examples.selects.Usage>("selects-usage");
     }
 }

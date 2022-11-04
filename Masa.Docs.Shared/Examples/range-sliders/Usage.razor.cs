@@ -21,8 +21,8 @@ public class Usage : Masa.Docs.Shared.Components.Usage
 
     protected override ParameterList<SliderParameter> GenSliderParameters() => new()
     {
-        { nameof(MRangeSlider<double>.Min), new SliderParameter(-50, -100, 100) },
-        { nameof(MRangeSlider<double>.Max), new SliderParameter(50, -100, 100) }
+        { nameof(MRangeSlider<double>.Min), new SliderParameter(-50, -100, 100, false) },
+        { nameof(MRangeSlider<double>.Max), new SliderParameter(50, -100, 100, false) }
     };
 
     public Usage() : base(typeof(MRangeSlider<double>))
@@ -48,7 +48,8 @@ public class Usage : Masa.Docs.Shared.Components.Usage
         return new Dictionary<string, object>()
         {
             { nameof(MRangeSlider<double>.Hint), "Im a hint" },
-            { nameof(MRangeSlider<double>.Label), "Range Slider" }
+            { nameof(MRangeSlider<double>.Label), "Range Slider" },
+            { nameof(MRangeSlider<double>.Value), new List<double>(){-25,25 } }
         };
     }
 }

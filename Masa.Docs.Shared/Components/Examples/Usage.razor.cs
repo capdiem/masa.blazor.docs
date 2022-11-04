@@ -78,7 +78,7 @@ public partial class Usage
 
     protected virtual IEnumerable<ParameterItem<bool>> ActiveToggleParameters => _toggleParameters.Where(item => item.Value);
     protected virtual IEnumerable<ParameterItem<CheckboxParameter>> ActiveCheckboxParameters => _checkboxParameters.Where(item => item.Value.Value);
-    protected virtual IEnumerable<ParameterItem<SliderParameter>> ActiveSliderParameters => _sliderParameters.Where(item => item.Value.Value > 0);
+    protected virtual IEnumerable<ParameterItem<SliderParameter>> ActiveSliderParameters => _sliderParameters.Where(item => item.Value.Condition);
     protected virtual IEnumerable<ParameterItem<SelectParameter>> ActiveSelectParameters => _selectParameters.Where(item => item.Value.Value != null);
 
     private string SourceCode
