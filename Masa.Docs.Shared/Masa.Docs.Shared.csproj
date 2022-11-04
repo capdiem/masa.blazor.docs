@@ -22,6 +22,7 @@
     <Compile Remove="Examples\forms\examples\**" />
     <Compile Remove="Examples\otp-input\examples\**" />
     <Compile Remove="Examples\radio\examples\**" />
+    <Compile Remove="Examples\range-sliders\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
@@ -38,6 +39,7 @@
     <Content Remove="Examples\forms\examples\**" />
     <Content Remove="Examples\otp-input\examples\**" />
     <Content Remove="Examples\radio\examples\**" />
+    <Content Remove="Examples\range-sliders\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
@@ -54,6 +56,7 @@
     <EmbeddedResource Remove="Examples\forms\examples\**" />
     <EmbeddedResource Remove="Examples\otp-input\examples\**" />
     <EmbeddedResource Remove="Examples\radio\examples\**" />
+    <EmbeddedResource Remove="Examples\range-sliders\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
@@ -70,6 +73,7 @@
     <None Remove="Examples\forms\examples\**" />
     <None Remove="Examples\otp-input\examples\**" />
     <None Remove="Examples\radio\examples\**" />
+    <None Remove="Examples\range-sliders\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
   </ItemGroup>
@@ -181,6 +185,8 @@
     <None Include="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\radio\en-US.md" />
     <None Include="wwwroot\docs\pages\components\radio\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\range-sliders\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\range-sliders\zh-CN.md" />
   </ItemGroup>
 
 </Project>
