@@ -56,7 +56,8 @@
           "selects",
           "sliders",
           "switches",
-          "textareas"
+          "textareas",
+          "text-fields"
         ]
       }
     ]
