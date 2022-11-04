@@ -55,7 +55,8 @@
           "range-sliders",
           "selects",
           "sliders",
-          "switches"
+          "switches",
+          "textareas"
         ]
       }
     ]

@@ -26,6 +26,7 @@
     <Compile Remove="Examples\selects\examples\**" />
     <Compile Remove="Examples\sliders\examples\**" />
     <Compile Remove="Examples\switches\examples\**" />
+    <Compile Remove="Examples\textareas\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -48,6 +49,7 @@
     <Content Remove="Examples\selects\examples\**" />
     <Content Remove="Examples\sliders\examples\**" />
     <Content Remove="Examples\switches\examples\**" />
+    <Content Remove="Examples\textareas\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -70,6 +72,7 @@
     <EmbeddedResource Remove="Examples\selects\examples\**" />
     <EmbeddedResource Remove="Examples\sliders\examples\**" />
     <EmbeddedResource Remove="Examples\switches\examples\**" />
+    <EmbeddedResource Remove="Examples\textareas\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -92,6 +95,7 @@
     <None Remove="Examples\selects\examples\**" />
     <None Remove="Examples\sliders\examples\**" />
     <None Remove="Examples\switches\examples\**" />
+    <None Remove="Examples\textareas\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -230,6 +234,8 @@
     <None Include="wwwroot\docs\pages\components\sliders\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\switches\en-US.md" />
     <None Include="wwwroot\docs\pages\components\switches\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\textareas\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\textareas\zh-CN.md" />
   </ItemGroup>
 
 </Project>
