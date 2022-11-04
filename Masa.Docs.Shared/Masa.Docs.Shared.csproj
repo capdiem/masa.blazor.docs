@@ -25,9 +25,11 @@
     <Compile Remove="Examples\range-sliders\examples\**" />
     <Compile Remove="Examples\selects\examples\**" />
     <Compile Remove="Examples\sliders\examples\**" />
+    <Compile Remove="Examples\switches\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\selects\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <Content Remove="Examples\autocomplete\examples\**" />
     <Content Remove="Examples\cascaders\examples\**" />
     <Content Remove="Examples\checkboxes\examples\**" />
@@ -45,9 +47,11 @@
     <Content Remove="Examples\range-sliders\examples\**" />
     <Content Remove="Examples\selects\examples\**" />
     <Content Remove="Examples\sliders\examples\**" />
+    <Content Remove="Examples\switches\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\selects\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
     <EmbeddedResource Remove="Examples\cascaders\examples\**" />
     <EmbeddedResource Remove="Examples\checkboxes\examples\**" />
@@ -65,9 +69,11 @@
     <EmbeddedResource Remove="Examples\range-sliders\examples\**" />
     <EmbeddedResource Remove="Examples\selects\examples\**" />
     <EmbeddedResource Remove="Examples\sliders\examples\**" />
+    <EmbeddedResource Remove="Examples\switches\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\selects\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\switches\examples\**" />
     <None Remove="Examples\autocomplete\examples\**" />
     <None Remove="Examples\cascaders\examples\**" />
     <None Remove="Examples\checkboxes\examples\**" />
@@ -85,9 +91,11 @@
     <None Remove="Examples\range-sliders\examples\**" />
     <None Remove="Examples\selects\examples\**" />
     <None Remove="Examples\sliders\examples\**" />
+    <None Remove="Examples\switches\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\selects\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\switches\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -101,6 +109,8 @@
     <Content Remove="wwwroot\docs\pages\components\radio\zh-CN.md" />
     <Content Remove="wwwroot\docs\pages\components\selects\index.en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\selects\index.zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\switches\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\switches\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -218,6 +228,8 @@
     <None Include="wwwroot\docs\pages\components\sliders\examples\VerticalSliders.razor" />
     <None Include="wwwroot\docs\pages\components\sliders\en-US.md" />
     <None Include="wwwroot\docs\pages\components\sliders\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\switches\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\switches\zh-CN.md" />
   </ItemGroup>
 
 </Project>

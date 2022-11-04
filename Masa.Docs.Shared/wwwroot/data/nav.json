@@ -54,7 +54,8 @@
           "radio",
           "range-sliders",
           "selects",
-          "sliders"
+          "sliders",
+          "switches"
         ]
       }
     ]

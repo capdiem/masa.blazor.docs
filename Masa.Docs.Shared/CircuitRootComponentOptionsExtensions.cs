@@ -43,5 +43,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.range_sliders.Usage>("range-sliders-usage");
         options.RegisterCustomElement<Examples.selects.Usage>("selects-usage");
         options.RegisterCustomElement<Examples.sliders.Usage>("sliders-usage");
+        options.RegisterCustomElement<Examples.switches.Usage>("switches-usage");
     }
 }
