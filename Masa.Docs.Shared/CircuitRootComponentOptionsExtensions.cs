@@ -39,5 +39,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.file_inputs.Usage>("file-inputs-usage");
         options.RegisterCustomElement<Examples.forms.Usage>("forms-usage");
         options.RegisterCustomElement<Examples.otp_input.Usage>("otp-input-usage");
+        options.RegisterCustomElement<Examples.radio.Usage>("radio-usage");
     }
 }

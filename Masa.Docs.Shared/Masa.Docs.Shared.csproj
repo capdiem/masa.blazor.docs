@@ -8,6 +8,84 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\autocomplete\examples\**" />
+    <Compile Remove="Examples\cascaders\examples\**" />
+    <Compile Remove="Examples\checkboxes\examples\**" />
+    <Compile Remove="Examples\drag-zone\examples\**" />
+    <Compile Remove="Examples\echarts\examples\**" />
+    <Compile Remove="Examples\editor\examples\**" />
+    <Compile Remove="Examples\error-handler\examples\**" />
+    <Compile Remove="Examples\expansion-panels\examples\**" />
+    <Compile Remove="Examples\file-inputs\examples\**" />
+    <Compile Remove="Examples\floating-action-button\examples\**" />
+    <Compile Remove="Examples\footers\examples\**" />
+    <Compile Remove="Examples\forms\examples\**" />
+    <Compile Remove="Examples\otp-input\examples\**" />
+    <Compile Remove="Examples\radio\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <Content Remove="Examples\autocomplete\examples\**" />
+    <Content Remove="Examples\cascaders\examples\**" />
+    <Content Remove="Examples\checkboxes\examples\**" />
+    <Content Remove="Examples\drag-zone\examples\**" />
+    <Content Remove="Examples\echarts\examples\**" />
+    <Content Remove="Examples\editor\examples\**" />
+    <Content Remove="Examples\error-handler\examples\**" />
+    <Content Remove="Examples\expansion-panels\examples\**" />
+    <Content Remove="Examples\file-inputs\examples\**" />
+    <Content Remove="Examples\floating-action-button\examples\**" />
+    <Content Remove="Examples\footers\examples\**" />
+    <Content Remove="Examples\forms\examples\**" />
+    <Content Remove="Examples\otp-input\examples\**" />
+    <Content Remove="Examples\radio\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <EmbeddedResource Remove="Examples\autocomplete\examples\**" />
+    <EmbeddedResource Remove="Examples\cascaders\examples\**" />
+    <EmbeddedResource Remove="Examples\checkboxes\examples\**" />
+    <EmbeddedResource Remove="Examples\drag-zone\examples\**" />
+    <EmbeddedResource Remove="Examples\echarts\examples\**" />
+    <EmbeddedResource Remove="Examples\editor\examples\**" />
+    <EmbeddedResource Remove="Examples\error-handler\examples\**" />
+    <EmbeddedResource Remove="Examples\expansion-panels\examples\**" />
+    <EmbeddedResource Remove="Examples\file-inputs\examples\**" />
+    <EmbeddedResource Remove="Examples\floating-action-button\examples\**" />
+    <EmbeddedResource Remove="Examples\footers\examples\**" />
+    <EmbeddedResource Remove="Examples\forms\examples\**" />
+    <EmbeddedResource Remove="Examples\otp-input\examples\**" />
+    <EmbeddedResource Remove="Examples\radio\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
+    <None Remove="Examples\autocomplete\examples\**" />
+    <None Remove="Examples\cascaders\examples\**" />
+    <None Remove="Examples\checkboxes\examples\**" />
+    <None Remove="Examples\drag-zone\examples\**" />
+    <None Remove="Examples\echarts\examples\**" />
+    <None Remove="Examples\editor\examples\**" />
+    <None Remove="Examples\error-handler\examples\**" />
+    <None Remove="Examples\expansion-panels\examples\**" />
+    <None Remove="Examples\file-inputs\examples\**" />
+    <None Remove="Examples\floating-action-button\examples\**" />
+    <None Remove="Examples\footers\examples\**" />
+    <None Remove="Examples\forms\examples\**" />
+    <None Remove="Examples\otp-input\examples\**" />
+    <None Remove="Examples\radio\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\docs\pages\components\dividers\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\dividers\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\file-inputs\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\file-inputs\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\otp-input\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\radio\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\radio\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
@@ -21,12 +99,88 @@
   <ItemGroup>
     <ProjectReference Include="..\..\github\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
   </ItemGroup>
-
+  
   <ItemGroup>
-    <ExamplesSourceFile Include="Examples\**\*.razor" />
+    <Content Update="wwwroot\docs\pages\components\alerts\en-US.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="wwwroot\docs\pages\components\avatars\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\autocomplete\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\autocomplete\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\cascaders\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\cascaders\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\checkboxes\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\dividers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\dividers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\ChildContent.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Inset.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\SubHeaders.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\Vertical.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\examples\View.razor" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\drag-zone\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\echarts\examples\Basic.razor" />
+    <None Include="wwwroot\docs\pages\components\echarts\examples\Dark.razor" />
+    <None Include="wwwroot\docs\pages\components\echarts\examples\HeightAndWidth.razor" />
+    <None Include="wwwroot\docs\pages\components\echarts\examples\Locale.razor" />
+    <None Include="wwwroot\docs\pages\components\echarts\examples\Theme.razor" />
+    <None Include="wwwroot\docs\pages\components\echarts\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\echarts\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Basic.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\BeforeAllUpload.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Height.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Markdown.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Method.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Module.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Placeholder.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\ReadOnly.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\Theme.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\ToolBar.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\examples\UploadPicture.razor" />
+    <None Include="wwwroot\docs\pages\components\editor\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\editor\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\OnErrorHandleAsync.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\ShowAlert.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\examples\ShowDetail.razor" />
+    <None Include="wwwroot\docs\pages\components\error-handler\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\error-handler\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Accordion.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Advanced.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\CustomIcon.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Disabled.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Focusable.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Inset.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Model.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Popout.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\examples\Readonly.razor" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\expansion-panels\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\file-inputs\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\file-inputs\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\examples\Animation.razor" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\examples\LateralScreens.razor" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\examples\SmallVariant.razor" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\examples\SpeedDial.razor" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\floating-action-button\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\footers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\footers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\forms\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\forms\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\otp-input\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\otp-input\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\radio\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\radio\zh-CN.md" />
   </ItemGroup>
 
-  <Target Name="CopyExmaplesToTxt" AfterTargets="Build">
-    <Copy SourceFiles="@(ExamplesSourceFile)" DestinationFiles="wwwroot\docs\pages\components\%(RecursiveDir)\examples\%(Filename).txt" />
-  </Target>
 </Project>

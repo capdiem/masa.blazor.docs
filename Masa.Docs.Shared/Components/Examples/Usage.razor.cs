@@ -34,7 +34,7 @@ public partial class Usage
         {
             var parameters = new List<ParameterItem<object?>>();
             parameters.AddRange(_toggleParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value)));
-            parameters.AddRange(_checkboxParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
+            parameters.AddRange(_checkboxParameters.Select(item => new ParameterItem<object?>(item.Key, (item.Value.IsBoolean ? item.Value.Value : item.Value.ParameterValue))));
             parameters.AddRange(_sliderParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             parameters.AddRange(_selectParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
 
