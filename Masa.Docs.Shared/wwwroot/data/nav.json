@@ -53,7 +53,8 @@
           "otp-input",
           "radio",
           "range-sliders",
-          "selects"
+          "selects",
+          "sliders"
         ]
       }
     ]

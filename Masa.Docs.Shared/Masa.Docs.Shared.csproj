@@ -24,6 +24,7 @@
     <Compile Remove="Examples\radio\examples\**" />
     <Compile Remove="Examples\range-sliders\examples\**" />
     <Compile Remove="Examples\selects\examples\**" />
+    <Compile Remove="Examples\sliders\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -43,6 +44,7 @@
     <Content Remove="Examples\radio\examples\**" />
     <Content Remove="Examples\range-sliders\examples\**" />
     <Content Remove="Examples\selects\examples\**" />
+    <Content Remove="Examples\sliders\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -62,6 +64,7 @@
     <EmbeddedResource Remove="Examples\radio\examples\**" />
     <EmbeddedResource Remove="Examples\range-sliders\examples\**" />
     <EmbeddedResource Remove="Examples\selects\examples\**" />
+    <EmbeddedResource Remove="Examples\sliders\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -81,6 +84,7 @@
     <None Remove="Examples\radio\examples\**" />
     <None Remove="Examples\range-sliders\examples\**" />
     <None Remove="Examples\selects\examples\**" />
+    <None Remove="Examples\sliders\examples\**" />
     <None Remove="wwwroot\docs\pages\components\autocomplete\examples\**" />
     <None Remove="wwwroot\docs\pages\components\footers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\selects\examples\**" />
@@ -197,6 +201,23 @@
     <None Include="wwwroot\docs\pages\components\radio\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\range-sliders\en-US.md" />
     <None Include="wwwroot\docs\pages\components\range-sliders\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\AppendAndPrepend.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\AppendTextField.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Colors.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Disabled.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Discrete.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Icons.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Index.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\InverseLabel.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\MinAndMax.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Readonly.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Step.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Thumb.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Ticks.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\Validation.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\examples\VerticalSliders.razor" />
+    <None Include="wwwroot\docs\pages\components\sliders\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\sliders\zh-CN.md" />
   </ItemGroup>
 
 </Project>
