@@ -108,12 +108,12 @@
         if (firstRender)
         {
             var uri = new Uri(NavigationManager.Uri);
-            var group = uri.Segments[1].Replace("/", "");
+            var category = uri.Segments[1].Replace("/", "");
             var title = uri.Segments[2].Replace("/", "");
 
             var executingAssemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             type = Type.GetType($"{executingAssemblyName}.{File}");
-            var sourceCode = await DocService.ReadExampleAsync(group, title, type.Name);
+            var sourceCode = await DocService.ReadExampleAsync(category, title, type.Name);
 
             var (razor, cs, css) = ResolveSourceCode(sourceCode);
 

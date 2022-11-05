@@ -22,29 +22,40 @@
                     if (header == "name")
                     {
                         <td>
-                            <span class="name-item text-mono ml-2">
-                                @item.Name
+                            <span class="name-item text-mono">
+                                <span class="font-weight-bold primary--text">
+                                    @item.Name
+                                </span>
                             </span>
                         </td>
                     }
                     else if (header == "type")
                     {
                         <td>
-                            <span class="name-item text-mono ml-2">
-                                @item.Type
+                            <span class="name-item text-mono">
+                                <MHighlight Inline Code="@item.Type" Language="cs"></MHighlight>
                             </span>
                         </td>
                     }
                     else if (header == "default")
                     {
                         <td>
-                            <span class="name-item text-mono ml-2">
-                                @item.DefaultValue
+                            <span class="name-item text-mono">
+                                <MHighlight Inline Code="@item.DefaultValue" Language="cs"></MHighlight>
                             </span>
                         </td>
                     }
                 }
             </tr>
+
+            @if (!string.IsNullOrWhiteSpace(item.Description))
+            {
+                <tr>
+                    <td colspan="3" class="text--mono">
+                        <MMarkdownIt Source="@item.Description"></MMarkdownIt>
+                    </td>
+                </tr>
+            }
         }
         </tbody>
     </MSimpleTable>

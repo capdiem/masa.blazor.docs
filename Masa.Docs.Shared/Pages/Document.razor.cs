@@ -12,10 +12,10 @@ public partial class Document
     private NavigationManager NavigationManager { get; set; } = null!;
 
     [Parameter]
-    public string Title { get; set; } = null!;
+    public string Page { get; set; } = null!;
 
     [Parameter]
-    public string Group { get; set; } = null!;
+    public string Category { get; set; } = null!;
 
     [Parameter]
     [SupplyParameterFromQuery]
@@ -23,23 +23,21 @@ public partial class Document
 
     private string? _md;
 
-    private string? _prevGroup;
-    private string? _prevTitle;
+    private string? _prevCategory;
+    private string? _prevPage;
 
     private string? _frontMatter;
 
     private bool IsApiTab => Tab is not null && Tab.Equals("api", StringComparison.OrdinalIgnoreCase);
 
-    private string ComponentName => "MAlert";
-
     protected override async Task OnParametersSetAsync()
     {
         await base.OnParametersSetAsync();
 
-        if (Title != _prevTitle || Group != _prevGroup)
+        if (Page != _prevPage || Category != _prevCategory)
         {
-            _prevGroup = Group;
-            _prevTitle = Title;
+            _prevCategory = Category;
+            _prevPage = Page;
             await ReadMarkdownAsync();
         }
     }
@@ -58,7 +56,7 @@ public partial class Document
     {
         try
         {
-            _md = await DocService.ReadAsync(Group, Title);
+            _md = await DocService.ReadDocumentAsync(Category, Page);
         }
         catch (HttpRequestException e)
         {

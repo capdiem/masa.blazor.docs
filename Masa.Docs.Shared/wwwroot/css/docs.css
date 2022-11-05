@@ -14,3 +14,7 @@
 .m-application code {
     background-color: unset !important;
 }
+
+.text-mono {
+    font-family: Roboto Mono,monospace;
+}

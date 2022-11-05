@@ -1,4 +1,4 @@
-﻿@page "/{group}/{title}"
+﻿@page "/{category}/{page}"
 
 <div class="mb-6">
     <MButton OnClick="ChangeCulture">Toggle culture</MButton>
@@ -21,13 +21,12 @@
 
         <FadeTransition LeaveAbsolute>
             <ShowTransitionElement Tag="div" Value="@IsApiTab">
-                <Apis Component="@ComponentName"></Apis>
+                <Apis Page="@Page"></Apis>
             </ShowTransitionElement>
             <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
                 <MMarkdownIt Source="@_md" Html
                              OnFrontMatterParsed="@(val => _frontMatter = val)" />
             </ShowTransitionElement>
         </FadeTransition>
-
     </MResponsive>
 </MContainer>

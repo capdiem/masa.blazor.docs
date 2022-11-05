@@ -41,8 +41,8 @@ public static class ApiGenerator
             var value = new Dictionary<string, List<ParameterInfo>>()
             {
                 { "props", parameters },
-                { "event", eventParameters },
-                { "content", contentParameters },
+                { "events", eventParameters },
+                { "contents", contentParameters },
             };
 
             parametersCache.Add(typeName, value);
@@ -59,7 +59,7 @@ public static class ApiGenerator
 
         var defaultValueAttribute = propertyInfo.CustomAttributes.FirstOrDefault(attr => attr.AttributeType == typeof(DefaultValue));
         instance.DefaultValue = defaultValueAttribute is not null
-            ? defaultValueAttribute.ConstructorArguments.First().Value?.ToString()
+            ? GetValueOfDefaultValueAttribute(defaultValueAttribute)
             : GetDefaultValue(propertyInfo.PropertyType);
 
         return instance;
@@ -81,17 +81,40 @@ public static class ApiGenerator
 
         if (type.IsAssignableTo(typeof(IOneOf)))
         {
-            return string.Join("|", type.BaseType.GenericTypeArguments.Select(t => Keyword(t.Name)));
+            var genericTypeArguments = string.Join(" | ", type.BaseType.GenericTypeArguments.Select(t => Keyword(t.Name)));
+            return $"{type.Name} [{genericTypeArguments}]";
+        }
+
+        if (type.IsEnum)
+        {
+            var names = string.Join(" | ", Enum.GetNames(type));
+            return $"{type.Name}.[{names}]";
         }
 
         return Keyword(type.Name);
+    }
+
+    static string? GetValueOfDefaultValueAttribute(CustomAttributeData data)
+    {
+        var argument = data.ConstructorArguments.First();
+        if (argument.ArgumentType == typeof(string))
+        {
+            return $"\"{argument.Value}\"";
+        }
+
+        return argument.Value?.ToString();
     }
 
     static string? GetDefaultValue(Type type)
     {
         if (type.IsValueType && type.IsPrimitive)
         {
-            return Activator.CreateInstance(type)?.ToString();
+            return Activator.CreateInstance(type)?.ToString()?.ToLower() ?? null;
+        }
+
+        if (type.IsEnum)
+        {
+            return Enum.GetNames(type).FirstOrDefault();
         }
 
         if (type.IsAssignableTo(typeof(IOneOf)))
