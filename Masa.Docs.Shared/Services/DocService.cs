@@ -12,6 +12,7 @@ public class DocService
     private readonly HttpClient _httpClient;
 
     private string _currentCulture = "en-us";
+    private Dictionary<string, List<string>>? _apiInPageCache;
 
     public DocService(IHttpClientFactory factory)
     {
@@ -35,6 +36,25 @@ public class DocService
         var key = $"{category}/{title}/{example}";
         return await _exampleCache.GetOrAdd(key,
             async _ => await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/{category}/{title}/examples/{example}.txt"));
+    }
+
+    public async Task<Dictionary<string, List<string>>> ReadApiInPageAsync()
+    {
+        if (_apiInPageCache is not null && _apiInPageCache.Any())
+        {
+            return _apiInPageCache;
+        }
+
+        try
+        {
+            _apiInPageCache = await _httpClient.GetFromJsonAsync<Dictionary<string, List<string>>>("_content/Masa.Docs.Shared/data/api-in-page.json");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+
+        return _apiInPageCache ?? new Dictionary<string, List<string>>();
     }
 
     public async Task<Dictionary<string, Dictionary<string, string>>?> ReadApisAsync(string kebabCaseComponent)

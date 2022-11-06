@@ -20,8 +20,8 @@
         }
 
         <MTabs Value="IsApiTab.ToString()" Class="m-bar--underline mb-12">
-            <MTab Value="@("False")" Href="@NavigationManager.GetUriWithQueryParameter("tab", "")">DEMO</MTab>
-            <MTab Value="@("True")" Href="@NavigationManager.GetUriWithQueryParameter("tab", "api")">API</MTab>
+            <MTab Value="@("False")" OnClick="@(() => NavigateToTab(""))">DEMO</MTab>
+            <MTab Value="@("True")" OnClick="@(() => NavigateToTab("api"))">API</MTab>
         </MTabs>
 
         @if (IsApiTab && _parametersGroup.Count == 0)

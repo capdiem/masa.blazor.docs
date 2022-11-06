@@ -31,12 +31,8 @@ public partial class Document : IDisposable
         { "h4", "m-heading text-h6 mb-2" },
     };
 
-    private bool _rendered;
-
     private string? _md;
-
     private string? _frontMatter;
-
     private Dictionary<string, List<ParameterInfo>> _parametersGroup = new();
 
     private bool IsApiTab => Tab is not null && Tab.Equals("api", StringComparison.OrdinalIgnoreCase);
@@ -50,42 +46,34 @@ public partial class Document : IDisposable
 
     private async void NavigationManagerOnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
+        await ReadAsync();
+        await InvokeAsync(StateHasChanged);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+    await base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            await ReadAsync();
+            StateHasChanged();
+        }
+    }
+
+    private async Task ReadAsync()
+    {
         if (IsApiTab)
         {
             await ReadApisAsync();
         }
 
         await ReadDocumentAsync();
-
-        await InvokeAsync(StateHasChanged);
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    private void NavigateToTab(string tab)
     {
-        await base.OnAfterRenderAsync(firstRender);
-
-        if (firstRender)
-        {
-            if (IsApiTab)
-            {
-                await ReadApisAsync();
-            }
-
-            await ReadDocumentAsync();
-
-            StateHasChanged();
-        }
-    }
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-
-        if (!_rendered)
-        {
-            _rendered = true;
-            StateHasChanged();
-        }
+        NavigationManager.NavigateTo(NavigationManager.GetUriWithQueryParameter("tab", tab));
     }
 
     private string _prevCulture = "en-US";
@@ -115,7 +103,16 @@ public partial class Document : IDisposable
 
     private async Task ReadApisAsync()
     {
-        var name = FormatName(Page);
+        var name = Page;
+        
+        var apiInPage = await DocService.ReadApiInPageAsync();
+
+        if (apiInPage.ContainsKey(Page))
+        {
+            name = apiInPage[Page].FirstOrDefault() ?? Page;
+        }
+
+        name = FormatName(name);
         var component = ApiGenerator.ApiGenerator.parametersCache.Keys.FirstOrDefault(key => Regex.IsMatch(key, $"[M|P]{{1}}{name}$"));
         if (component is not null)
         {
@@ -154,7 +151,7 @@ public partial class Document : IDisposable
         return string.Join("", name.Split('-').Select(item => char.ToUpper(item[0]) + item.Substring(1)));
     }
 
-    private string FormatName(string name)
+    private static string FormatName(string name)
     {
         // TODO: remove the last 's' if <> list contains the kebab-case name 
         name = name.TrimEnd('s');
