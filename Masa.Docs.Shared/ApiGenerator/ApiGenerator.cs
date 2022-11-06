@@ -57,6 +57,9 @@ public static class ApiGenerator
             Type = GetTypeName(propertyInfo.PropertyType),
         };
 
+        var editorRequiredAttribute = propertyInfo.CustomAttributes.FirstOrDefault(attr => attr.AttributeType == typeof(EditorRequiredAttribute));
+        instance.Required = editorRequiredAttribute is not null;
+
         var defaultValueAttribute = propertyInfo.CustomAttributes.FirstOrDefault(attr => attr.AttributeType == typeof(DefaultValue));
         instance.DefaultValue = defaultValueAttribute is not null
             ? GetValueOfDefaultValueAttribute(defaultValueAttribute)
@@ -146,11 +149,13 @@ public static class ApiGenerator
 
 public class ParameterInfo
 {
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
 
-    public string Type { get; set; }
+    public string Type { get; set; } = null!;
 
     public string? DefaultValue { get; set; }
 
-    public string? Description { get; set; } // todo: description of api
+    public string? Description { get; set; }
+
+    public bool Required { get; set; }
 }

@@ -28,13 +28,27 @@ public partial class Usage
         _additionalParameters = GenAdditionalParameters();
     }
 
+    private bool _rendered;
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+
+        if (!_rendered)
+        {
+            _rendered = true;
+            StateHasChanged();
+        }
+    }
+
     private Dictionary<string, object?> Parameters
     {
         get
         {
             var parameters = new List<ParameterItem<object?>>();
             parameters.AddRange(_toggleParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value)));
-            parameters.AddRange(_checkboxParameters.Select(item => new ParameterItem<object?>(item.Key, (item.Value.IsBoolean ? item.Value.Value : item.Value.ParameterValue))));
+            parameters.AddRange(_checkboxParameters.Select(item =>
+                new ParameterItem<object?>(item.Key, (item.Value.IsBoolean ? item.Value.Value : item.Value.ParameterValue))));
             parameters.AddRange(_sliderParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
             parameters.AddRange(_selectParameters.Select(item => new ParameterItem<object?>(item.Key, item.Value.Value)));
 

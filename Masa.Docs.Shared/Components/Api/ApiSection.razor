@@ -3,7 +3,17 @@
 
 @if (Data is not null && Data.Any())
 {
-    <ApiDatatable Name="@Name" Data="Data" />
+    <section id="@Name.ToLower()">
+        <h2 class="m-heading text-h4 text-sm-h4 mb-3">@Name.ToUpperFirst()</h2>
+
+        <div>
+            <div class="d-flex mb-2">
+                <AppTextField @bind-Value="filter" Icon="mdi-magnify" Clearable Label="Filter"></AppTextField>
+            </div>
+
+            <ApiDatatable Field="@Name" Data="Data" Filter="@filter" />
+        </div>
+    </section>
 }
 
 @code {
@@ -15,5 +25,7 @@
     [Parameter]
     [EditorRequired]
     public List<ParameterInfo>? Data { get; set; }
+
+    private string filter;
 
 }

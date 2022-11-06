@@ -1,7 +1,7 @@
 ﻿@using Masa.Docs.Shared.ApiGenerator
 @namespace Masa.Docs.Shared.Components
 
-<AppSheet>
+<AppSheet Class="mb-9">
     <MSimpleTable Class="api-table">
         <thead>
         <tr>
@@ -14,17 +14,24 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var item in Data)
+        @foreach (var item in Items)
         {
-            <tr>
+            <tr class="grey lighten-3">
                 @foreach (var header in Headers)
                 {
                     if (header == "name")
                     {
                         <td>
                             <span class="name-item text-mono">
-                                <span class="font-weight-bold primary--text">
-                                    @item.Name
+                                <span class="font-weight-bold">
+                                    <MBadge Value="@(item.Required)" Color="transparent" OffsetY="10">
+                                        <BadgeContent>
+                                            <MIcon Size="9" Color="red lighten-2">mdi-asterisk</MIcon>
+                                        </BadgeContent>
+                                        <ChildContent>
+                                            @item.Name
+                                        </ChildContent>
+                                    </MBadge>
                                 </span>
                             </span>
                         </td>
@@ -47,15 +54,22 @@
                     }
                 }
             </tr>
-
-            @if (!string.IsNullOrWhiteSpace(item.Description))
-            {
-                <tr>
-                    <td colspan="3" class="text--mono">
-                        <MMarkdownIt Source="@item.Description"></MMarkdownIt>
-                    </td>
-                </tr>
-            }
+            <tr>
+                <td colspan="3">
+                    <span class="text--mono">
+                        @if (string.IsNullOrWhiteSpace(item.Description))
+                        {
+                            <div>
+                                MISSING DESCRIPTION
+                            </div>
+                        }
+                        else
+                        {
+                            <MMarkdownIt Source="@item.Description"></MMarkdownIt>
+                        }
+                    </span>
+                </td>
+            </tr>
         }
         </tbody>
     </MSimpleTable>
@@ -65,10 +79,13 @@
 
     [Parameter]
     [EditorRequired]
-    public string Name { get; set; } = null!;
+    public string Field { get; set; } = null!;
 
     [Parameter]
     public List<ParameterInfo> Data { get; set; }
+
+    [Parameter]
+    public string? Filter { get; set; }
 
     static readonly Dictionary<string, string[]> HeaderMaps = new()
     {
@@ -77,6 +94,10 @@
         { "contents", new[] { "name", "type" } }
     };
 
-    private string[] Headers => HeaderMaps[Name];
+    private string[] Headers => HeaderMaps[Field];
+
+    private List<ParameterInfo> Items => string.IsNullOrWhiteSpace(Filter)
+        ? Data
+        : Data.Where(item => item.Name.Contains(Filter, StringComparison.OrdinalIgnoreCase) || item.Type.Contains(Filter, StringComparison.OrdinalIgnoreCase) || (item.DefaultValue != null && item.DefaultValue.Contains(Filter, StringComparison.OrdinalIgnoreCase))).ToList();
 
 }

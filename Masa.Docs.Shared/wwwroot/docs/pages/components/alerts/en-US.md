@@ -13,10 +13,6 @@ Alerts in their simplest form are flat sheets of paper that display a message.
 
 ## Anatomy
 
-## API
-
-- [MAlert](/api/MAlert)
-
 ## Examples
 
 ### Props

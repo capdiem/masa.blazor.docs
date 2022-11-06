@@ -7,26 +7,45 @@
 <MContainer Class="pa-4 pa-sm-6 pa-md-8"
             Fluid
             Tag="section">
-    <MResponsive MaxWidth="960"
+    <MResponsive MaxWidth="1368"
                  Class="mx-auto overflow-visible">
+
         @if (_frontMatter is not null)
         {
             <FrontMatter Yaml="@_frontMatter"></FrontMatter>
         }
+        else
+        {
+            <MSkeletonLoader Type="article"></MSkeletonLoader>
+        }
 
-        <MTabs>
-            <MTab Href="@NavigationManager.GetUriWithQueryParameter("tab", "")">DEMO</MTab>
-            <MTab Href="@NavigationManager.GetUriWithQueryParameter("tab", "api")">API</MTab>
+        <MTabs Value="IsApiTab.ToString()" Class="m-bar--underline mb-12">
+            <MTab Value="@("False")" Href="@NavigationManager.GetUriWithQueryParameter("tab", "")">DEMO</MTab>
+            <MTab Value="@("True")" Href="@NavigationManager.GetUriWithQueryParameter("tab", "api")">API</MTab>
         </MTabs>
 
-        <FadeTransition LeaveAbsolute>
-            <ShowTransitionElement Tag="div" Value="@IsApiTab">
-                <Apis Page="@Page"></Apis>
-            </ShowTransitionElement>
-            <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
-                <MMarkdownIt Source="@_md" Html
-                             OnFrontMatterParsed="@(val => _frontMatter = val)" />
-            </ShowTransitionElement>
-        </FadeTransition>
+        @if (IsApiTab && _parametersGroup.Count == 0)
+        {
+            <MSkeletonLoader Type="table"></MSkeletonLoader>
+        }
+        else if (!IsApiTab && _md == null)
+        {
+            <MSkeletonLoader Type="article,card"></MSkeletonLoader>
+        }
+        else
+        {
+            <FadeTransition LeaveAbsolute>
+                <ShowTransitionElement Tag="div" Value="@IsApiTab">
+                    <Apis ParametersGroup="@_parametersGroup"></Apis>
+                </ShowTransitionElement>
+                <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
+                    <MMarkdownIt Source="@_md"
+                                 OnFrontMatterParsed="@(val => _frontMatter = val)"
+                                 Html
+                                 HeaderSections
+                                 TagClassMap="TagClassMap" />
+                </ShowTransitionElement>
+            </FadeTransition>
+        }
     </MResponsive>
 </MContainer>

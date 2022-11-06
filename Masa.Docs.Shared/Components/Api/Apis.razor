@@ -1,9 +1,8 @@
 ﻿@using Masa.Docs.Shared.ApiGenerator
 @using System.Text.RegularExpressions
 @namespace Masa.Docs.Shared.Components
-@inject DocService DocService
 
-@foreach (var (name, data) in _parametersGroup)
+@foreach (var (name, data) in ParametersGroup)
 {
     <ApiSection Name="@name" Data="@data" />
 }
@@ -12,64 +11,6 @@
 
     [Parameter]
     [EditorRequired]
-    public string Page { get; set; } = null!;
-
-    private string? _prevPage;
-    private Dictionary<string, List<ParameterInfo>> _parametersGroup = new();
-
-    protected override async Task OnParametersSetAsync()
-    {
-        await base.OnParametersSetAsync();
-
-        if (_prevPage != Page)
-        {
-            _prevPage = Page;
-
-            var name = FormatName(Page);
-            var component = ApiGenerator.parametersCache.Keys.FirstOrDefault(key => Regex.IsMatch(key, $"[M|P]{{1}}{name}$"));
-            if (component is not null)
-            {
-                _parametersGroup = ApiGenerator.parametersCache[component];
-
-                var descriptionGroup = await DocService.ReadApisAsync(Page);
-
-                if (descriptionGroup is null)
-                {
-                    return;
-                }
-
-                foreach (var group in descriptionGroup)
-                {
-                    if (!_parametersGroup.ContainsKey(group.Key))
-                    {
-                        continue;
-                    }
-
-                    var parameters = _parametersGroup[group.Key];
-                    foreach (var (prop, desc) in group.Value)
-                    {
-                        var parameter = parameters.FirstOrDefault(param => param.Name.Equals(prop, StringComparison.OrdinalIgnoreCase));
-                        if (parameter is not null)
-                        {
-                            parameter.Description = desc;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    private static string KebabToPascal(string name)
-    {
-        name = name.Trim('-');
-        return string.Join("", name.Split('-').Select(item => char.ToUpper(item[0]) + item.Substring(1)));
-    }
-
-    private string FormatName(string name)
-    {
-    // TODO: remove the last 's' if <> list contains the kebab-case name 
-        name = name.TrimEnd('s');
-        return KebabToPascal(name);
-    }
+    public Dictionary<string, List<ParameterInfo>> ParametersGroup { get; set; } = null!;
 
 }
