@@ -22,7 +22,7 @@
             @foreach (var item in _toc)
             {
                 <li class="pl-3 text-body-2 py-1 font-weight-regular @GenClass(item)">
-                    <a href="@item.Hash" class="m-toc-link d-block transition-swing text-decoration-none" @onclick:preventDefault>@item.Content</a>
+                    <a href="@($"#{item.Anchor}")" class="m-toc-link d-block transition-swing text-decoration-none" @onclick:preventDefault>@item.Content</a>
                 </li>
             }
         </ul>
@@ -31,7 +31,7 @@
 
 @code {
 
-    private List<MarkdownItHeading> _toc = new();
+    private List<MarkdownItTocContent> _toc = new();
 
     protected override void OnInitialized()
     {
@@ -40,7 +40,7 @@
         AppService.TocChanged += AppServiceOnTocChanged;
     }
 
-    private void AppServiceOnTocChanged(object? sender, List<MarkdownItHeading>? headings)
+    private void AppServiceOnTocChanged(object? sender, List<MarkdownItTocContent>? headings)
     {
         if (headings is null)
         {
@@ -52,11 +52,11 @@
         InvokeAsync(StateHasChanged);
     }
 
-    private string GenClass(MarkdownItHeading heading)
+    private string GenClass(MarkdownItTocContent tocContent)
     {
         var builder = new StringBuilder();
 
-        switch (heading.Level)
+        switch (tocContent.Level)
         {
             case 3:
                 builder.Append("pl-6");

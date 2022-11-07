@@ -13,9 +13,9 @@ public partial class AppService
     // };
 
     private readonly Lazy<Task<List<NavItem>>> _navs;
-    private List<MarkdownItHeading>? _toc;
+    private List<MarkdownItTocContent>? _toc;
 
-    public event EventHandler<List<MarkdownItHeading>?>? TocChanged;
+    public event EventHandler<List<MarkdownItTocContent>?>? TocChanged;
 
     public AppService(IHttpClientFactory factory)
     {
@@ -32,7 +32,7 @@ public partial class AppService
         });
     }
     
-    public List<MarkdownItHeading>? Toc
+    public List<MarkdownItTocContent>? Toc
     {
         get => _toc;
         set

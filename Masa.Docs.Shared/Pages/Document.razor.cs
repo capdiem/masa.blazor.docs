@@ -28,13 +28,6 @@ public partial class Document : IDisposable
     [SupplyParameterFromQuery]
     public string? Tab { get; set; }
 
-    private static readonly Dictionary<string, string> TagClassMap = new()
-    {
-        { "h2", "m-heading text-h4 text-sm-h4 mb-3" },
-        { "h3", "m-heading text-h5 mb-2" },
-        { "h4", "m-heading text-h6 mb-2" },
-    };
-
     private string? _md;
     private FrontMatterMeta? _frontMatterMeta;
 
@@ -98,9 +91,9 @@ public partial class Document : IDisposable
         _frontMatterMeta = new DeserializerBuilder().IgnoreUnmatchedProperties().Build().Deserialize<FrontMatterMeta>(yaml);
     }
 
-    private void OnTocParsed(List<MarkdownItHeading>? headings)
+    private void OnTocParsed(List<MarkdownItTocContent>? contents)
     {
-        AppService.Toc = headings;
+        AppService.Toc = contents;
     }
 
     private async Task ReadDocumentAsync()

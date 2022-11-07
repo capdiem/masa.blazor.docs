@@ -105,6 +105,34 @@
         window.getTimeOffset = function () {
             return new Date().getTimezoneOffset();
         }
+        
+        window.BlazorComponent.markdownItRules = function (key, markdownIt) {
+          if (key !== "document") return
+
+          addHeadingRules(markdownIt)
+
+          function addHeadingRules (md) {
+            md.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
+              const level = tokens[idx].markup.length
+              const next = tokens[idx + 1]
+              const children = next ? next.children : []
+              const [, href] = children[2].attrs[0]
+              const content = children[0].content
+          
+              tokens[idx].tag = 'app-heading'
+              tokens[idx].attrSet('content', content)
+              tokens[idx].attrSet('href', href)
+              tokens[idx].attrSet('level', level)
+          
+              return self.renderToken(tokens, idx, options)
+            }
+            md.renderer.rules.heading_close = (tokens, idx, options, env, self) => {
+              tokens[idx].tag = 'app-heading'
+          
+              return self.renderToken(tokens, idx, options)
+            }
+          }
+        }
     </script>
 </body>
 </html>
