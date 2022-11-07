@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Masa.Docs.Shared.Examples.list_item_groups
+﻿namespace Masa.Docs.Shared.Examples.list_item_groups
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
+        protected override Type UsageWrapperType => typeof(UsageWrapper);
+
         public Usage() : base(typeof(MListItemGroup)) { }
 
         protected override RenderFragment GenChildContent() => builder =>
@@ -16,13 +12,14 @@ namespace Masa.Docs.Shared.Examples.list_item_groups
             foreach (var item in items)
             {
                 builder.OpenComponent<MListItem>(i);
-                builder.AddAttribute(1, nameof(MListItem.ChildContent), (RenderFragment)(childBuilder =>
+                i++;
+                builder.AddAttribute(i, nameof(MListItem.ChildContent), (RenderFragment)(childBuilder =>
                 {
                     childBuilder.OpenComponent<MListItemIcon>(0);
                     childBuilder.AddAttribute(1, nameof(MListItemIcon), (RenderFragment)(mliiChildBuilder =>
                     {
                         mliiChildBuilder.OpenComponent<MIcon>(0);
-                        mliiChildBuilder.AddAttribute(1, nameof(MIcon.Icon), $"{item.Icon}");
+                        mliiChildBuilder.AddAttribute(1, "ChildContent", (RenderFragment)(b => b.AddContent(0, $"{item.Icon}")));
                         mliiChildBuilder.CloseComponent();
                     }));
                     childBuilder.CloseComponent();
@@ -43,6 +40,15 @@ namespace Masa.Docs.Shared.Examples.list_item_groups
                 i++;
             }
         };
+
+        protected override Dictionary<string, object>? GenAdditionalParameters()
+        {
+            return new Dictionary<string, object>()
+            {
+                { nameof(MListItemGroup.Value), selected },
+              
+            };
+        }
 
         static readonly Item[] items =
         {
@@ -68,7 +74,7 @@ namespace Masa.Docs.Shared.Examples.list_item_groups
             }
         };
 
-        StringNumber selected = 1;
+        StringNumber selected = 0;
 
         public class Item
         {

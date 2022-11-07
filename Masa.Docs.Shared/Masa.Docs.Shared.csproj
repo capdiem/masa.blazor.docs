@@ -59,6 +59,7 @@
     <ExamplesSourceFile Remove="Examples\list-item-groups\Mandatory.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\Multiple.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\SelectionControls.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\usages\UsageWrapper.razor" />
   </ItemGroup>
 
   <ItemGroup>
