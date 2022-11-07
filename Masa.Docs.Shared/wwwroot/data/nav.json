@@ -65,7 +65,9 @@
         "title": "Groups",
         "group": "components",
         "items": [
-          "button-groups"
+          "button-groups",
+          "chip-groups",
+          "item-groups"
         ]
       }
     ]

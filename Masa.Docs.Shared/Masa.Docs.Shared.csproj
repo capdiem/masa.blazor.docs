@@ -27,6 +27,59 @@
     <ExamplesSourceFile Include="Examples\**\*.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Examples\item-groups\examples\**" />
+    <Content Remove="Examples\item-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\item-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
+    <None Remove="Examples\item-groups\examples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\Column.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\FilterResults.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\Mandatory.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\Multiple.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\ProductCard.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\ToothbrushCard.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\examples\Usage.razor" />
+    <ExamplesSourceFile Remove="Examples\chip-groups\Usages.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Examples\chip-groups\en-US.md" />
+    <None Remove="Examples\chip-groups\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Examples\chip-groups\examples\Column.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\FilterResults.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\Mandatory.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\Multiple.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\ProductCard.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\ToothbrushCard.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\chip-groups\examples\Usage.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
   <Target Name="CopyExmaplesToTxt" AfterTargets="Build">
     <Copy SourceFiles="@(ExamplesSourceFile)" DestinationFiles="wwwroot\docs\pages\components\%(RecursiveDir)\examples\%(Filename).txt" />
   </Target>
