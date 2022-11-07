@@ -38,7 +38,7 @@ public class DocService
             async _ => await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/{category}/{title}/examples/{example}.txt"));
     }
 
-    public async Task<Dictionary<string, List<string>>> ReadApiInPageAsync()
+    public async Task<Dictionary<string, List<string>>> ReadPageToApiAsync()
     {
         if (_apiInPageCache is not null && _apiInPageCache.Any())
         {
@@ -47,7 +47,7 @@ public class DocService
 
         try
         {
-            _apiInPageCache = await _httpClient.GetFromJsonAsync<Dictionary<string, List<string>>>("_content/Masa.Docs.Shared/data/api-in-page.json");
+            _apiInPageCache = await _httpClient.GetFromJsonAsync<Dictionary<string, List<string>>>("_content/Masa.Docs.Shared/data/page-to-api.json");
         }
         catch (Exception e)
         {

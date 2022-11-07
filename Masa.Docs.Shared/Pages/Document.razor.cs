@@ -33,7 +33,8 @@ public partial class Document : IDisposable
 
     private string? _md;
     private string? _frontMatter;
-    private Dictionary<string, List<ParameterInfo>> _parametersGroup = new();
+
+    private readonly Dictionary<string, Dictionary<string, List<ParameterInfo>>> _apiData = new();
 
     private bool IsApiTab => Tab is not null && Tab.Equals("api", StringComparison.OrdinalIgnoreCase);
 
@@ -46,13 +47,15 @@ public partial class Document : IDisposable
 
     private async void NavigationManagerOnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
+        _apiData.Clear();
+
         await ReadAsync();
         await InvokeAsync(StateHasChanged);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-    await base.OnAfterRenderAsync(firstRender);
+        await base.OnAfterRenderAsync(firstRender);
 
         if (firstRender)
         {
@@ -103,45 +106,62 @@ public partial class Document : IDisposable
 
     private async Task ReadApisAsync()
     {
-        var name = Page;
-        
-        var apiInPage = await DocService.ReadApiInPageAsync();
-
-        if (apiInPage.ContainsKey(Page))
+        if (_apiData.Count > 0)
         {
-            name = apiInPage[Page].FirstOrDefault() ?? Page;
+            return;
         }
 
-        name = FormatName(name);
-        var component = ApiGenerator.ApiGenerator.parametersCache.Keys.FirstOrDefault(key => Regex.IsMatch(key, $"[M|P]{{1}}{name}$"));
-        if (component is not null)
+        var name = Page;
+
+        var pageToApi = await DocService.ReadPageToApiAsync();
+
+        if (pageToApi.ContainsKey(Page))
         {
-            _parametersGroup = ApiGenerator.ApiGenerator.parametersCache[component];
+            await pageToApi[Page].ForEachAsync(async componentName => { _apiData[componentName] = await getApiGroupAsync(componentName, true); });
+        }
+        else
+        {
+            var apiGroup = await getApiGroupAsync(FormatName(name));
+            _apiData[FormatName(name)] = apiGroup;
+        }
 
-            var descriptionGroup = await DocService.ReadApisAsync(Page);
+        async Task<Dictionary<string, List<ParameterInfo>>> getApiGroupAsync(string name, bool isFullname = false)
+        {
+            var component = isFullname
+                ? ApiGenerator.ApiGenerator.parametersCache.Keys.FirstOrDefault(key => key == name)
+                : ApiGenerator.ApiGenerator.parametersCache.Keys.FirstOrDefault(key => Regex.IsMatch(key, $"[M|P]{{1}}{name}$"));
 
-            if (descriptionGroup is null)
+            if (component is not null)
             {
-                return;
-            }
+                var parametersCacheValue = ApiGenerator.ApiGenerator.parametersCache[component];
 
-            foreach (var group in descriptionGroup)
-            {
-                if (!_parametersGroup.ContainsKey(group.Key))
-                {
-                    continue;
-                }
+                var descriptionGroup = await DocService.ReadApisAsync(Page);
 
-                var parameters = _parametersGroup[group.Key];
-                foreach (var (prop, desc) in group.Value)
+                if (descriptionGroup is not null)
                 {
-                    var parameter = parameters.FirstOrDefault(param => param.Name.Equals(prop, StringComparison.OrdinalIgnoreCase));
-                    if (parameter is not null)
+                    foreach (var group in descriptionGroup)
                     {
-                        parameter.Description = desc;
+                        if (!parametersCacheValue.ContainsKey(group.Key))
+                        {
+                            continue;
+                        }
+
+                        var parameters = parametersCacheValue[group.Key];
+                        foreach (var (prop, desc) in group.Value)
+                        {
+                            var parameter = parameters.FirstOrDefault(param => param.Name.Equals(prop, StringComparison.OrdinalIgnoreCase));
+                            if (parameter is not null)
+                            {
+                                parameter.Description = desc;
+                            }
+                        }
                     }
                 }
+
+                return parametersCacheValue;
             }
+
+            return new Dictionary<string, List<ParameterInfo>>();
         }
     }
 

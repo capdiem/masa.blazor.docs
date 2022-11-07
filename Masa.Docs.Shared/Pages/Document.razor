@@ -24,7 +24,7 @@
             <MTab Value="@("True")" OnClick="@(() => NavigateToTab("api"))">API</MTab>
         </MTabs>
 
-        @if (IsApiTab && _parametersGroup.Count == 0)
+        @if (IsApiTab && _apiData.Count == 0)
         {
             <MSkeletonLoader Type="table"></MSkeletonLoader>
         }
@@ -36,7 +36,7 @@
         {
             <FadeTransition LeaveAbsolute>
                 <ShowTransitionElement Tag="div" Value="@IsApiTab">
-                    <Apis ParametersGroup="@_parametersGroup"></Apis>
+                    <Apis Data="@_apiData"></Apis>
                 </ShowTransitionElement>
                 <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
                     <MMarkdownIt Source="@_md"
