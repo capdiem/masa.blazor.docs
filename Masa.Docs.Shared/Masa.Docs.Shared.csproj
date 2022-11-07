@@ -28,19 +28,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\hover\examples\**" />
     <Compile Remove="Examples\item-groups\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <Content Remove="Examples\hover\examples\**" />
     <Content Remove="Examples\item-groups\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\hover\examples\**" />
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\hover\examples\**" />
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
+    <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\item-groups\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
   </ItemGroup>
 
@@ -83,6 +92,8 @@
     <None Include="Examples\list-item-groups\Mandatory.razor" />
     <None Include="Examples\list-item-groups\Multiple.razor" />
     <None Include="Examples\list-item-groups\SelectionControls.razor" />
+    <None Include="wwwroot\docs\pages\components\hover\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\hover\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />

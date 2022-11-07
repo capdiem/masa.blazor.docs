@@ -48,7 +48,7 @@ public class Usage : Masa.Docs.Shared.Components.Usage
                     builder.OpenComponent<MButton>(0);
                     builder.AddAttribute(1, nameof(MButton.Color), "purple");
                     builder.AddAttribute(2, nameof(MButton.Dark), true);
-                    builder.AddAttribute(3, nameof(MButton.Attributes), context.Attrs);
+                    builder.AddMultipleAttributes(3, context.Attrs);
                     builder.AddChildContent(4, "Open Playground");
                     builder.CloseComponent();
                 })
