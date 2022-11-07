@@ -67,7 +67,8 @@
         "items": [
           "button-groups",
           "chip-groups",
-          "item-groups"
+          "item-groups",
+          "list-item-groups"
         ]
       }
     ]

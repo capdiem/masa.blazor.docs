@@ -36,6 +36,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Examples\list-item-groups\ActiveClass.razor" />
+    <Content Remove="Examples\list-item-groups\FlatList.razor" />
+    <Content Remove="Examples\list-item-groups\Index.razor" />
+    <Content Remove="Examples\list-item-groups\Mandatory.razor" />
+    <Content Remove="Examples\list-item-groups\Multiple.razor" />
+    <Content Remove="Examples\list-item-groups\SelectionControls.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\Column.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\FilterResults.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\Mandatory.razor" />
@@ -44,6 +53,12 @@
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\ToothbrushCard.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\Usage.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\Usages.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\ActiveClass.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\FlatList.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\Index.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\Mandatory.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\Multiple.razor" />
+    <ExamplesSourceFile Remove="Examples\list-item-groups\SelectionControls.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,8 +67,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Examples\list-item-groups\ActiveClass.razor" />
+    <None Include="Examples\list-item-groups\FlatList.razor" />
+    <None Include="Examples\list-item-groups\Index.razor" />
+    <None Include="Examples\list-item-groups\Mandatory.razor" />
+    <None Include="Examples\list-item-groups\Multiple.razor" />
+    <None Include="Examples\list-item-groups\SelectionControls.razor" />
     <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\list-item-groups\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
