@@ -29,10 +29,19 @@
 
   <ItemGroup>
     <Compile Remove="Examples\item-groups\examples\**" />
+    <Compile Remove="Examples\slide-groups\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <Content Remove="Examples\item-groups\examples\**" />
+    <Content Remove="Examples\slide-groups\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\item-groups\examples\**" />
+    <None Remove="Examples\slide-groups\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -78,6 +87,8 @@
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>

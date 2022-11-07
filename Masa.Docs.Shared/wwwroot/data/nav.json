@@ -68,7 +68,8 @@
           "button-groups",
           "chip-groups",
           "item-groups",
-          "list-item-groups"
+          "list-item-groups",
+          "slide-groups"
         ]
       }
     ]
