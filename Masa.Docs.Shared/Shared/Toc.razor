@@ -1,0 +1,80 @@
+﻿@inject AppService AppService
+@using System.Text
+@implements IDisposable
+
+<MNavigationDrawer Id="default-toc"
+                   Right
+                   Color=""
+                   App
+                   Class="py-4 pr-3"
+                   Clipped
+                   Floating
+                   Width="256">
+    <PrependContent>
+        @if (_toc.Any())
+        {
+            <div class="mb-2"></div>
+        }
+    </PrependContent>
+
+    <ChildContent>
+        <ul class="mb-6">
+            @foreach (var item in _toc)
+            {
+                <li class="pl-3 text-body-2 py-1 font-weight-regular @GenClass(item)">
+                    <a href="@item.Hash" class="m-toc-link d-block transition-swing text-decoration-none" @onclick:preventDefault>@item.Content</a>
+                </li>
+            }
+        </ul>
+    </ChildContent>
+</MNavigationDrawer>
+
+@code {
+
+    private List<MarkdownItHeading> _toc = new();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        AppService.TocChanged += AppServiceOnTocChanged;
+    }
+
+    private void AppServiceOnTocChanged(object? sender, List<MarkdownItHeading>? headings)
+    {
+        if (headings is null)
+        {
+            return;
+        }
+
+        _toc = headings;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private string GenClass(MarkdownItHeading heading)
+    {
+        var builder = new StringBuilder();
+
+        switch (heading.Level)
+        {
+            case 3:
+                builder.Append("pl-6");
+                break;
+            case 4:
+                builder.Append("pl-9");
+                break;
+            case 5:
+                builder.Append("pl-12");
+                break;
+        }
+
+        return builder.ToString();
+    }
+
+    public void Dispose()
+    {
+        AppService.TocChanged -= AppServiceOnTocChanged;
+    }
+
+}

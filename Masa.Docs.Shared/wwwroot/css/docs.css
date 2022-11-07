@@ -33,3 +33,15 @@
 h1 + p {
     font-size: 1.25rem;
 }
+
+#default-toc ul {
+    list-style-type: none;
+}
+
+#default-toc li {
+    border-left: 2px solid #E5E5E5;
+}
+
+#default-toc .m-toc-link {
+    color: inherit;
+}

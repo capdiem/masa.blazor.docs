@@ -3,6 +3,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using Masa.Docs.Shared.ApiGenerator;
 using Microsoft.AspNetCore.Components.Routing;
+using YamlDotNet.Serialization;
 
 namespace Masa.Docs.Shared.Pages;
 
@@ -13,6 +14,9 @@ public partial class Document : IDisposable
 
     [Inject]
     private NavigationManager NavigationManager { get; set; } = null!;
+
+    [Inject]
+    private AppService AppService { get; set; } = null!;
 
     [Parameter]
     public string Page { get; set; } = null!;
@@ -32,7 +36,7 @@ public partial class Document : IDisposable
     };
 
     private string? _md;
-    private string? _frontMatter;
+    private FrontMatterMeta? _frontMatterMeta;
 
     private readonly Dictionary<string, Dictionary<string, List<ParameterInfo>>> _apiData = new();
 
@@ -87,6 +91,16 @@ public partial class Document : IDisposable
         _prevCulture = culture;
         DocService.ChangeLanguage(new CultureInfo(culture));
         await ReadDocumentAsync();
+    }
+
+    private void OnFrontMatterParsed(string yaml)
+    {
+        _frontMatterMeta = new DeserializerBuilder().IgnoreUnmatchedProperties().Build().Deserialize<FrontMatterMeta>(yaml);
+    }
+
+    private void OnTocParsed(List<MarkdownItHeading>? headings)
+    {
+        AppService.Toc = headings;
     }
 
     private async Task ReadDocumentAsync()

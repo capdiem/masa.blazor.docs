@@ -3,9 +3,19 @@ using System.Text.Json;
 
 namespace Masa.Docs.Shared.Services;
 
-public class AppService
+public partial class AppService
 {
+    // private static readonly Dictionary<string, (string Icon, string color)> Categories = new()
+    // {
+    //     { "components", ("mdi-view-dashboard-outline", "indigo darken-1") },
+    //     { "features", ("mdi-image-edit-outline", "red") },
+    //     { "styles", ("mdi-palette-outline", "deep-purple accent-4") },
+    // };
+
     private readonly Lazy<Task<List<NavItem>>> _navs;
+    private List<MarkdownItHeading>? _toc;
+
+    public event EventHandler<List<MarkdownItHeading>?>? TocChanged;
 
     public AppService(IHttpClientFactory factory)
     {
@@ -20,6 +30,16 @@ public class AppService
 
             return navs ?? new List<NavItem>();
         });
+    }
+    
+    public List<MarkdownItHeading>? Toc
+    {
+        get => _toc;
+        set
+        {
+            _toc = value;
+            TocChanged?.Invoke(this, value);
+        }
     }
 
     public async Task<List<NavItem>> GetNavs()

@@ -13,7 +13,7 @@
 
     [EditorRequired]
     [Parameter]
-    public string[]? Related { get; set; }
+    public IEnumerable<string>? Related { get; set; }
 
     protected override void OnParametersSet()
     {
