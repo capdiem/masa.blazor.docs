@@ -83,7 +83,8 @@
       "modals",
       "navigation-drawers",
       "not-grouped",
-      "overlays"
+      "overlays",
+      "pagination"
     ]
   }
 ]

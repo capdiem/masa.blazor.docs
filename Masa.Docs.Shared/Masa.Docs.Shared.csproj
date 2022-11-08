@@ -146,11 +146,19 @@
     <ExamplesSourceFile Remove="Examples\list-item-groups\usages\UsageWrapper.razor" />
     <ExamplesSourceFile Remove="Examples\markdown\usages\UsageWrapper.razor" />
     <ExamplesSourceFile Remove="Examples\overlays\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Circle.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Disabled.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Icon.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Index.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Length.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\TotalVisible.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Examples\chip-groups\en-US.md" />
     <None Remove="Examples\chip-groups\zh-CN.md" />
+    <None Remove="Examples\pagination\index.en-US.md" />
+    <None Remove="Examples\pagination\index.zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -215,6 +223,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Examples\chip-groups\examples\Usage.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Circle.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Disabled.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Icon.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Index.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Length.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\TotalVisible.razor">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
