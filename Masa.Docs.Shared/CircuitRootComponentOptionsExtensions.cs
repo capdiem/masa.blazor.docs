@@ -59,6 +59,8 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.images.Usage>("images-usage");
         options.RegisterCustomElement<Examples.infinite_scroll.Usage>("infinite-scroll-usage");
         options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
-        options.RegisterCustomElement<Usage>("markdown-usage");
+        options.RegisterCustomElement<Examples.markdown.usages.Usage>("markdown-usage");
+        options.RegisterCustomElement<Examples.menus.Usage>("menus-usage");
+        options.RegisterCustomElement<Examples.modals.Usage>("modals-usage");
     }
 }

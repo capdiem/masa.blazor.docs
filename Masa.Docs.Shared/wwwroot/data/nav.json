@@ -78,7 +78,9 @@
       "images",
       "infinite-scroll",
       "lists",
-      "markdown"
+      "markdown",
+      "menus",
+      "modals"
     ]
   }
 ]

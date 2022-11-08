@@ -35,6 +35,8 @@
     <Compile Remove="Examples\item-groups\examples\**" />
     <Compile Remove="Examples\lists\examples\**" />
     <Compile Remove="Examples\markdown\examples\**" />
+    <Compile Remove="Examples\menus\examples\**" />
+    <Compile Remove="Examples\modals\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -46,6 +48,8 @@
     <Content Remove="Examples\item-groups\examples\**" />
     <Content Remove="Examples\lists\examples\**" />
     <Content Remove="Examples\markdown\examples\**" />
+    <Content Remove="Examples\menus\examples\**" />
+    <Content Remove="Examples\modals\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -57,6 +61,8 @@
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
     <EmbeddedResource Remove="Examples\lists\examples\**" />
     <EmbeddedResource Remove="Examples\markdown\examples\**" />
+    <EmbeddedResource Remove="Examples\menus\examples\**" />
+    <EmbeddedResource Remove="Examples\modals\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -68,6 +74,8 @@
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\lists\examples\**" />
     <ExamplesSourceFile Remove="Examples\markdown\examples\**" />
+    <ExamplesSourceFile Remove="Examples\menus\examples\**" />
+    <ExamplesSourceFile Remove="Examples\modals\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
@@ -76,6 +84,8 @@
     <None Remove="Examples\item-groups\examples\**" />
     <None Remove="Examples\lists\examples\**" />
     <None Remove="Examples\markdown\examples\**" />
+    <None Remove="Examples\menus\examples\**" />
+    <None Remove="Examples\modals\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -94,6 +104,8 @@
     <Content Remove="Examples\list-item-groups\SelectionControls.razor" />
     <Content Remove="wwwroot\docs\pages\components\markdown\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\markdown\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\modals\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\modals\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -153,6 +165,10 @@
     <None Include="wwwroot\docs\pages\components\lists\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\markdown\en-US.md" />
     <None Include="wwwroot\docs\pages\components\markdown\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\menus\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\menus\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\modals\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\modals\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
   </ItemGroup>
