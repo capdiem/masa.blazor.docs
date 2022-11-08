@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.Web;
+﻿using Masa.Docs.Shared.Examples.markdown.usages;
+using Microsoft.AspNetCore.Components.Web;
 using System;
 
 namespace Masa.Docs.Shared;
@@ -58,5 +59,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.images.Usage>("images-usage");
         options.RegisterCustomElement<Examples.infinite_scroll.Usage>("infinite-scroll-usage");
         options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
+        options.RegisterCustomElement<Usage>("markdown-usage");
     }
 }

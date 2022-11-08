@@ -1,0 +1,11 @@
+﻿@namespace Masa.Docs.Shared.Examples.usages
+@implements Masa.Docs.Shared.Components.IUsageWrapper
+
+@ChildContent
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public RenderFragment ChildContent { get; set; } = null!;
+}
