@@ -54,5 +54,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.slide_groups.Usage>("slide-groups-usage");
         options.RegisterCustomElement<Examples.hover.Usage>("hover-usage");
         options.RegisterCustomElement<Examples.icons.Usage>("icons-usage");
+        options.RegisterCustomElement<Examples.image_captcha.Usage>("image-captcha-usage");
     }
 }
