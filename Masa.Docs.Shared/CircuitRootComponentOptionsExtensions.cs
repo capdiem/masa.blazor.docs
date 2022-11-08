@@ -62,5 +62,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.markdown.usages.Usage>("markdown-usage");
         options.RegisterCustomElement<Examples.menus.Usage>("menus-usage");
         options.RegisterCustomElement<Examples.modals.Usage>("modals-usage");
+        options.RegisterCustomElement<Examples.navigation_drawers.Usage>("navigation-drawers-usage");
+        options.RegisterCustomElement<Examples.overlays.usages.Usage>("overlays-usage");
     }
 }

@@ -37,6 +37,9 @@
     <Compile Remove="Examples\markdown\examples\**" />
     <Compile Remove="Examples\menus\examples\**" />
     <Compile Remove="Examples\modals\examples\**" />
+    <Compile Remove="Examples\navigation-drawers\examples\**" />
+    <Compile Remove="Examples\not-grouped\examples\**" />
+    <Compile Remove="Examples\overlays\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -50,6 +53,9 @@
     <Content Remove="Examples\markdown\examples\**" />
     <Content Remove="Examples\menus\examples\**" />
     <Content Remove="Examples\modals\examples\**" />
+    <Content Remove="Examples\navigation-drawers\examples\**" />
+    <Content Remove="Examples\not-grouped\examples\**" />
+    <Content Remove="Examples\overlays\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -63,6 +69,9 @@
     <EmbeddedResource Remove="Examples\markdown\examples\**" />
     <EmbeddedResource Remove="Examples\menus\examples\**" />
     <EmbeddedResource Remove="Examples\modals\examples\**" />
+    <EmbeddedResource Remove="Examples\navigation-drawers\examples\**" />
+    <EmbeddedResource Remove="Examples\not-grouped\examples\**" />
+    <EmbeddedResource Remove="Examples\overlays\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -76,6 +85,9 @@
     <ExamplesSourceFile Remove="Examples\markdown\examples\**" />
     <ExamplesSourceFile Remove="Examples\menus\examples\**" />
     <ExamplesSourceFile Remove="Examples\modals\examples\**" />
+    <ExamplesSourceFile Remove="Examples\navigation-drawers\examples\**" />
+    <ExamplesSourceFile Remove="Examples\not-grouped\examples\**" />
+    <ExamplesSourceFile Remove="Examples\overlays\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
@@ -86,6 +98,9 @@
     <None Remove="Examples\markdown\examples\**" />
     <None Remove="Examples\menus\examples\**" />
     <None Remove="Examples\modals\examples\**" />
+    <None Remove="Examples\navigation-drawers\examples\**" />
+    <None Remove="Examples\not-grouped\examples\**" />
+    <None Remove="Examples\overlays\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -130,6 +145,7 @@
     <ExamplesSourceFile Remove="Examples\list-item-groups\SelectionControls.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\usages\UsageWrapper.razor" />
     <ExamplesSourceFile Remove="Examples\markdown\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\overlays\usages\UsageWrapper.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -169,6 +185,12 @@
     <None Include="wwwroot\docs\pages\components\menus\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\modals\en-US.md" />
     <None Include="wwwroot\docs\pages\components\modals\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\navigation-drawers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\navigation-drawers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\not-grouped\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\not-grouped\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\overlays\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\overlays\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
   </ItemGroup>

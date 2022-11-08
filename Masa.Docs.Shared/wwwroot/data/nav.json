@@ -80,7 +80,10 @@
       "lists",
       "markdown",
       "menus",
-      "modals"
+      "modals",
+      "navigation-drawers",
+      "not-grouped",
+      "overlays"
     ]
   }
 ]
