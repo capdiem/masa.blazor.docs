@@ -73,6 +73,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Examples\infinite-scroll\CustomContent.razor" />
+    <Content Remove="Examples\infinite-scroll\Index.razor" />
+    <Content Remove="Examples\infinite-scroll\VirtualScroller.razor" />
     <Content Remove="Examples\list-item-groups\ActiveClass.razor" />
     <Content Remove="Examples\list-item-groups\FlatList.razor" />
     <Content Remove="Examples\list-item-groups\Index.razor" />
@@ -91,6 +94,10 @@
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\Usage.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\Usages.razor" />
     <ExamplesSourceFile Remove="Examples\icons\UsageTemplate.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\CustomContent.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\Index.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\VirtualScroller.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\ActiveClass.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\FlatList.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\Index.razor" />
@@ -106,6 +113,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Examples\infinite-scroll\CustomContent.razor" />
+    <None Include="Examples\infinite-scroll\Index.razor" />
+    <None Include="Examples\infinite-scroll\VirtualScroller.razor" />
     <None Include="Examples\list-item-groups\ActiveClass.razor" />
     <None Include="Examples\list-item-groups\FlatList.razor" />
     <None Include="Examples\list-item-groups\Index.razor" />
@@ -120,6 +130,8 @@
     <None Include="wwwroot\docs\pages\components\image-captcha\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\images\en-US.md" />
     <None Include="wwwroot\docs\pages\components\images\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\infinite-scroll\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\infinite-scroll\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
