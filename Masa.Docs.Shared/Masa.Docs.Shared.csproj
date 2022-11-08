@@ -31,6 +31,7 @@
     <Compile Remove="Examples\hover\examples\**" />
     <Compile Remove="Examples\icons\examples\**" />
     <Compile Remove="Examples\image-captcha\examples\**" />
+    <Compile Remove="Examples\images\examples\**" />
     <Compile Remove="Examples\item-groups\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
@@ -39,6 +40,7 @@
     <Content Remove="Examples\hover\examples\**" />
     <Content Remove="Examples\icons\examples\**" />
     <Content Remove="Examples\image-captcha\examples\**" />
+    <Content Remove="Examples\images\examples\**" />
     <Content Remove="Examples\item-groups\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
@@ -47,6 +49,7 @@
     <EmbeddedResource Remove="Examples\hover\examples\**" />
     <EmbeddedResource Remove="Examples\icons\examples\**" />
     <EmbeddedResource Remove="Examples\image-captcha\examples\**" />
+    <EmbeddedResource Remove="Examples\images\examples\**" />
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
@@ -55,11 +58,13 @@
     <ExamplesSourceFile Remove="Examples\hover\examples\**" />
     <ExamplesSourceFile Remove="Examples\icons\examples\**" />
     <ExamplesSourceFile Remove="Examples\image-captcha\examples\**" />
+    <ExamplesSourceFile Remove="Examples\images\examples\**" />
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
     <None Remove="Examples\image-captcha\examples\**" />
+    <None Remove="Examples\images\examples\**" />
     <None Remove="Examples\item-groups\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
@@ -113,6 +118,8 @@
     <None Include="wwwroot\docs\pages\components\icons\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\image-captcha\en-US.md" />
     <None Include="wwwroot\docs\pages\components\image-captcha\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\images\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\images\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
