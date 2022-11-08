@@ -57,5 +57,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.image_captcha.Usage>("image-captcha-usage");
         options.RegisterCustomElement<Examples.images.Usage>("images-usage");
         options.RegisterCustomElement<Examples.infinite_scroll.Usage>("infinite-scroll-usage");
+        options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
     }
 }

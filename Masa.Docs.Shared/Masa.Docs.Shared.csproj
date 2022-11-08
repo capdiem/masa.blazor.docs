@@ -33,6 +33,7 @@
     <Compile Remove="Examples\image-captcha\examples\**" />
     <Compile Remove="Examples\images\examples\**" />
     <Compile Remove="Examples\item-groups\examples\**" />
+    <Compile Remove="Examples\lists\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -42,6 +43,7 @@
     <Content Remove="Examples\image-captcha\examples\**" />
     <Content Remove="Examples\images\examples\**" />
     <Content Remove="Examples\item-groups\examples\**" />
+    <Content Remove="Examples\lists\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -51,6 +53,7 @@
     <EmbeddedResource Remove="Examples\image-captcha\examples\**" />
     <EmbeddedResource Remove="Examples\images\examples\**" />
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\lists\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -60,12 +63,14 @@
     <ExamplesSourceFile Remove="Examples\image-captcha\examples\**" />
     <ExamplesSourceFile Remove="Examples\images\examples\**" />
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\lists\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
     <None Remove="Examples\image-captcha\examples\**" />
     <None Remove="Examples\images\examples\**" />
     <None Remove="Examples\item-groups\examples\**" />
+    <None Remove="Examples\lists\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
@@ -136,6 +141,8 @@
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\lists\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\lists\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
   </ItemGroup>

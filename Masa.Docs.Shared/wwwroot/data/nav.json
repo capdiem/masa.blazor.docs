@@ -76,7 +76,8 @@
       "icons",
       "image-captcha",
       "images",
-      "infinite-scroll"
+      "infinite-scroll",
+      "lists"
     ]
   }
 ]
