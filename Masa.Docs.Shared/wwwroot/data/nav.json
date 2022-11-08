@@ -72,7 +72,19 @@
           "slide-groups"
         ]
       },
-      "hover"
+      "hover",
+      "icons",
+      "image-captcha",
+      "images",
+      "infinite-scroll",
+      "lists",
+      "markdown",
+      "menus",
+      "modals",
+      "navigation-drawers",
+      "not-grouped",
+      "overlays",
+      "pagination"
     ]
   }
 ]

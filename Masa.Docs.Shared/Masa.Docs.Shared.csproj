@@ -29,37 +29,98 @@
 
   <ItemGroup>
     <Compile Remove="Examples\hover\examples\**" />
+    <Compile Remove="Examples\icons\examples\**" />
+    <Compile Remove="Examples\image-captcha\examples\**" />
+    <Compile Remove="Examples\images\examples\**" />
     <Compile Remove="Examples\item-groups\examples\**" />
+    <Compile Remove="Examples\lists\examples\**" />
+    <Compile Remove="Examples\markdown\examples\**" />
+    <Compile Remove="Examples\menus\examples\**" />
+    <Compile Remove="Examples\modals\examples\**" />
+    <Compile Remove="Examples\navigation-drawers\examples\**" />
+    <Compile Remove="Examples\not-grouped\examples\**" />
+    <Compile Remove="Examples\overlays\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <Content Remove="Examples\hover\examples\**" />
+    <Content Remove="Examples\icons\examples\**" />
+    <Content Remove="Examples\image-captcha\examples\**" />
+    <Content Remove="Examples\images\examples\**" />
     <Content Remove="Examples\item-groups\examples\**" />
+    <Content Remove="Examples\lists\examples\**" />
+    <Content Remove="Examples\markdown\examples\**" />
+    <Content Remove="Examples\menus\examples\**" />
+    <Content Remove="Examples\modals\examples\**" />
+    <Content Remove="Examples\navigation-drawers\examples\**" />
+    <Content Remove="Examples\not-grouped\examples\**" />
+    <Content Remove="Examples\overlays\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <EmbeddedResource Remove="Examples\hover\examples\**" />
+    <EmbeddedResource Remove="Examples\icons\examples\**" />
+    <EmbeddedResource Remove="Examples\image-captcha\examples\**" />
+    <EmbeddedResource Remove="Examples\images\examples\**" />
     <EmbeddedResource Remove="Examples\item-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\lists\examples\**" />
+    <EmbeddedResource Remove="Examples\markdown\examples\**" />
+    <EmbeddedResource Remove="Examples\menus\examples\**" />
+    <EmbeddedResource Remove="Examples\modals\examples\**" />
+    <EmbeddedResource Remove="Examples\navigation-drawers\examples\**" />
+    <EmbeddedResource Remove="Examples\not-grouped\examples\**" />
+    <EmbeddedResource Remove="Examples\overlays\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\hover\examples\**" />
+    <ExamplesSourceFile Remove="Examples\icons\examples\**" />
+    <ExamplesSourceFile Remove="Examples\image-captcha\examples\**" />
+    <ExamplesSourceFile Remove="Examples\images\examples\**" />
     <ExamplesSourceFile Remove="Examples\item-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\lists\examples\**" />
+    <ExamplesSourceFile Remove="Examples\markdown\examples\**" />
+    <ExamplesSourceFile Remove="Examples\menus\examples\**" />
+    <ExamplesSourceFile Remove="Examples\modals\examples\**" />
+    <ExamplesSourceFile Remove="Examples\navigation-drawers\examples\**" />
+    <ExamplesSourceFile Remove="Examples\not-grouped\examples\**" />
+    <ExamplesSourceFile Remove="Examples\overlays\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\hover\examples\**" />
+    <None Remove="Examples\icons\examples\**" />
+    <None Remove="Examples\image-captcha\examples\**" />
+    <None Remove="Examples\images\examples\**" />
     <None Remove="Examples\item-groups\examples\**" />
+    <None Remove="Examples\lists\examples\**" />
+    <None Remove="Examples\markdown\examples\**" />
+    <None Remove="Examples\menus\examples\**" />
+    <None Remove="Examples\modals\examples\**" />
+    <None Remove="Examples\navigation-drawers\examples\**" />
+    <None Remove="Examples\not-grouped\examples\**" />
+    <None Remove="Examples\overlays\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <None Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Examples\infinite-scroll\CustomContent.razor" />
+    <Content Remove="Examples\infinite-scroll\Index.razor" />
+    <Content Remove="Examples\infinite-scroll\VirtualScroller.razor" />
     <Content Remove="Examples\list-item-groups\ActiveClass.razor" />
     <Content Remove="Examples\list-item-groups\FlatList.razor" />
     <Content Remove="Examples\list-item-groups\Index.razor" />
     <Content Remove="Examples\list-item-groups\Mandatory.razor" />
     <Content Remove="Examples\list-item-groups\Multiple.razor" />
     <Content Remove="Examples\list-item-groups\SelectionControls.razor" />
+    <Content Remove="wwwroot\docs\pages\components\markdown\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\markdown\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\modals\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\modals\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -71,6 +132,11 @@
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\ToothbrushCard.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\examples\Usage.razor" />
     <ExamplesSourceFile Remove="Examples\chip-groups\Usages.razor" />
+    <ExamplesSourceFile Remove="Examples\icons\UsageTemplate.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\CustomContent.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\Index.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\infinite-scroll\VirtualScroller.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\ActiveClass.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\FlatList.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\Index.razor" />
@@ -78,14 +144,27 @@
     <ExamplesSourceFile Remove="Examples\list-item-groups\Multiple.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\SelectionControls.razor" />
     <ExamplesSourceFile Remove="Examples\list-item-groups\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\markdown\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\overlays\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Circle.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Disabled.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Icon.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Index.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\Length.razor" />
+    <ExamplesSourceFile Remove="Examples\pagination\examples\TotalVisible.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Examples\chip-groups\en-US.md" />
     <None Remove="Examples\chip-groups\zh-CN.md" />
+    <None Remove="Examples\pagination\index.en-US.md" />
+    <None Remove="Examples\pagination\index.zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Examples\infinite-scroll\CustomContent.razor" />
+    <None Include="Examples\infinite-scroll\Index.razor" />
+    <None Include="Examples\infinite-scroll\VirtualScroller.razor" />
     <None Include="Examples\list-item-groups\ActiveClass.razor" />
     <None Include="Examples\list-item-groups\FlatList.razor" />
     <None Include="Examples\list-item-groups\Index.razor" />
@@ -94,10 +173,32 @@
     <None Include="Examples\list-item-groups\SelectionControls.razor" />
     <None Include="wwwroot\docs\pages\components\hover\en-US.md" />
     <None Include="wwwroot\docs\pages\components\hover\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\icons\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\icons\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\image-captcha\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\image-captcha\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\images\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\images\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\infinite-scroll\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\infinite-scroll\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\item-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\list-item-groups\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\lists\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\lists\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\markdown\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\markdown\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\menus\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\menus\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\modals\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\modals\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\navigation-drawers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\navigation-drawers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\not-grouped\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\not-grouped\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\overlays\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\overlays\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
   </ItemGroup>
@@ -122,6 +223,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Examples\chip-groups\examples\Usage.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Circle.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Disabled.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Icon.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Index.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\Length.razor">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Examples\pagination\examples\TotalVisible.razor">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>

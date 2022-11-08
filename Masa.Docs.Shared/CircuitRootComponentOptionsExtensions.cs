@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.Web;
+﻿using Masa.Docs.Shared.Examples.markdown.usages;
+using Microsoft.AspNetCore.Components.Web;
 using System;
 
 namespace Masa.Docs.Shared;
@@ -54,5 +55,16 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.list_item_groups.Usage>("list-item-groups-usage");
         options.RegisterCustomElement<Examples.slide_groups.Usage>("slide-groups-usage");
         options.RegisterCustomElement<Examples.hover.Usage>("hover-usage");
+        options.RegisterCustomElement<Examples.icons.Usage>("icons-usage");
+        options.RegisterCustomElement<Examples.image_captcha.Usage>("image-captcha-usage");
+        options.RegisterCustomElement<Examples.images.Usage>("images-usage");
+        options.RegisterCustomElement<Examples.infinite_scroll.Usage>("infinite-scroll-usage");
+        options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
+        options.RegisterCustomElement<Examples.markdown.usages.Usage>("markdown-usage");
+        options.RegisterCustomElement<Examples.menus.Usage>("menus-usage");
+        options.RegisterCustomElement<Examples.modals.Usage>("modals-usage");
+        options.RegisterCustomElement<Examples.navigation_drawers.Usage>("navigation-drawers-usage");
+        options.RegisterCustomElement<Examples.overlays.usages.Usage>("overlays-usage");
+        options.RegisterCustomElement<Examples.pagination.Usage>("pagination-usage");
     }
 }
