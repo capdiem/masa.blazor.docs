@@ -12,6 +12,8 @@ public partial class AppService
     //     { "styles", ("mdi-palette-outline", "deep-purple accent-4") },
     // };
 
+    public const int AppBarHeight = 64;
+
     private readonly Lazy<Task<List<NavItem>>> _navs;
     private List<MarkdownItTocContent>? _toc;
 

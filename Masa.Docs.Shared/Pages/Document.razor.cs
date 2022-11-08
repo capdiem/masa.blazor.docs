@@ -25,7 +25,6 @@ public partial class Document : IDisposable
     public string Category { get; set; } = null!;
 
     [Parameter]
-    [SupplyParameterFromQuery]
     public string? Tab { get; set; }
 
     private string? _md;
@@ -73,7 +72,8 @@ public partial class Document : IDisposable
 
     private void NavigateToTab(string tab)
     {
-        NavigationManager.NavigateTo(NavigationManager.GetUriWithQueryParameter("tab", tab));
+        // NavigationManager.NavigateTo(NavigationManager.GetUriWithQueryParameter("tab", tab));
+        NavigationManager.NavigateTo($"/{Category}/{Page}/{tab}");
     }
 
     private string _prevCulture = "en-US";

@@ -9,6 +9,7 @@ public static class CircuitRootComponentOptionsExtensions
     {
         options.RegisterCustomElement<Masa.Docs.Shared.Components.Example>("masa-example");
         options.RegisterCustomElement<Masa.Docs.Shared.Components.AppHeading>("app-heading");
+        options.RegisterCustomElement<Masa.Docs.Shared.Components.AppLink>("app-link");
 
         options.RegisterCustomElement<Examples.alerts.Border>("alerts-prop-border");
         options.RegisterCustomElement<Examples.alerts.Usage>("alerts-usage");

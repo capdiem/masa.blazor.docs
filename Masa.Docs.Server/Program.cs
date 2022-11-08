@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor(options => { options.RootComponents.RegisterCustomElementsOfMasaDocs(); });
+builder.Services.AddHealthChecks();
 
 builder.Services.AddScoped<LazyAssemblyLoader>();
 builder.Services.AddMasaBlazor(options =>
@@ -28,6 +29,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.MapHealthChecks("/healthz");
 
 app.UseHttpsRedirection();
 

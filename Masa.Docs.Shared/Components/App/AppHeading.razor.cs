@@ -1,9 +1,18 @@
-﻿using Microsoft.AspNetCore.Components.Rendering;
+﻿using BlazorComponent.JSInterop;
+using Microsoft.AspNetCore.Components.Rendering;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.JSInterop;
 
 namespace Masa.Docs.Shared.Components;
 
 public class AppHeading : ComponentBase
 {
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = null!;
+
+    [Inject]
+    private IJSRuntime JsRuntime { get; set; } = null!;
+
     [Parameter]
     public int Level { get; set; } = 1;
 
@@ -11,7 +20,7 @@ public class AppHeading : ComponentBase
     public string? Href { get; set; }
 
     [Parameter, EditorRequired]
-    public string Content { get; set; }
+    public string Content { get; set; } = null!;
 
     private static Dictionary<int, string> _map = new()
     {
@@ -22,20 +31,41 @@ public class AppHeading : ComponentBase
         { 5, "text-subtitle-1 font-weight-medium mb-2" },
     };
 
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        await base.SetParametersAsync(parameters);
+
+        ArgumentNullException.ThrowIfNull(Content);
+    }
+
     protected override void BuildRenderTree(RenderTreeBuilder builder)
     {
         builder.OpenElement(0, $"h{Level}");
         builder.AddAttribute(1, "class", $"m-heading {_map[Level]}");
-        builder.AddContent(2, (builder) =>
+        builder.AddContent(2, (childBuilder) =>
         {
-            builder.OpenElement(0, "a");
-            builder.AddAttribute(1, "href", Href);
-            builder.AddAttribute(2, "class", "text-decoration-none text-right text-md-left");
-            // builder.AddAttribute(3, "click", );
-            builder.AddContent(4, "#");
-            builder.CloseElement();
+            childBuilder.OpenElement(0, "a");
+            childBuilder.AddAttribute(1, "href", Href);
+            childBuilder.AddAttribute(2, "class", "text-decoration-none text-right text-md-left");
+            childBuilder.AddEventPreventDefaultAttribute(3, "onclick", true);
+            childBuilder.AddAttribute(4, "onclick", EventCallback.Factory.Create<MouseEventArgs>(this, () => OnClick(Href)));
+            childBuilder.AddContent(5, "#");
+            childBuilder.CloseElement();
         });
         builder.AddContent(3, Content);
         builder.CloseElement();
+    }
+
+    private async Task OnClick(string href)
+    {
+        if (href.StartsWith("#"))
+        {
+            // TODO: remove the following lines when #40190 of aspnetcore resolved.
+            // TODO: Blazor now does not support automatic scrolling of anchor points.
+            // Check this when .NET 8 released.
+
+            NavigationManager.ReplaceWithHash(href);
+            await JsRuntime.ScrollToElement(href, AppService.AppBarHeight);
+        }
     }
 }
