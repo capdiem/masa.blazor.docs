@@ -20,6 +20,9 @@
 
 @code {
 
+    [CascadingParameter]
+    public CultureInfo Culture { get; set; } = null!;
+
     private List<NavItem> Navs { get; set; } = new();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

@@ -1,4 +1,8 @@
-﻿.m-bar--underline {
+﻿.flex-1-1-auto {
+    flex: 1 1 auto !important;
+}
+
+.m-bar--underline {
     border-width: 0 0 thin 0;
     border-style: solid;
 }

@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Globalization;
 using System.Net;
 using System.Text.RegularExpressions;
 using Masa.Docs.Shared.ApiGenerator;
@@ -102,16 +101,6 @@ public partial class Components : IDisposable
         {
             AppService.Toc = toc;
         }
-    }
-
-    private string _prevCulture = "en-US";
-
-    private async Task ChangeCulture()
-    {
-        var culture = _prevCulture == "en-US" ? "zh-CN" : "en-US";
-        _prevCulture = culture;
-        DocService.ChangeLanguage(new CultureInfo(culture));
-        await ReadDocumentAsync();
     }
 
     private void OnFrontMatterParsed(string? yaml)

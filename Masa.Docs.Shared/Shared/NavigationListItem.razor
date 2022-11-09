@@ -11,11 +11,7 @@
     }
 
     <MListItemContent>
-        <MListItemTitle>@Item.Title</MListItemTitle>
-        @if (I18n.Culture.Name != "en-US")
-        {
-            <MListItemSubtitle>@I18n.T(Item.Title)</MListItemSubtitle>
-        }
+        <MListItemTitle>@I18n.T(Item.Title)</MListItemTitle>
     </MListItemContent>
 </MListItem>
 

@@ -1,0 +1,20 @@
+﻿<MListItem Href="@Item.Href"
+           Target="@(Item.Href != null ? "_blank" : "")"
+           Class="m-list-item--default"
+           Color="primary">
+    @if (Item.Icon is not null)
+    {
+        <MListItemIcon></MListItemIcon>
+    }
+
+    <MListItemContent>
+        <MListItemTitle>@Item.Title</MListItemTitle>
+    </MListItemContent>
+</MListItem>
+
+@code {
+
+    [Parameter, EditorRequired]
+    public DefaultItem Item { get; set; } = new();
+
+}

@@ -1,34 +1,31 @@
 ﻿using System.Globalization;
 using System.Net.Http.Json;
+using BlazorComponent.I18n;
 
 namespace Masa.Docs.Shared.Services;
 
 public class DocService
 {
+    private readonly I18n _i18n;
     private readonly ConcurrentCache<string, ValueTask<string>> _documentCache = new();
     private readonly ConcurrentCache<string, ValueTask<string>> _exampleCache = new();
     private readonly ConcurrentCache<string, ValueTask<Dictionary<string, Dictionary<string, string>>?>> _apiCache = new();
 
     private readonly HttpClient _httpClient;
 
-    private string _currentCulture = "en-us";
     private Dictionary<string, List<string>>? _apiInPageCache;
 
-    public DocService(IHttpClientFactory factory)
+    public DocService(IHttpClientFactory factory, I18n i18n)
     {
+        _i18n = i18n;
         _httpClient = factory.CreateClient("masa-docs");
-    }
-
-    public void ChangeLanguage(CultureInfo culture)
-    {
-        _currentCulture = culture.Name;
     }
 
     public async Task<string> ReadDocumentAsync(string category, string title)
     {
-        var key = $"{category}/{title}:{_currentCulture}";
+        var key = $"{category}/{title}:{_i18n.Culture.Name}";
         return await _documentCache.GetOrAdd(key,
-            async _ => await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/{category}/{title}/{_currentCulture}.md"));
+            async _ => await _httpClient.GetStringAsync($"_content/Masa.Docs.Shared/docs/pages/{category}/{title}/{_i18n.Culture.Name}.md"));
     }
 
     public async Task<string> ReadExampleAsync(string category, string title, string example)
@@ -59,12 +56,12 @@ public class DocService
 
     public async Task<Dictionary<string, Dictionary<string, string>>?> ReadApisAsync(string kebabCaseComponent)
     {
-        var key = $"{kebabCaseComponent}:{_currentCulture}";
+        var key = $"{kebabCaseComponent}:{_i18n.Culture.Name}";
 
         try
         {
             return await _apiCache.GetOrAdd(key, async _ => await _httpClient.GetFromJsonAsync<Dictionary<string, Dictionary<string, string>>>(
-                $"_content/Masa.Docs.Shared/docs/pages/apis/{kebabCaseComponent}/{_currentCulture}.json"));
+                $"_content/Masa.Docs.Shared/docs/pages/apis/{kebabCaseComponent}/{_i18n.Culture.Name}.json"));
         }
         catch (Exception e)
         {

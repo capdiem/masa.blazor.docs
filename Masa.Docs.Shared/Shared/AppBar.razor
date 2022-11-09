@@ -1,9 +1,20 @@
-﻿<MAppBar Id="app-bar"
+﻿@using System.Globalization
+<MAppBar Id="app-bar"
          App
          Class="m-bar--underline"
          Flat
          ClippedRight
          Height="@AppService.AppBarHeight">
     <MAppBarNavIcon></MAppBarNavIcon>
-    <AppBarItems></AppBarItems>
+    <AppBarItems OnCultureChanged="OnCultureChanged"></AppBarItems>
 </MAppBar>
+
+@code {
+
+    [CascadingParameter]
+    public CultureInfo Culture { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnCultureChanged { get; set; }
+
+}

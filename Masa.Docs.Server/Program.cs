@@ -16,7 +16,7 @@ builder.Services.AddMasaBlazor(options =>
         theme.Themes.Light.Accent = "#005CAF";
         theme.Themes.Light.UserDefined["Tertiary"] = "#e57373";
     });
-});
+}).AddI18nForServer("wwwroot/locale");
 
 // TODO: add i18n for server
 

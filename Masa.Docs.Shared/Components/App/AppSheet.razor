@@ -1,7 +1,7 @@
 ﻿@namespace Masa.Docs.Shared.Components
 
 <MSheet Class="overflow-hidden"
-        Outlined
+        Outlined="@Outlined"
         Rounded="true"
         @attributes="@Attributes">
     @ChildContent
@@ -11,6 +11,9 @@
 
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public bool Outlined { get; set; } = true;
 
     [Parameter(CaptureUnmatchedValues = true)]
     public Dictionary<string, object> Attributes { get; set; } = new();

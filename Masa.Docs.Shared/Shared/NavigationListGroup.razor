@@ -1,4 +1,6 @@
 ﻿@using System.Text.Json
+@inject I18n I18n
+
 <MListGroup Group="@GenGroup(Item.Items, Item.Segment)"
             PrependIcon="@Item.Icon"
             NoAction
@@ -7,7 +9,7 @@
     <ActivatorContent>
         <MListItemContent>
             <MListItemTitle>
-                @Item.Title
+                @I18n.T(Item.Title)
             </MListItemTitle>
         </MListItemContent>
     </ActivatorContent>
