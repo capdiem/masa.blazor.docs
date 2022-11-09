@@ -66,5 +66,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.navigation_drawers.Usage>("navigation-drawers-usage");
         options.RegisterCustomElement<Examples.overlays.usages.Usage>("overlays-usage");
         options.RegisterCustomElement<Examples.pagination.Usage>("pagination-usage");
+        options.RegisterCustomElement<Examples.date_pickers.Usage>("date-pickers-usage");
+        options.RegisterCustomElement<Examples.date_pickers_month.Usage>("date-pickers-month-usage");
     }
 }

@@ -28,6 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\date-pickers-month\examples\**" />
+    <Compile Remove="Examples\date-pickers\examples\**" />
     <Compile Remove="Examples\hover\examples\**" />
     <Compile Remove="Examples\icons\examples\**" />
     <Compile Remove="Examples\image-captcha\examples\**" />
@@ -41,9 +43,12 @@
     <Compile Remove="Examples\not-grouped\examples\**" />
     <Compile Remove="Examples\overlays\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <Content Remove="Examples\date-pickers-month\examples\**" />
+    <Content Remove="Examples\date-pickers\examples\**" />
     <Content Remove="Examples\hover\examples\**" />
     <Content Remove="Examples\icons\examples\**" />
     <Content Remove="Examples\image-captcha\examples\**" />
@@ -57,9 +62,12 @@
     <Content Remove="Examples\not-grouped\examples\**" />
     <Content Remove="Examples\overlays\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\date-pickers-month\examples\**" />
+    <EmbeddedResource Remove="Examples\date-pickers\examples\**" />
     <EmbeddedResource Remove="Examples\hover\examples\**" />
     <EmbeddedResource Remove="Examples\icons\examples\**" />
     <EmbeddedResource Remove="Examples\image-captcha\examples\**" />
@@ -73,9 +81,12 @@
     <EmbeddedResource Remove="Examples\not-grouped\examples\**" />
     <EmbeddedResource Remove="Examples\overlays\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\date-pickers-month\examples\**" />
+    <ExamplesSourceFile Remove="Examples\date-pickers\examples\**" />
     <ExamplesSourceFile Remove="Examples\hover\examples\**" />
     <ExamplesSourceFile Remove="Examples\icons\examples\**" />
     <ExamplesSourceFile Remove="Examples\image-captcha\examples\**" />
@@ -89,6 +100,8 @@
     <ExamplesSourceFile Remove="Examples\not-grouped\examples\**" />
     <ExamplesSourceFile Remove="Examples\overlays\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
+    <None Remove="Examples\date-pickers-month\examples\**" />
+    <None Remove="Examples\date-pickers\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
     <None Remove="Examples\image-captcha\examples\**" />
@@ -102,6 +115,7 @@
     <None Remove="Examples\not-grouped\examples\**" />
     <None Remove="Examples\overlays\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
     <None Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
@@ -117,6 +131,8 @@
     <Content Remove="Examples\list-item-groups\Mandatory.razor" />
     <Content Remove="Examples\list-item-groups\Multiple.razor" />
     <Content Remove="Examples\list-item-groups\SelectionControls.razor" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\.md" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\index.en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\markdown\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\markdown\zh-CN.md" />
     <Content Remove="wwwroot\docs\pages\components\modals\en-US.md" />
@@ -171,6 +187,8 @@
     <None Include="Examples\list-item-groups\Mandatory.razor" />
     <None Include="Examples\list-item-groups\Multiple.razor" />
     <None Include="Examples\list-item-groups\SelectionControls.razor" />
+    <None Include="wwwroot\docs\pages\components\date-pickers-month\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\date-pickers-month\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\hover\en-US.md" />
     <None Include="wwwroot\docs\pages\components\hover\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\icons\en-US.md" />

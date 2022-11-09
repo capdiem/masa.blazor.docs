@@ -84,7 +84,15 @@
       "navigation-drawers",
       "not-grouped",
       "overlays",
-      "pagination"
+      "pagination",
+      {
+        "title": "Pickers",
+        "group": "components",
+        "items": [
+          "date-pickers",
+          "date-pickers-month"
+        ]
+      }
     ]
   }
 ]
