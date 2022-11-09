@@ -72,5 +72,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.progress_circular.Usage>("progress-circular-usage");
         options.RegisterCustomElement<Examples.progress_linear.Usage>("progress-linear-usage");
         options.RegisterCustomElement<Examples.ratings.Usage>("ratings-usage");
+        options.RegisterCustomElement<Examples.sheets.Usage>("sheets-usage");
     }
 }

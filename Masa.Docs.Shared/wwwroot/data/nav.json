@@ -103,7 +103,8 @@
           "progress-linear"
         ]
       },
-      "ratings"
+      "ratings",
+      "sheets"
     ]
   }
 ]
