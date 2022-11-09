@@ -1,27 +1,26 @@
 ﻿using YamlDotNet.Core.Tokens;
 
-namespace Masa.Docs.Shared.Examples.progress_circular;
+namespace Masa.Docs.Shared.Examples.progress_linear;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {
-    public Usage() : base(typeof(MProgressCircular))
+    public Usage() : base(typeof(MProgressLinear))
     {
     }
 
     protected override ParameterList<CheckboxParameter> GenCheckboxParameters() => new()
     {
-        { nameof(MProgressCircular.Indeterminate), new CheckboxParameter("false", true) },
+        { nameof(MProgressLinear.Indeterminate), new CheckboxParameter("false", true) },
     };
 
     protected override ParameterList<SliderParameter> GenSliderParameters() => new()
     {
-        { nameof(MProgressCircular.Size), new SliderParameter(40, 0, 128) },
-        { nameof(MProgressCircular.Width), new SliderParameter(4, 0, 12) }
+        { nameof(MProgressLinear.Height), new SliderParameter(4, 0, 12) }
     };
 
     protected override ParameterList<SelectParameter> GenSelectParameters() => new()
     {
-        { nameof(MProgressCircular.Color), new SelectParameter(new List<string>() { "primary", "purple", "error","lime" }) },
+        { nameof(MProgressLinear.Color), new SelectParameter(new List<string>() { "primary", "purple", "error","lime" }) },
     };
 
     protected override object? CastValue(ParameterItem<object?> parameter)
@@ -33,8 +32,7 @@ public class Usage : Masa.Docs.Shared.Components.Usage
 
         return parameter.Key switch
         {
-            nameof(MProgressCircular.Size) => (StringNumber)(double)parameter.Value,
-            nameof(MProgressCircular.Width) => (StringNumber)((double)parameter.Value),
+            nameof(MProgressLinear.Height) => (StringNumber)(double)parameter.Value,
             _ => parameter.Value
         };
     }
@@ -43,7 +41,7 @@ public class Usage : Masa.Docs.Shared.Components.Usage
     {
         return new Dictionary<string, object>()
         {
-            { nameof(MProgressCircular.Value), (StringNumber)20 },
+            { nameof(MProgressLinear.Value), (double)15 },
         };
     }
 }

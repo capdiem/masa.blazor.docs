@@ -93,7 +93,8 @@
           "date-pickers-month",
           "time-pickers",
           "popup-service",
-          "progress-circular"
+          "progress-circular",
+          "progress-linear"
         ]
       }
     ]
