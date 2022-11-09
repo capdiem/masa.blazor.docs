@@ -90,7 +90,8 @@
         "group": "components",
         "items": [
           "date-pickers",
-          "date-pickers-month"
+          "date-pickers-month",
+          "time-pickers"
         ]
       }
     ]
