@@ -91,7 +91,9 @@
         "items": [
           "date-pickers",
           "date-pickers-month",
-          "time-pickers"
+          "time-pickers",
+          "popup-service",
+          "progress-circular"
         ]
       }
     ]

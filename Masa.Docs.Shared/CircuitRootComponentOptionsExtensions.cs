@@ -69,5 +69,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.date_pickers.Usage>("date-pickers-usage");
         options.RegisterCustomElement<Examples.date_pickers_month.Usage>("date-pickers-month-usage");
         options.RegisterCustomElement<Examples.time_pickers.Usage>("time-pickers-usage");
+        options.RegisterCustomElement<Examples.progress_circular.Usage>("progress-circular-usage");
     }
 }
