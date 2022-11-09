@@ -45,6 +45,7 @@
     <Compile Remove="Examples\popup-service\examples\**" />
     <Compile Remove="Examples\progress-circular\examples\**" />
     <Compile Remove="Examples\progress-linear\examples\**" />
+    <Compile Remove="Examples\ratings\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
     <Compile Remove="Examples\time-pickers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
@@ -69,6 +70,7 @@
     <Content Remove="Examples\popup-service\examples\**" />
     <Content Remove="Examples\progress-circular\examples\**" />
     <Content Remove="Examples\progress-linear\examples\**" />
+    <Content Remove="Examples\ratings\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
     <Content Remove="Examples\time-pickers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
@@ -93,6 +95,7 @@
     <EmbeddedResource Remove="Examples\popup-service\examples\**" />
     <EmbeddedResource Remove="Examples\progress-circular\examples\**" />
     <EmbeddedResource Remove="Examples\progress-linear\examples\**" />
+    <EmbeddedResource Remove="Examples\ratings\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
     <EmbeddedResource Remove="Examples\time-pickers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
@@ -117,6 +120,7 @@
     <ExamplesSourceFile Remove="Examples\popup-service\examples\**" />
     <ExamplesSourceFile Remove="Examples\progress-circular\examples\**" />
     <ExamplesSourceFile Remove="Examples\progress-linear\examples\**" />
+    <ExamplesSourceFile Remove="Examples\ratings\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
     <ExamplesSourceFile Remove="Examples\time-pickers\examples\**" />
     <None Remove="Examples\date-pickers-month\examples\**" />
@@ -136,6 +140,7 @@
     <None Remove="Examples\popup-service\examples\**" />
     <None Remove="Examples\progress-circular\examples\**" />
     <None Remove="Examples\progress-linear\examples\**" />
+    <None Remove="Examples\ratings\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
     <None Remove="Examples\time-pickers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
@@ -253,6 +258,8 @@
     <None Include="wwwroot\docs\pages\components\progress-circular\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\progress-linear\en-US.md" />
     <None Include="wwwroot\docs\pages\components\progress-linear\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\ratings\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\ratings\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\time-pickers\en-US.md" />

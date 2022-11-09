@@ -71,5 +71,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.time_pickers.Usage>("time-pickers-usage");
         options.RegisterCustomElement<Examples.progress_circular.Usage>("progress-circular-usage");
         options.RegisterCustomElement<Examples.progress_linear.Usage>("progress-linear-usage");
+        options.RegisterCustomElement<Examples.ratings.Usage>("ratings-usage");
     }
 }
