@@ -1,5 +1,13 @@
 {
   "$DefaultCulture": "true",
+  "introduction": "介绍",
+  "why-masa-blazor": "为什么使用MASA Blazor",
+  "roadmap": "路线图",
+  "getting-started": "快速入门",
+  "installation": "安装",
+  "ui-components": "UI组件",
+  "alerts": "Alerts（提示框）",
+  
   "Home": "首页",
   "Docs": "文档",
   "Blog": "博客",
@@ -7,9 +15,6 @@
   "Search": "搜索",
   "MASABlazorDescription": "基于Material Design和BlazorComponent的交互能力提供标准的基础组件库。提供如布局、弹框标准、Loading、全局异常处理等标准场景的预置组件。",
   "GetStarted": "开始使用吧",
-  "introduction": "介绍",
-  "why-masa-blazor": "为什么使用MASA Blazor",
-  "roadmap": "路线图",
   "VideoTeaching": "视频教学",
   "VideoTitle": "MASA Blazor教学视频",
   "VideoDesc": "视频演示内容将使用三种方式创建项目，包括：MASA Blazor模板创建Blazor Server、Blazor Wasm以及手动添加MASA Blazor。",

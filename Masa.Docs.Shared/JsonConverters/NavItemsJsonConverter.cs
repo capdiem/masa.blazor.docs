@@ -62,7 +62,7 @@ public class NavItemsJsonConverter : JsonConverter<List<NavItem>>
                                 navItem.Group = reader.GetString();
                                 break;
                             case "items":
-                                navItem.Items = ReadSubItems(ref reader);
+                                navItem.Children = ReadSubItems(ref reader);
                                 break;
                         }
                     }

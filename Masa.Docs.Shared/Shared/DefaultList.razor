@@ -1,6 +1,9 @@
-﻿<MList Dense
+﻿@typeparam TItem where TItem : IDefaultItem<TItem>
+
+<MList Dense
        Expand
-       Nav>
+       Nav
+       Linkage="Linkage">
 
     @foreach (var item in Items)
     {
@@ -31,9 +34,12 @@
 @code {
 
     [Parameter]
-    public List<DefaultItem> Items { get; set; } = new();
+    public List<TItem> Items { get; set; } = new();
 
     [Parameter]
-    public RenderFragment<DefaultItem>? ItemContent { get; set; }
+    public RenderFragment<TItem>? ItemContent { get; set; }
+
+    [Parameter]
+    public bool Linkage { get; set; }
 
 }

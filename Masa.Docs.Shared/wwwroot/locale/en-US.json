@@ -1,4 +1,12 @@
 {
+  "introduction": "Introduction",
+  "why-masa-blazor": "Why MASA Blazor",
+  "roadmap": "Roadmap",
+  "getting-started": "Getting started",
+  "installation": "Installation",
+  "ui-components": "UI components",
+  "alerts": "Alerts",
+
   "Home": "Home",
   "Docs": "Docs",
   "Blog": "Blog",
@@ -6,9 +14,6 @@
   "Search": "Search",
   "MASABlazorDescription": "Provide standard basic component library based on the interaction ability of Material Design and BlazorComponent. It provides preset components for standard scenarios such as layout, pop-up frame standard, loading, global exception handling, etc.",
   "GetStarted": "Get Started",
-  "introduction": "Introduction",
-  "why-masa-blazor": "Why MASA Blazor",
-  "roadmap": "Roadmap",
   "VideoTeaching": "Video teaching",
   "VideoTitle": "MASA Blazor teaching video",
   "VideoDesc": "The video presentation content will create the project in three ways, including creating a blazor server using the MASA Blazor template, Blazor Wasm, and manually adding MASA Blazor.",
@@ -61,7 +66,7 @@
   "props": "Props",
   "contents": "Contents",
   "events": "Events",
-  "tag":{
+  "tag": {
     "preset": "preset",
     "service": "service",
     "new": "new",

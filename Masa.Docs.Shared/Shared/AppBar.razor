@@ -4,15 +4,16 @@
          Class="m-bar--underline"
          Flat
          ClippedRight
+         Color="white"
          Height="@AppService.AppBarHeight">
-    <MAppBarNavIcon></MAppBarNavIcon>
+    <MAppBarNavIcon Class="hidden-lg-and-up"></MAppBarNavIcon>
     <AppBarItems OnCultureChanged="OnCultureChanged"></AppBarItems>
 </MAppBar>
 
 @code {
 
     [CascadingParameter]
-    public CultureInfo Culture { get; set; }
+    public CultureInfo Culture { get; set; } = null!;
 
     [Parameter]
     public EventCallback<string> OnCultureChanged { get; set; }

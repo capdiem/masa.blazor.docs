@@ -1,15 +1,22 @@
 [
   {
     "title": "introduction",
-    "icon": "mdi-heart",
+    "icon": "mdi-book",
     "items": [
       "why-masa-blazor",
       "roadmap"
     ]
   },
   {
+    "title": "getting-started",
+    "icon": "mdi-lightning-bolt",
+    "items": [
+      "installation"
+    ]
+  },
+  {
     "title": "ui-components",
-    "icon": "mdi-heart",
+    "icon": "mdi-cards-variant",
     "group": "components",
     "items": [
       "alerts",

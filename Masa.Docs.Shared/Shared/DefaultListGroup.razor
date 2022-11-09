@@ -1,4 +1,6 @@
-﻿<MListGroup PrependIcon="@Icon"
+﻿@typeparam TItem where TItem : IDefaultItem<TItem>
+
+<MListGroup Group="@GenGroup(Item.Children)"
             AppendIcon="mdi-menu-down"
             Class="m-list-group--default"
             NoAction
@@ -11,6 +13,9 @@
             }
         </MListItemContent>
     </ActivatorContent>
+    <PrependIconContent>
+        <MIcon Color="primary">@Item.Icon</MIcon>
+    </PrependIconContent>
     <ChildContent>
         @foreach (var child in Item.Children)
         {
@@ -40,9 +45,25 @@
     public string? Icon { get; set; }
 
     [Parameter, EditorRequired]
-    public DefaultItem Item { get; set; }
+    public TItem Item { get; set; }
 
     [Parameter]
     public bool SubGroup { get; set; }
+
+    List<string> GenGroup(List<TItem>? items)
+    {
+        if (items == null || !items.Any()) return new List<string>();
+
+        var groups = new List<string>();
+
+        foreach (var item in items)
+        {
+            groups.AddRange(GenGroup(item.Children));
+            if (item.HasChildren) continue;
+            // groups.Add($"{baseSegment}/{item.Segment}");
+        }
+
+        return groups;
+    }
 
 }

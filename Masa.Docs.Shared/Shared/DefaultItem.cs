@@ -1,6 +1,6 @@
 ﻿namespace Masa.Docs.Shared.Shared;
 
-public class DefaultItem
+public class DefaultItem : IDefaultItem<DefaultItem>
 {
     public string? Heading { get; set; }
 
@@ -11,10 +11,27 @@ public class DefaultItem
     public string? Icon { get; set; }
 
     public string? Title { get; set; }
-    
+
     public StringNumber Value { get; set; }
+    public List<DefaultItem>? Children { get; set; }
+    public bool HasChildren => Children.Any();
+}
 
-    public List<DefaultItem> Children { get; set; } = new();
+public interface IDefaultItem<TItem>
+{
+    string? Heading { get; }
 
-    public bool HasChildren => Children is not null && Children.Any();
+    bool Divider { get; set; }
+
+    string? Href { get; set; }
+
+    string? Icon { get; set; }
+
+    string? Title { get; set; }
+
+    StringNumber Value { get; set; }
+
+    List<TItem>? Children { get; }
+
+    bool HasChildren => Children is not null && Children.Any();
 }

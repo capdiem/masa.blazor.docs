@@ -1,15 +1,9 @@
-﻿namespace Masa.Docs.Shared;
+﻿using Masa.Docs.Shared.Shared;
 
-public class NavItem
+namespace Masa.Docs.Shared;
+
+public class NavItem : IDefaultItem<NavItem>
 {
-    public string Title { get; set; } = null!;
-
-    public string? Group { get; set; }
-
-    public string? Icon { get; set; }
-
-    public List<NavItem>? Items { get; set; }
-
     public NavItem()
     {
     }
@@ -19,7 +13,21 @@ public class NavItem
         Title = title;
     }
 
-    public bool HasChildren => Items is not null && Items.Any();
+    public string Title { get; set; } = null!;
+
+    public StringNumber Value { get; set; }
+
+    public List<NavItem>? Children { get; set; }
+
+    public string? Group { get; set; }
+
+    public string? Heading { get; set; }
+
+    public bool Divider { get; set; }
+
+    public string? Href { get; set; }
+
+    public string? Icon { get; set; }
 
     public string Segment => (Group ?? Title);
 }
