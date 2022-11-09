@@ -28,6 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\date-pickers-month\examples\**" />
+    <Compile Remove="Examples\date-pickers\examples\**" />
     <Compile Remove="Examples\hover\examples\**" />
     <Compile Remove="Examples\icons\examples\**" />
     <Compile Remove="Examples\image-captcha\examples\**" />
@@ -40,10 +42,24 @@
     <Compile Remove="Examples\navigation-drawers\examples\**" />
     <Compile Remove="Examples\not-grouped\examples\**" />
     <Compile Remove="Examples\overlays\examples\**" />
+    <Compile Remove="Examples\popup-service\examples\**" />
+    <Compile Remove="Examples\progress-circular\examples\**" />
+    <Compile Remove="Examples\progress-linear\examples\**" />
+    <Compile Remove="Examples\ratings\examples\**" />
+    <Compile Remove="Examples\sheets\examples\**" />
+    <Compile Remove="Examples\skeleton-loaders\examples\**" />
     <Compile Remove="Examples\slide-groups\examples\**" />
+    <Compile Remove="Examples\snackbars\examples\**" />
+    <Compile Remove="Examples\steppers\examples\**" />
+    <Compile Remove="Examples\time-pickers\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\icons\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\popup-service\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\skeleton-loaders\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <Content Remove="Examples\date-pickers-month\examples\**" />
+    <Content Remove="Examples\date-pickers\examples\**" />
     <Content Remove="Examples\hover\examples\**" />
     <Content Remove="Examples\icons\examples\**" />
     <Content Remove="Examples\image-captcha\examples\**" />
@@ -56,10 +72,24 @@
     <Content Remove="Examples\navigation-drawers\examples\**" />
     <Content Remove="Examples\not-grouped\examples\**" />
     <Content Remove="Examples\overlays\examples\**" />
+    <Content Remove="Examples\popup-service\examples\**" />
+    <Content Remove="Examples\progress-circular\examples\**" />
+    <Content Remove="Examples\progress-linear\examples\**" />
+    <Content Remove="Examples\ratings\examples\**" />
+    <Content Remove="Examples\sheets\examples\**" />
+    <Content Remove="Examples\skeleton-loaders\examples\**" />
     <Content Remove="Examples\slide-groups\examples\**" />
+    <Content Remove="Examples\snackbars\examples\**" />
+    <Content Remove="Examples\steppers\examples\**" />
+    <Content Remove="Examples\time-pickers\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\icons\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\popup-service\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\skeleton-loaders\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\date-pickers-month\examples\**" />
+    <EmbeddedResource Remove="Examples\date-pickers\examples\**" />
     <EmbeddedResource Remove="Examples\hover\examples\**" />
     <EmbeddedResource Remove="Examples\icons\examples\**" />
     <EmbeddedResource Remove="Examples\image-captcha\examples\**" />
@@ -72,10 +102,24 @@
     <EmbeddedResource Remove="Examples\navigation-drawers\examples\**" />
     <EmbeddedResource Remove="Examples\not-grouped\examples\**" />
     <EmbeddedResource Remove="Examples\overlays\examples\**" />
+    <EmbeddedResource Remove="Examples\popup-service\examples\**" />
+    <EmbeddedResource Remove="Examples\progress-circular\examples\**" />
+    <EmbeddedResource Remove="Examples\progress-linear\examples\**" />
+    <EmbeddedResource Remove="Examples\ratings\examples\**" />
+    <EmbeddedResource Remove="Examples\sheets\examples\**" />
+    <EmbeddedResource Remove="Examples\skeleton-loaders\examples\**" />
     <EmbeddedResource Remove="Examples\slide-groups\examples\**" />
+    <EmbeddedResource Remove="Examples\snackbars\examples\**" />
+    <EmbeddedResource Remove="Examples\steppers\examples\**" />
+    <EmbeddedResource Remove="Examples\time-pickers\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\icons\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\popup-service\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\skeleton-loaders\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\date-pickers-month\examples\**" />
+    <ExamplesSourceFile Remove="Examples\date-pickers\examples\**" />
     <ExamplesSourceFile Remove="Examples\hover\examples\**" />
     <ExamplesSourceFile Remove="Examples\icons\examples\**" />
     <ExamplesSourceFile Remove="Examples\image-captcha\examples\**" />
@@ -88,7 +132,18 @@
     <ExamplesSourceFile Remove="Examples\navigation-drawers\examples\**" />
     <ExamplesSourceFile Remove="Examples\not-grouped\examples\**" />
     <ExamplesSourceFile Remove="Examples\overlays\examples\**" />
+    <ExamplesSourceFile Remove="Examples\popup-service\examples\**" />
+    <ExamplesSourceFile Remove="Examples\progress-circular\examples\**" />
+    <ExamplesSourceFile Remove="Examples\progress-linear\examples\**" />
+    <ExamplesSourceFile Remove="Examples\ratings\examples\**" />
+    <ExamplesSourceFile Remove="Examples\sheets\examples\**" />
+    <ExamplesSourceFile Remove="Examples\skeleton-loaders\examples\**" />
     <ExamplesSourceFile Remove="Examples\slide-groups\examples\**" />
+    <ExamplesSourceFile Remove="Examples\snackbars\examples\**" />
+    <ExamplesSourceFile Remove="Examples\steppers\examples\**" />
+    <ExamplesSourceFile Remove="Examples\time-pickers\examples\**" />
+    <None Remove="Examples\date-pickers-month\examples\**" />
+    <None Remove="Examples\date-pickers\examples\**" />
     <None Remove="Examples\hover\examples\**" />
     <None Remove="Examples\icons\examples\**" />
     <None Remove="Examples\image-captcha\examples\**" />
@@ -101,9 +156,21 @@
     <None Remove="Examples\navigation-drawers\examples\**" />
     <None Remove="Examples\not-grouped\examples\**" />
     <None Remove="Examples\overlays\examples\**" />
+    <None Remove="Examples\popup-service\examples\**" />
+    <None Remove="Examples\progress-circular\examples\**" />
+    <None Remove="Examples\progress-linear\examples\**" />
+    <None Remove="Examples\ratings\examples\**" />
+    <None Remove="Examples\sheets\examples\**" />
+    <None Remove="Examples\skeleton-loaders\examples\**" />
     <None Remove="Examples\slide-groups\examples\**" />
+    <None Remove="Examples\snackbars\examples\**" />
+    <None Remove="Examples\steppers\examples\**" />
+    <None Remove="Examples\time-pickers\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\date-pickers\examples\**" />
     <None Remove="wwwroot\docs\pages\components\hover\examples\**" />
     <None Remove="wwwroot\docs\pages\components\icons\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\popup-service\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\skeleton-loaders\examples\**" />
     <None Remove="wwwroot\docs\pages\components\slide-groups\examples\**" />
   </ItemGroup>
 
@@ -117,10 +184,18 @@
     <Content Remove="Examples\list-item-groups\Mandatory.razor" />
     <Content Remove="Examples\list-item-groups\Multiple.razor" />
     <Content Remove="Examples\list-item-groups\SelectionControls.razor" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\.md" />
+    <Content Remove="wwwroot\docs\pages\components\date-pickers\index.en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\markdown\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\markdown\zh-CN.md" />
     <Content Remove="wwwroot\docs\pages\components\modals\en-US.md" />
     <Content Remove="wwwroot\docs\pages\components\modals\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\popup-service\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\popup-service\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\progress-circular\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\progress-circular\zh-CN.md" />
+    <Content Remove="wwwroot\docs\pages\components\progress-linear\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\progress-linear\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -152,6 +227,8 @@
     <ExamplesSourceFile Remove="Examples\pagination\examples\Index.razor" />
     <ExamplesSourceFile Remove="Examples\pagination\examples\Length.razor" />
     <ExamplesSourceFile Remove="Examples\pagination\examples\TotalVisible.razor" />
+    <ExamplesSourceFile Remove="Examples\skeleton-loaders\usages\UsageWrapper.razor" />
+    <ExamplesSourceFile Remove="Examples\snackbars\usages\UsageWrapper.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -171,6 +248,8 @@
     <None Include="Examples\list-item-groups\Mandatory.razor" />
     <None Include="Examples\list-item-groups\Multiple.razor" />
     <None Include="Examples\list-item-groups\SelectionControls.razor" />
+    <None Include="wwwroot\docs\pages\components\date-pickers-month\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\date-pickers-month\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\hover\en-US.md" />
     <None Include="wwwroot\docs\pages\components\hover\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\icons\en-US.md" />
@@ -199,8 +278,26 @@
     <None Include="wwwroot\docs\pages\components\not-grouped\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\overlays\en-US.md" />
     <None Include="wwwroot\docs\pages\components\overlays\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\popup-service\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\popup-service\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\progress-circular\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\progress-circular\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\progress-linear\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\progress-linear\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\ratings\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\ratings\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\sheets\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\sheets\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\skeleton-loaders\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\skeleton-loaders\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\en-US.md" />
     <None Include="wwwroot\docs\pages\components\slide-groups\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\snackbars\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\snackbars\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\steppers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\steppers\zh-CN.md" />
+    <None Include="wwwroot\docs\pages\components\time-pickers\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\time-pickers\zh-CN.md" />
   </ItemGroup>
 
   <ItemGroup>

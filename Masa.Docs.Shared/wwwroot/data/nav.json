@@ -84,7 +84,30 @@
       "navigation-drawers",
       "not-grouped",
       "overlays",
-      "pagination"
+      "pagination",
+      {
+        "title": "Pickers",
+        "group": "components",
+        "items": [
+          "date-pickers",
+          "date-pickers-month",
+          "time-pickers"
+        ]
+      },
+      "popup-service",
+      {
+        "title": "Progress",
+        "group": "components",
+        "items": [
+          "progress-circular",
+          "progress-linear"
+        ]
+      },
+      "ratings",
+      "sheets",
+      "skeleton-loaders",
+      "snackbars",
+      "steppers"
     ]
   }
 ]

@@ -62,9 +62,19 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
         options.RegisterCustomElement<Examples.markdown.usages.Usage>("markdown-usage");
         options.RegisterCustomElement<Examples.menus.Usage>("menus-usage");
-        options.RegisterCustomElement<Examples.modals.Usage>("modals-usage");
+        options.RegisterCustomElement<Examples.snackbars.usages.Usage>("modals-usage");
         options.RegisterCustomElement<Examples.navigation_drawers.Usage>("navigation-drawers-usage");
         options.RegisterCustomElement<Examples.overlays.usages.Usage>("overlays-usage");
         options.RegisterCustomElement<Examples.pagination.Usage>("pagination-usage");
+        options.RegisterCustomElement<Examples.date_pickers.Usage>("date-pickers-usage");
+        options.RegisterCustomElement<Examples.date_pickers_month.Usage>("date-pickers-month-usage");
+        options.RegisterCustomElement<Examples.time_pickers.Usage>("time-pickers-usage");
+        options.RegisterCustomElement<Examples.progress_circular.Usage>("progress-circular-usage");
+        options.RegisterCustomElement<Examples.progress_linear.Usage>("progress-linear-usage");
+        options.RegisterCustomElement<Examples.ratings.Usage>("ratings-usage");
+        options.RegisterCustomElement<Examples.sheets.Usage>("sheets-usage");
+        options.RegisterCustomElement<Examples.skeleton_loaders.usages.Usage>("skeleton-loaders-usage");
+        options.RegisterCustomElement<Examples.snackbars.usages.Usage>("snackbars-usage");
+        options.RegisterCustomElement<Examples.steppers.Usage>("steppers-usage");
     }
 }
