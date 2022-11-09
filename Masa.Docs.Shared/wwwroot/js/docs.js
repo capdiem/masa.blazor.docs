@@ -107,8 +107,24 @@ window.registerWindowScrollEventForToc = function (dotnet, tocId) {
   let _scrolling;
   let _offsets = [];
   let _toc = [];
+  let _registered;
 
   window.addEventListener("scroll", onScroll);
+
+  function registerClickEvents() {
+    if (_registered) return
+    const elements = document.querySelectorAll(`#${tocId} li`);
+    if (elements && elements.length > 0) {
+      _registered = true;
+      for (const e of elements) {
+        e.addEventListener('click', async () => {
+          _scrolling = true;
+          await new Promise(resolve => setTimeout(resolve, 600))
+          _scrolling = false;
+        })
+      }
+    }
+  }
 
   function setOffsets() {
     const offsets = [];
@@ -127,17 +143,13 @@ window.registerWindowScrollEventForToc = function (dotnet, tocId) {
     _offsets = offsets;
   }
 
-  function findActiveIndex() {
-    console.log('findActiveIndex')
+  async function findActiveIndex() {
     const currentOffset =
       window.pageYOffset || document.documentElement.offsetTop || 0;
 
     if (currentOffset === 0) {
-      const aindex = window.location.href.indexOf("#");
-      if (aindex > -1) {
-        dotnet.invokeMethodAsync("scrollToHashIfExists");
-      }
-      return;
+      await dotnet.invokeMethodAsync("UpdateHash", "")
+      return
     }
 
     setOffsets();
@@ -157,21 +169,17 @@ window.registerWindowScrollEventForToc = function (dotnet, tocId) {
 
     const hash = _toc[tindex];
 
-    const aindex2 = window.location.href.indexOf("#");
-    const currentHash = window.location.href.slice(aindex2);
-    if (currentHash === hash) {
-      return;
-    }
-
     _scrolling = true;
 
-    dotnet.invokeMethodAsync("scrollToHash", hash);
+    await dotnet.invokeMethodAsync("UpdateHash", hash);
 
     _scrolling = false;
   }
 
   function onScroll() {
     clearTimeout(_timeout);
+
+    registerClickEvents();
 
     if (_scrolling) {
       return;
