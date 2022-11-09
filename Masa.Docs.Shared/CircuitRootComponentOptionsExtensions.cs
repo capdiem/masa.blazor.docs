@@ -62,7 +62,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.lists.Usage>("lists-usage");
         options.RegisterCustomElement<Examples.markdown.usages.Usage>("markdown-usage");
         options.RegisterCustomElement<Examples.menus.Usage>("menus-usage");
-        options.RegisterCustomElement<Examples.modals.Usage>("modals-usage");
+        options.RegisterCustomElement<Examples.snackbars.usages.Usage>("modals-usage");
         options.RegisterCustomElement<Examples.navigation_drawers.Usage>("navigation-drawers-usage");
         options.RegisterCustomElement<Examples.overlays.usages.Usage>("overlays-usage");
         options.RegisterCustomElement<Examples.pagination.Usage>("pagination-usage");
@@ -74,5 +74,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.ratings.Usage>("ratings-usage");
         options.RegisterCustomElement<Examples.sheets.Usage>("sheets-usage");
         options.RegisterCustomElement<Examples.skeleton_loaders.usages.Usage>("skeleton-loaders-usage");
+        options.RegisterCustomElement<Examples.snackbars.usages.Usage>("snackbars-usage");
+        options.RegisterCustomElement<Examples.steppers.Usage>("steppers-usage");
     }
 }

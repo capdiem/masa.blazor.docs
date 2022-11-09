@@ -105,7 +105,9 @@
       },
       "ratings",
       "sheets",
-      "skeleton-loaders"
+      "skeleton-loaders",
+      "snackbars",
+      "steppers"
     ]
   }
 ]
