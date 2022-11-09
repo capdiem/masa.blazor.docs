@@ -107,7 +107,8 @@
       "sheets",
       "skeleton-loaders",
       "snackbars",
-      "steppers"
+      "steppers",
+      "subheaders"
     ]
   }
 ]

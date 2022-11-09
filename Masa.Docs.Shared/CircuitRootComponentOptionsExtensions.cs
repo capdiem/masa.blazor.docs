@@ -76,5 +76,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.skeleton_loaders.usages.Usage>("skeleton-loaders-usage");
         options.RegisterCustomElement<Examples.snackbars.usages.Usage>("snackbars-usage");
         options.RegisterCustomElement<Examples.steppers.Usage>("steppers-usage");
+        options.RegisterCustomElement<Examples.subheaders.Usage>("subheaders-usage");
     }
 }
