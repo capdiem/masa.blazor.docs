@@ -1,9 +1,5 @@
 ---
-category: Components
-subtitle: 未分组的
-type: 未分组的
-title: Not Grouped
-cols: 1
+title: 未分组的
 tag: preset
 related:
 
@@ -12,8 +8,6 @@ related:
 - /components/lists
 
 ---
-
-# Not Grouped（未分组的）
 
 ## 示例
 

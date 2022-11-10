@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 开关
-type: 开关
-title: Switches
-cols: 1
+title: Switches（开关）
+desc: "**MSwitch** 组件使用户能够在两个不同的值之间进行选择。 它们非常类似于一个切换，或开关，虽然视觉上不同于一个复选框。"
 related:
   - /components/checkboxes
   - /components/forms
   - /components/radio
 ---
 
-# Switches（开关）
-
-**MSwitch** 组件使用户能够在两个不同的值之间进行选择。 它们非常类似于一个切换，或开关，虽然视觉上不同于一个复选框。
-
 ## 使用
 
 最简单形式的 **MSwitch** 提供两个值之间的切换。
 
 <switches-usage></switches-usage>
-
-## API
-
-- [MSwitch](/api/MSwitch)
 
 ## 示例
 

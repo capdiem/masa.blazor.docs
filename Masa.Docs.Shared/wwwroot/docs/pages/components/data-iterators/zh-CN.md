@@ -1,27 +1,15 @@
 ---
-category: Components
-subtitle: 数据迭代器
-type: 数据迭代器
-title: Data iterators
-cols: 1
+title: Data iterators（数据迭代器）
+desc: "`MDataIterator` 组件用于显示数据，并且与 `MDataTable` 组件共享其大部分功能。 功能包括排序、搜索、分页和选择。"
 related:
   - /components/data-tables
   - /components/simple-tables
   - /components/toolbars
 ---
 
-# Data iterators（数据迭代器）
-
-`MDataIterator` 组件用于显示数据，并且与 `MDataTable` 组件共享其大部分功能。 功能包括排序、搜索、分页和选择。
-
 ## 使用
 
 <data-iterators-usage></data-iterators-usage>
-
-## API
-
-- [MDataIterator](/api/MDataIterator)
-- [MDataFooter](/api/MDataFooter)
 
 ## 示例
 

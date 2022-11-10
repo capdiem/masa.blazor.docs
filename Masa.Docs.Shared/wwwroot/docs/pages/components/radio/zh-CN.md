@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 单选按钮
-type: 单选按钮
-title: Radio
-cols: 1
+title: Radio（单选按钮）
+desc: "**MRadio** 组件是一个简单的单选按钮。 与 **MRadioGroup** 组件结合时，您可以提供分组的功能，允许用户从一组预定义的选项中进行选择。"
 related:
   - /components/button-groups
   - /components/forms
   - /components/checkboxes
 ---
 
-# Radio（单选按钮）
-
-**MRadio** 组件是一个简单的单选按钮。 与 **MRadioGroup** 组件结合时，您可以提供分组的功能，允许用户从一组预定义的选项中进行选择。
-
 ## 使用
 
 虽然 **MRadio** 可以单独使用，但它最好与 **MRadioGroup** 一起使用。 在 **MRadioGroup** 上使用 @bind-Value，您可以访问组内所选单选按钮的值。
 
 <radio-usage></radio-usage>
-
-## API
-
-- [MRadio](/api/MRadio)
-- [MRadioGroup](/api/MRadioGroup)
 
 ## 示例
 

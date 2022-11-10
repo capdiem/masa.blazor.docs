@@ -1,29 +1,17 @@
 ---
-category: Components
-type: SlideGroup
-title: Slide groups
-cols: 1
+title: Slide Groups
+desc: "The **MSlideGroup** component is used to display pseudo paginated information. It uses [**MItemGroup**](/components/item-groups) at its core and provides a baseline for components such as [**MTabs**](/components/tabs) and [**MChipGroup**](/components/chip-groups)."
 related:
   - /components/icons
   - /components/carousels
   - /components/tabs
 ---
 
-# Slide Groups
-
-The **MSlideGroup** component is used to display pseudo paginated information. It uses [**MItemGroup**](/components/item-groups) at its core and provides
-a baseline for components such as [**MTabs**](/components/tabs) and [**MChipGroup**](/components/chip-groups).
-
 ## Usage
 
 Similar to the **MWindow** component, **MSideGroup** lets items to take up as much space as needed, allowing the user to move horizontally through the provided information.
 
 <slide-groups-usage></slide-groups-usage>
-
-## API
-
-- [MSlideGroup](/api/MSlideGroup)
-- [MSlideItem](/api/MSlideItem)
 
 ## Examples
 

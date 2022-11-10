@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Hover
 title: Hover
-cols: 1
+desc: "The **MHover** component provides a clean interface for handling the hover state of any component."
 related:
   - /components/cards
   - /components/images
   - /components/tooltips
 ---
 
-# Hover
-
-The **MHover** component provides a clean interface for handling the hover state of any component.
-
 ## Usage
 
 The **MHover** component is a wrapper that should contain only one child element, and can trigger an event when hovered over.
 
 <hover-usage></hover-usage>
-
-## API
-
-- [MHover](/api/MHover)
 
 ## Examples
 

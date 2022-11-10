@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 分页
-type: 分页
-title: Pagination
-cols: 1
+title: Pagination（分页）
+desc: "**MPagination** 组件用于分离长数据集，以便用户消化信息。 根据提供的数据量，分页组件将自动缩放。 要维护当前页面，只需提供 Value 属性。"
 related:
   - /components/data-iterators
   - /components/data-tables
   - /components/lists
 ---
 
-# Pagination（分页）
-
-**MPagination** 组件用于分离长数据集，以便用户消化信息。 根据提供的数据量，分页组件将自动缩放。 要维护当前页面，只需提供 Value 属性。
-
 ## 使用
 
 分页默认根据设置的 `Length` 属性显示页数，两边有 `Prev` 和 `Next` 按钮帮助导航。
 
 <pagination-usage></pagination-usage>
-
-## API
-
-- [MPagination](/api/MPagination)
 
 ## 示例
 

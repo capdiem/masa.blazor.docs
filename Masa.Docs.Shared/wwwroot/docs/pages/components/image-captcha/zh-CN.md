@@ -1,18 +1,10 @@
 ---
-category: Components
-subtitle: 图片验证码
-type: 图片验证码
-title: Image Captcha
-cols: 1
+title: Image Captcha（图片验证码）
 tag: preset
 related:
   - /components/text-fields
   - /components/image
 ---
-
-# Image Captcha（图片验证码）
-
-提供生成图片验证码的组件。
 
 ## 使用
 

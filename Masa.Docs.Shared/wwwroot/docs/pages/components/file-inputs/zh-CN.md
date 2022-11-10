@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 文件上传
-type: 文件上传
-title: File inputs
-cols: 1
+title: File inputs（文件上传）
+desc: "**MFileInput** 是一个定制的输入组件，它提供了一个干净的选择界面，显示详细的选择信息和上传进度。 它意在直接取代标准文件输入。"
 related:
   - /components/text-fields
   - /components/forms
   - /components/icons
 ---
 
-# File inputs（文件上传）
-
-**MFileInput** 是一个定制的输入组件，它提供了一个干净的选择界面，显示详细的选择信息和上传进度。 它意在直接取代标准文件输入。
-
 ## 使用
 
 **MFileInput** 组件的核心是一个基于 [MTextField](/components/text-fields) 拓展的基本容器。
 
 <file-inputs-usage></file-inputs-usage>
-
-## API
-
-- [MFileInput](/api/MFileInput)
 
 ## 示例
 

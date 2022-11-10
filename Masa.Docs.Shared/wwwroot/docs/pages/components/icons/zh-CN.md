@@ -1,27 +1,15 @@
 ---
-category: Components
-subtitle: 图标
-type: 图标
-title: Icons
-cols: 1
+title: Icons（图标）
+desc: "**MIcon** 组件提供了一系列用于为您的应用程序的各个方面提供上下文的胶卷。 对于所有可用图标的列表, 请访问官方的 [Material Design 图标](https://materialdesignicons.com/) 页面。要使用任何这些图标，只需使用 `mdi-` 前缀，然后是图标名称。"
 related:
   - /features/icon-fonts
   - /components/buttons
   - /components/cards
 ---
 
-# Icons（图标）
-
-**MIcon** 组件提供了一系列用于为您的应用程序的各个方面提供上下文的胶卷。 对于所有可用图标的列表, 请访问官方的 [Material Design 图标](https://materialdesignicons.com/) 页面。
-要使用任何这些图标，只需使用 `mdi-` 前缀，然后是图标名称。
-
 ## 使用
 
 图标有两个主题（浅色和深色）和五种不同的尺寸（`x-small`、`small`、`medium`（默认）、`large` 和 `x-large`）。
-
-## API
-
-- [MIcon](/api/MIcon)
 
 ## 示例
 

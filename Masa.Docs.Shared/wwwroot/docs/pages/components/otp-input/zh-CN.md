@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 一次性密码输入
-type: 一次性密码输入
-title: OTP Input
-cols: 1
+title: OTP Input（一次性密码输入）
+desc: "OTP 输入用于通过一次性密码对用户进行身份验证的 MFA 程序"
 related:
   - /components/textareas
   - /components/text-fields
   - /components/forms
 ---
 
-# OTP Input（一次性密码输入）
-
-OTP 输入用于通过一次性密码对用户进行身份验证的 MFA 程序
-
 ## 使用
 
 在这里，我们显示了可以在应用程序中使用的设置列表。
 
 <otp-input-usage></otp-input-usage>
-
-## API
-
-- [MOtpInput](/api/MOtpInput)
 
 ## 示例
 

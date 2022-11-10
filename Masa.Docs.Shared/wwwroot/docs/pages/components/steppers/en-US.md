@@ -1,31 +1,17 @@
 ---
-category: Components
-type: Stepper
 title: Steppers
-cols: 1
+desc: "The **MStepper** component displays progress through numbered steps."
 related:
   - /components/tabs
   - /components/buttons
   - /components/windows
 ---
 
-# Steppers
-
-The **MStepper** component displays progress through numbered steps.
-
 ## Usage
 
 A stepper can be used for a multitude of scenarios, including shopping carts, record creation and more.
 
 <steppers-usage></steppers-usage>
-
-## API
-
-- [MStepper](/api/MStepper)
-- [MStepperContent](/api/MStepperContent)
-- [MStepperHeader](/api/MStepperHeader)
-- [MStepperItems](/api/MStepperItems)
-- [MStepperStep](/api/MStepperStep)
 
 ## Examples
 

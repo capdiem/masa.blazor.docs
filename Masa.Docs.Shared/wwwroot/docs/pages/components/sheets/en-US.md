@@ -1,17 +1,11 @@
 ---
-category: Components
-type: Sheet
 title: Sheets
-cols: 1
+desc: "The **MSheet** component is the baseline for numerous components such as MCard, MToolbar, and more. The available properties form the foundation of Material Design—the concept of paper and elevation (shadows)."
 related:
   - /components/cards
   - /components/grid-system
   - /stylesandanimations/elevation
 ---
-
-# Sheets
-
-The **MSheet** component is the baseline for numerous components such as MCard, MToolbar, and more. The available properties form the foundation of Material Design—the concept of paper and elevation (shadows).
 
 ## Usage
 
@@ -19,10 +13,6 @@ The **MSheet** component is a transformable piece of paper that provides a basic
 For example, properties such as `rounded` and `shaped` modify the `border-radius` property while `elevation` increases/decreases `box-shadow`.
 
 <sheets-usage></sheets-usage>
-
-## API
-
-- [MSheet](/api/MSheet)
 
 ## Examples
 

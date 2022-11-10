@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Footers
 title: Footers
-cols: 1
+desc: "The **MFooter** component is used to display public information that users may want to access from any page in the website."
 related:
   - /components/grid-system
   - /components/buttons
   - /components/toolbars
 ---
 
-# Footers
-
-The **MFooter** component is used to display public information that users may want to access from any page in the website.
-
 ## Usage
 
 The **MFooter** component in its simplest form is a container.
 
 <footers-usage></footers-usage>
-
-## API
-
-- [MFooter](/api/MFooter)
 
 ## Examples
 

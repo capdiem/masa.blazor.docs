@@ -1,32 +1,19 @@
 ---
-category: Components
-type: ExpansionPanels
 title: Expansion panels
-cols: 1
+desc: "The **MExpansionPanel** component is useful for reducing vertical space with large amounts of information. The default
+functionality of the component is to only display one expansion-panel body at a time; however, with the **Multiple**
+property, the expansion-panel can remain open until explicitly closed."
 related:
   - /components/cards
   - /components/data-tables
   - /components/lists
 ---
 
-# Expansion panels
-
-The **MExpansionPanel** component is useful for reducing vertical space with large amounts of information. The default
-functionality of the component is to only display one expansion-panel body at a time; however, with the **Multiple**
-property, the expansion-panel can remain open until explicitly closed.
-
 ## Usage
 
 Expansion panels in their simplest form display a list of expandable items.
 
 <expansion-panels-usage></expansion-panels-usage>
-
-## API
-
-- [MExpansionPanels](/api/MExpansionPanels)
-- [MExpansionPanel](/api/MExpansionPanel)
-- [MExpansionPanelHeader](/api/MExpansionPanelHeader)
-- [MExpansionPanelContent](/api/MExpansionPanelContent)
 
 ## Examples
 

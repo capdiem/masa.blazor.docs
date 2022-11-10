@@ -1,27 +1,17 @@
 ---
-category: Components
-type: TextField
 title: Text fields
-cols: 1
+desc: "Text fields components are used for collecting user provided information."
 related:
   - /components/forms
   - /components/selects
   - /components/textareas
 ---
 
-# Text fields
-
-Text fields components are used for collecting user provided information.
-
 ## Usage
 
 A simple text field with placeholder and/or label.
 
 <text-fields-usage></text-fields-usage>
-
-## API
-
-- [MTextField](/api/MTextField)
 
 ## Examples
 

@@ -1,25 +1,15 @@
 ---
-category: Components
-type: Select
 title: Selects
-cols: 1
+desc: "The **Select** component is used for collecting user provided information from a list of options."
 related:
   - /components/autocompletes
   - /components/combobox
   - /components/forms
 ---
 
-# Selects
-
-The **Select** component is used for collecting user provided information from a list of options.
-
 ## Usage
 
 <selects-usage></selects-usage>
-
-## API
-
-- [MSelect](/api/MSelect)
 
 ## 注意
 

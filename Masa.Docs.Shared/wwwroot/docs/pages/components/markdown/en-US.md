@@ -1,14 +1,8 @@
 ---
-category: Components
-type: Markdown
 title: Markdown
-cols: 1
+desc: "Packaging based on [vditor](https://github.com/Vanessa219/vditor)"
 tag: js-proxy
 ---
-
-# Markdown
-
-Packaging based on [vditor](https://github.com/Vanessa219/vditor)
 
 ## Usage
 
@@ -27,10 +21,6 @@ Markdown Examples
 ```html
 <script src="https://cdn.masastack.com/npm/vditor/3.8.12/dist/index.min.js"></script>
 ```
-
-## API
-
-- [MMarkdown](/api/MMarkdown)
 
 ## Examples
 

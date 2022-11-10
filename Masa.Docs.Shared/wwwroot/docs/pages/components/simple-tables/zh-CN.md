@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 简单表格
-type: 简单表格
-title: Simple tables
-cols: 1
+title: Simple tables（简单表格）
+desc: "**MSimpleTable**组件是 table 元素的简单封装组件。 在组件中，你可以使用所有常规表元素，如 thead ， tbody ，tr 等。"
 related:
   - /components/data-iterators
   - /components/data-tables
   - /components/lists
 ---
 
-# Simple tables（简单表格）
-
-MSimpleTable组件是 table 元素的简单封装组件。 在组件中，你可以使用所有常规表元素，如 thead ， tbody ，tr 等。
-
 ## 使用
 
 简单表格组件是 `<table>` 元素的封装组件。
 
 <simple-tables-usage></simple-tables-usage>
-
-## API
-
-- [MSimpleTable](/api/MSimpleTable)
 
 ## 示例
 

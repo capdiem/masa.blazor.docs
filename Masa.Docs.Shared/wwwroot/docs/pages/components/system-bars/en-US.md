@@ -1,17 +1,10 @@
 ---
-category: Components
-type: SystemBars
-title: System bars
-cols: 1
+desc: "The **MSystemBar** component can be used to display status to the user. It looks like an Android system bar and can contain icons, spaces, and some text."
 related:
   - /components/buttons
   - /components/toolbars
   - /components/tabs
 ---
-
-# System bars
-
-The **MSystemBar** component can be used to display status to the user. It looks like an Android system bar and can contain icons, spaces, and some text.
 
 ## Usage
 
@@ -20,10 +13,6 @@ The **MSystemBar** component can be used to display status to the user. It looks
 <system-bars-usage></system-bars-usage>
 
 ## Anatomy
-
-## API
-
-- [MSystemBar](/api/MSystemBar)
 
 ## Examples
 

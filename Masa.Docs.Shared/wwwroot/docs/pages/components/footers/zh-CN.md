@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 页脚
-type: 页脚
-title: Footers
-cols: 1
+title: Footers（页脚）
+desc: "**MFooter** 组件用于显示用户可能想要从网站中的任何页面都能访问到的公共信息。"
 related:
   - /components/grid-system
   - /components/buttons
   - /components/toolbars
 ---
 
-# Footers（页脚）
-
-**MFooter** 组件用于显示用户可能想要从网站中的任何页面都能访问到的公共信息。
-
 ## 使用
 
 最简单形式的 **MFooter** 组件是一个容器。
 
 <footers-usage></footers-usage>
-
-## API
-
-- [MFooter](/api/MFooter)
 
 ## 示例
 

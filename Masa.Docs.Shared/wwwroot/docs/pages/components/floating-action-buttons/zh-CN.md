@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 浮动动作按钮
-type: 浮动动作按钮
-title: Floating Action Buttons
-cols: 1
+title: Floating Action Buttons（浮动动作按钮）
+desc: "**MButton** 组件可以用作浮动动作按钮。 这提供了一个具有主要行为点的应用程序。 结合 **MSpeedDial** 组件, 您可以创建一组可供用户使用的功能"
 related:
   - /components/button
   - /components/icons
   - /stylesandanimations/transitions
 ---
 
-# Floating Action Buttons（浮动动作按钮）
-
-**MButton** 组件可以用作浮动动作按钮。 这提供了一个具有主要行为点的应用程序。 结合 **MSpeedDial** 组件, 您可以创建一组可供用户使用的功能
-
 ## 使用
 
 浮动动作按钮可以附加到material上来表示应用程序中的提升操作。 在大多数情况下，将使用默认大小，而 `Small` 变量可用于与大小相似的元素保持连续性。
 
 <floating-action-button-usage></floating-action-button-usage>
-
-## API
-
-- [MButton](/api/MButton)
-- [MSpeedDial](/api/MSpeedDial)
 
 ## 示例
 

@@ -1,31 +1,18 @@
 ---
-category: Components
-type: SkeletonLoader
 title: Skeleton loaders
-cols: 1
+desc: "The `MSkeletonLoader` component is a versatile tool that can fill many roles within a project. At its heart, the component provides an indication to the user that something is coming but not yet available. There are over 30 pre-defined options available that can be combined to make custom examples."
 related:
-
 - /components/cards
 - /components/progress-circular
 - /components/buttons
 
 ---
 
-# Skeleton loaders
-
-The `MSkeletonLoader` component is a versatile tool that can fill many roles within a project. At its heart, the
-component provides an indication to the user that something is coming but not yet available. There are over 30
-pre-defined options available that can be combined to make custom examples.
-
 ## Usage
 
 The `Vertical` property allows you to stack the contents of **MSnackbar**.
 
 <skeleton-loaders-usage></skeleton-loaders-usage>
-
-## API
-
-- [MSkeletonLoader](/api/MSkeletonLoader)
 
 ## Examples
 

@@ -1,28 +1,18 @@
 ---
-category: Components
-type: FileInput
 title: File inputs
-cols: 1
+desc: "The **MFileInput**  component is a specialized input that provides a clean interface for selecting files,
+showing detailed selection information and upload progress. It is meant to be a direct replacement for a standard file input."
 related:
   - /components/text-fields
   - /components/forms
   - /components/icons
 ---
 
-# File inputs
-
-The **MFileInput**  component is a specialized input that provides a clean interface for selecting files, 
-showing detailed selection information and upload progress. It is meant to be a direct replacement for a standard file input.
-
 ## Usage
 
 At its core, the `MFileInput` component is a basic container that extends [MTextField](/components/text-fields).
 
 <file-inputs-usage></file-inputs-usage>
-
-## API
-
-- [MFileInput](/api/MFileInput)
 
 ## Examples
 

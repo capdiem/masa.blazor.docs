@@ -1,19 +1,11 @@
 ---
-category: Components
-type: List
 title: Lists
-cols: 1
+desc: "The **MList** component is used to display information. It can contain an avatar, content, actions, subheaders and much more. Lists present content in a way that makes it easy to identify a specific item in a collection. They provide a consistent styling for organizing groups of text and images." 
 related:
   - /components/item-groups
   - /components/list-item-groups
   - /components/subheaders
 ---
-
-# Lists
-
-The **MList** component is used to display information. It can contain an avatar, content, actions, subheaders and much
-more. Lists present content in a way that makes it easy to identify a specific item in a collection. They provide a
-consistent styling for organizing groups of text and images.
 
 ## Usage
 
@@ -21,20 +13,6 @@ Lists come in three main variations. single-line (default), two-line and three-l
 minimum height of the item and can also be controlled from `MList` with the same prop.
 
 <lists-usage></lists-usage>
-
-## API
-
-- [MList](/api/MList)
-- [MListGroup](/api/MListGroup)
-- [MListItem](/api/MListItem)
-- [MListItemAction](/api/MListItemAction)
-- [MListItemActionText](/api/MListItemActionText)
-- [MListItemAvatar](/api/MListItemAvatar)
-- [MListItemContent](/api/MListItemContent)
-- [MListItemGroup](/api/MListItemGroup)
-- [MListItemIcon](/api/MListItemIcon)
-- [MListItemSubtitle](/api/MListItemSubtitle)
-- [MListItemTitle](/api/MListItemTitle)
 
 ## Caveats
 

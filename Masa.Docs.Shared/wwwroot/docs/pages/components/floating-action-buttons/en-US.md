@@ -1,28 +1,18 @@
 ---
-category: Components
-type: Floating Action Buttons
+
 title: Floating Action Buttons
-cols: 1
+desc: "The **MButton** component can be used as a floating action button. This provides an application with a main point of action. Combined with the `MSpeedDial` component, you can create a diverse set of functions available for your users."
 related:
   - /components/button
   - /components/icons
   - /stylesandanimations/transitions
 ---
 
-# Floating Action Buttons
-
-The **MButton** component can be used as a floating action button. This provides an application with a main point of action. Combined with the `MSpeedDial` component, you can create a diverse set of functions available for your users.
-
 ## Usage
 
 Floating action buttons can be attached to material to signify a promoted action in your application. The default size will be used in most cases, whereas the `Small` variant can be used to maintain continuity with similar sized elements.
 
 <floating-action-button-usage></floating-action-button-usage>
-
-## API
-
-- [MButton](/api/MButton)
-- [MSpeedDial](/api/MSpeedDial)
 
 ## Examples
 

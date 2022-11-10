@@ -1,15 +1,8 @@
 ---
-category: Components
-subtitle: Markdown编辑器
-type: Markdown编辑器
-title: Markdown
-cols: 1
+title: Markdown（Markdown编辑器）
+desc: "基于[vditor](https://github.com/Vanessa219/vditor)封装"
 tag: js-proxy
 ---
-
-# Markdown（Markdown编辑器）
-
-基于[vditor](https://github.com/Vanessa219/vditor)封装
 
 ## 使用
 
@@ -28,10 +21,6 @@ Markdown编辑器示例
 ```html
 <script src="https://cdn.masastack.com/npm/vditor/3.8.12/dist/index.min.js"></script>
 ```
-
-## API
-
-- [MMarkdown](/api/MMarkdown)
 
 ## 示例
 

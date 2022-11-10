@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Rating
 title: Ratings
-cols: 1
+desc: "Semantic vector graphics."
 related:
   - /components/cards
   - /components/icons
   - /components/lists
 ---
 
-# Ratings
-
-Semantic vector graphics.
-
 ## Usage
 
 The **Ratings** component provides a simple interface for gathering user feedback.
 
 <ratings-usage></ratings-usage>
-
-## API
-
-- [MRating](/api/MRating)
 
 ## Examples
 

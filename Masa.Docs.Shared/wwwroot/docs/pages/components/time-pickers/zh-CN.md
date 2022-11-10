@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 时间选择器
-type: 时间选择器
-title: Time pickers
-cols: 1
+title: Time pickers（时间选择器）
+desc: "**MTimePicker** 是独立的组件，可以用于许多现有的 MASA Blazor 组件。 它为用户提供了选择时间的视觉表现。"
 related:
   - /components/buttons
   - /components/date-pickers
   - /components/text-fields
 ---
 
-# Time pickers（时间选择器）
-
-**MTimePicker** 是独立的组件，可以用于许多现有的 MASA Blazor 组件。 它为用户提供了选择时间的视觉表现。
-
 ## 使用
 
 时间选择器默认情况下启用了浅色主题。
 
 <time-pickers-usage></time-pickers-usage>
-
-## API
-
-- [MTimePicker](/api/MTimePicker)
 
 ## 示例
 

@@ -1,18 +1,11 @@
 ---
-category: Components
-type: Tabs
 title: Tabs
-cols: 1
+desc: "The **MTabs** component is used for hiding content behind a selectable item. This can also be used as a pseudo-navigation for a page, where the tabs are links and the tab-items are the content."
 related:
   - /components/icons
   - /components/toolbars
   - /components/windows
 ---
-
-# Tabs
-
-The **MTabs** component is used for hiding content behind a selectable item. This can also be used as a pseudo-navigation
-for a page, where the tabs are links and the tab-items are the content.
 
 ## Usage
 
@@ -20,13 +13,6 @@ The **MTabs** component is a styled extension of [**MItemGroup**](/components/it
 interface for organizing groups of content.
 
 <example file="" />
-
-## API
-
-- [MTabs](/api/MTabs)
-- [MTab](/api/MTab)
-- [MTabItem](/api/MTabItem)
-- [MTabsItems](/api/MTabsItems)
 
 ## Caveats
 

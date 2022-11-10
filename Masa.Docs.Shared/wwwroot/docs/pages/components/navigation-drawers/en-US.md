@@ -1,17 +1,11 @@
 ---
-category: Components
-type: NavigationDrawer
 title: Navigation drawers
-cols: 1
+desc: "**MNavigationDrawer** is a component used to navigate applications. It is usually wrapped and used in the **MCard** element."
 related:
   - /components/lists
   - /components/icons
   - /getting-started/wireframes
 ---
-
-# Navigation drawers
-
-**MNavigationDrawer** is a component used to navigate applications. It is usually wrapped and used in the **MCard** element.
 
 ## Usage
 

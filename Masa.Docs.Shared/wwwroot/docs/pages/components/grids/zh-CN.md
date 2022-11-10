@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 网格系统
-type: 网格系统
-title: Grid system
-cols: 1
+title: Grid System（网格系统）
+desc: "Masa.Blazor 配备了一个使用 flexbox 构建的 12 格网格系统。 网格用于在应用的内容中创建特定的布局。 它包含 5 种类型的媒体断点，用于针对特定的屏幕尺寸或方向，xs、sm、md、lg 和 xl。 这些分辨率在视口断点表中定义如下，可以通过自定义断点进行修改。"
 related:
   - /stylesandanimations/flex                      
   - /features/breakpoints
   - /stylesandanimations/display-helpers
 ---
-
-# Grid System（网格系统）
-
-Masa.Blazor 配备了一个使用 flexbox 构建的 12 格网格系统。 网格用于在应用的内容中创建特定的布局。 它包含 5 种类型的媒体断点，用于针对特定的屏幕尺寸或方向，xs、sm、md、lg 和 xl。 这些分辨率在视口断点表中定义如下，可以通过自定义断点进行修改。
 
 <div
   class="overflow-hidden mb-12 overflow-hidden m-sheet m-sheet--outlined theme--light rounded"
@@ -189,13 +182,6 @@ Masa.Blazor 网格深受 [Bootstrap 网格](https://getbootstrap.com/docs/4.0/la
 flexbox，[阅读 CSS Tricks flexbox 指南](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)，了解背景、术语、指南和代码片段。
 
 <example file="" />
-
-## API
-
-- [MContainer](/api/MContainer)
-- [MRow](/api/MRow)
-- [MCol](/api/MCol)
-- [MSpacer](/api/MSpacer)
 
 ## 子组件
 

@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 范围滑块
-type: 范围滑块
-title: Range sliders
-cols: 1
+title: Range sliders（范围滑块）
+desc: "**MRangeSlider** 组件是一个更好的可视化数字输入工具。 它用于收集数字数据。"
 related:
   - /components/forms
   - /components/selects
   - /components/sliders
 ---
 
-# Range sliders（范围滑块）
-
-**MRangeSlider** 组件是一个更好的可视化数字输入工具。 它用于收集数字数据。
-
 ## 使用
 
 滑块表示一根条上的一系列值，用户可以从中选择一个值。 滑块组件适用于调节音量、亮度，或者图像滤镜的强度。
 
 <usage name="">
-
-## API
-
-- [MRangeSlider](/api/MRangeSlider)
-- [MSlider](/api/MSlider)
 
 ## 示例
 
@@ -66,4 +54,3 @@ related:
 您可以在滑动时或始终使用 `ThumbLabel` 道具显示拇指标签。它可以通过设置 `ThumbColor` 属性来自定义颜色，并使用 `ThumbSize` 属性设置自定义大小。使用 `AlwaysDirty` 道具，它的颜色永远不会改变，即使在 `Min` 值上也是如此。
 
 <example file="" />
-

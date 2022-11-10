@@ -1,27 +1,17 @@
 ---
-category: Components
-type: ProgressCircular
 title: Progress circular
-cols: 1
+desc: "The component is used to display circular data to users. It also can be put into an indeterminate state to portray loading."
 related:
   - /components/cards
   - /components/progress-linear
   - /components/lists
 ---
 
-# Progress circular
-
-The component is used to display circular data to users. It also can be put into an indeterminate state to portray loading.
-
 ## Usage
 
 In its simplest form, **MProgressCircular** displays a circular progress bar. Use the `value` prop to control the progress.
 
 <progress-circular-usage></progress-circular-usage>
-
-## API
-
-- [MProgressCircular](/api/MProgressCircular)
 
 ## Examples
 

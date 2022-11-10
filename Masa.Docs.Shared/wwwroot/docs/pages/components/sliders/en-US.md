@@ -1,28 +1,17 @@
 ---
-category: Components
-type: Sliders
 title: Sliders
-cols: 1
+desc: "The **MSlider** component is a better visualization of the number input. It is used for gathering numerical user data."
 related:
   - /components/forms
   - /components/selects
   - /components/range-sliders
 ---
 
-# Sliders
-
-The **MSlider** component is a better visualization of the number input. It is used for gathering numerical user data.
-
 ## Usage
 
 Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
 
 <sliders-usage></sliders-usage>
-
-## API
-
-- [MSlider](/api/MSlider)
-- [MRangeSlider](/api/MRangeSlider)
 
 ## Examples
 

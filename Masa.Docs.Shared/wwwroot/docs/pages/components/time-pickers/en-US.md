@@ -1,27 +1,17 @@
 ---
-category: Components
-type: TimePickers
 title: Time pickers
-cols: 1
+desc: "The MTimePicker is stand-alone component that can be utilized in many existing Vuetify components. It offers the user a visual representation for selecting the time."
 related:
   - /components/buttons
   - /components/date-pickers
   - /components/text-fields
 ---
 
-# Time pickers
-
-The MTimePicker is stand-alone component that can be utilized in many existing Vuetify components. It offers the user a visual representation for selecting the time.
-
 ## Usage
 
 `Subheaders` in their simplest form display a subheading with default theme.
 
 <time-pickers-usage></time-pickers-usage>
-
-## API
-
-- [MTimePicker](/api/MTimePicker)
 
 ## Examples
 

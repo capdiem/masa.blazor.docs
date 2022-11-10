@@ -1,28 +1,17 @@
 ---
-category: Components
-type: RangeSliders
 title: Range sliders
-cols: 1
+desc: "The **MRangeSlider**  component is a better visualization of the number input. It is used for gathering numerical user data."
 related:
   - /components/forms
   - /components/selects
   - /components/sliders
 ---
 
-# Range sliders
-
-The **MRangeSlider**  component is a better visualization of the number input. It is used for gathering numerical user data.
-
 ## Usage
 
 Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
 
 <range-sliders-usage></range-sliders-usage>
-
-## API
-
-- [MRangeSlider](/api/MRangeSlider)
-- [MSlider](/api/MSlider)
 
 ## Examples
 

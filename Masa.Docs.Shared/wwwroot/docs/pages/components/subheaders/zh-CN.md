@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 副标题
-type: 副标题
-title: Subheaders
-cols: 1
+title: Subheaders（副标题）
+desc: "用于分隔列表的各个部分。"
 related:
   - /components/cards
   - /components/grid-system
   - /components/lists
 ---
 
-# Subheaders（副标题）
-
-用于分隔列表的各个部分。
-
 ## 使用
 
 最简单形式的副标题显示带有默认主题的副标题。
 
 <subheaders-usage></subheaders-usage>
-
-## API
-
-- [MSubheader](/api/MSubheader)
 
 ## 示例
 

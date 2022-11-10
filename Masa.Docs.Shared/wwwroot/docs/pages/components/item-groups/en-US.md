@@ -1,29 +1,18 @@
 ---
-category: Components
-type: ItemGroup
-title: Item groups
-cols: 1
+title: Item Groups
+desc: "The **MItemGroup** provides the ability to create a group of selectable items out of any component. This is the baseline
+functionality for components such as **MTabs** and **MCarousel**."
 related:
   - /components/button-groups
   - /components/carousels
   - /components/tabs
 ---
 
-# Item Groups
-
-The **MItemGroup** provides the ability to create a group of selectable items out of any component. This is the baseline
-functionality for components such as **MTabs** and **MCarousel**.
-
 ## Usage
 
 The core usage of the **MItemGroup** is to create groups of anything that should be controlled by a `Value`.
 
 <item-groups-usage></item-groups-usage>
-
-## API
-
-- [MItem](/api/MItem)
-- [MItemGroup](/api/MItemGroup)
 
 ## Examples
 

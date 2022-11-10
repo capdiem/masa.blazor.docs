@@ -1,36 +1,18 @@
 ---
-category: Components
-type: ListItemGroup
-title: List item groups
-cols: 1
+title: List Item Groups
+desc: "The **MListItemGroup** provides the ability to create a group of selectable **MListItem**. The **MListItemGroup** component
+utilizes **MItemGroup** at its core to provide a clean interface for interactive lists."
 related:
   - /components/lists
   - /components/item-groups
   - /components/cards
 ---
 
-# List Item Groups
-
-The **MListItemGroup** provides the ability to create a group of selectable **MListItem**. The **MListItemGroup** component
-utilizes **MItemGroup** at its core to provide a clean interface for interactive lists.
-
 ## Usage
 
 By default, the `ListItemGroup` operates similarly to **ItemGroup**. If a `Value` is not provided, the group will provide a default based upon its index.
 
 <list-item-groups-usage></list-item-groups-usage>
-
-## API
-
-- [MListGroup](/api/MListGroup)
-- [MListItem](/api/MListItem)
-- [MListItemAction](/api/MListItemAction)
-- [MListItemActionText](/api/MListItemActionText)
-- [MListItemAvatar](/api/MListItemAvatar)
-- [MListItemContent](/api/MListItemContent)
-- [MListItemGroup](/api/MListItemGroup)
-- [MListItemSubtitle](/api/MListItemSubtitle)
-- [MListItemTitle](/api/MListItemTitle)
 
 ## Examples
 

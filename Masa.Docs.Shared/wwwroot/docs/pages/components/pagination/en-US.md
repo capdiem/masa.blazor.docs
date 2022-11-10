@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Pagination
-title: Pagination
-cols: 1
+title: Pagination（分页）
+desc: "The **MPagination** component is used to separate long data sets so that user data information can be known. Provided the amount, the paging component will automatically scale. The current maintenance page provides value easily."
 related:
   - /components/data-iterators
   - /components/data-tables
   - /components/lists
 ---
 
-# Pagination（分页）
-
-The **MPagination** component is used to separate long data sets so that user data information can be known. Provided the amount, the paging component will automatically scale. The current maintenance page provides value easily.
-
 ## Usage
 
 By default, paging displays the number of pages according to the set `Length` property, and there are `Prev` and `Next` buttons on both sides to help navigation.
 
 <pagination-usage></pagination-usage>
-
-## API
-
-- [MPagination](/api/MPagination)
 
 ## Examples
 

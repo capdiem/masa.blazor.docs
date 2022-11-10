@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 进度环
-type: 进度环
-title: Progress circular
-cols: 1
+title: Progress circular（进度环）
+desc: "该组件用于向用户展示环形的数据。 它也可以设置为不确定的状态来表示加载。"
 related:
   - /components/cards
   - /components/progress-linear
   - /components/lists
 ---
 
-# Progress circular（进度环）
-
-该组件用于向用户展示环形的数据。 它也可以设置为不确定的状态来表示加载。
-
 ## 使用
 
 **MProgressCircular** 以其最简单的形式显示圆形进度条。使用 `value` 属性控制进度。
 
 <progress-circular-usage></progress-circular-usage>
-
-## API
-
-- [MProgressCircular](/api/MProgressCircular)
 
 ## 示例
 

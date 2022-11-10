@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 悬停
-type: 悬停
-title: Hover
-cols: 1
+title: Hover（悬停）
+desc: "**MHover** 组件为处理任何组件的悬停状态提供了一个干净的接口。"
 related:
   - /components/cards
   - /components/images
   - /components/tooltips
 ---
 
-# Hover（悬停）
-
-**MHover** 组件为处理任何组件的悬停状态提供了一个干净的接口。
-
 ## 使用
 
 **MHover** 组件是一个包装器，它应该只包含一个子元素并且可以在悬停时可以触发事件。
 
 <hover-usage></hover-usage>
-
-## API
-
-- [MHover](/api/MHover)
 
 ## 示例
 

@@ -1,30 +1,17 @@
 ---
-category: Components
-subtitle: 幻灯片组
-type: 幻灯片组
-title: Slide groups
-cols: 1
+title: Slide Groups（幻灯片组）
+desc: "**MSlideGroup** 组件用于显示伪分页信息。它以 [**MItemGroup**](/components/item-groups) 为核心，为 [**MTabs**](/components/tabs) 和 [**MChipGroup**](/components/chip-groups) 等组件提供基础。"
 related:
   - /components/icons
   - /components/carousels
   - /components/tabs
 ---
 
-# Slide Groups（幻灯片组）
-
-**MSlideGroup** 组件用于显示伪分页信息。它以 [**MItemGroup**](/components/item-groups) 为核心，为 [**MTabs**](/components/tabs)
-和 [**MChipGroup**](/components/chip-groups) 等组件提供基础。
-
 ## 使用
 
 类似于 **MWindow** 组件，**MSideGroup** 允许项目根据需要占用尽可能多的空间，允许用户在提供的信息中水平移动。
 
 <slide-groups-usage></slide-groups-usage>
-
-## API
-
-- [MSlideGroup](/api/MSlideGroup)
-- [MSlideItem](/api/MSlideItem)
 
 ## 示例
 

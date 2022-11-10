@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 菜单
-type: 菜单
-title: Menus
-cols: 1
+title: Menus（菜单）
+desc: "**MMenu** 组件在激活它的元素的位置上展示一个菜单。"
 related:
   - /components/dialogs
   - /components/tooltips
   - /stylesandanimations/transitions
 ---
 
-# Menus（菜单）
-
-**MMenu** 组件在激活它的元素的位置上展示一个菜单。
-
 ## 使用
 
 请记住将激活菜单的元素放置在 **ActivatorContent** 中。
 
 <menus-usage></menus-usage>
-
-## API
-
-- [MMenu](/api/MMenu)
 
 ## 示例
 

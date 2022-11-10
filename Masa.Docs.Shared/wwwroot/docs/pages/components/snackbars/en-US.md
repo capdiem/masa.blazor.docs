@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Snackbar
 title: Snackbars
-cols: 1
+desc: "The MSnackbar component is used to display quick messages to users. Snackbars supports positioning, removing delays, and callbacks."
 related:
   - /components/buttons
   - /stylesandanimations/colors
   - /components/forms
 ---
 
-# Snackbars
-
-The MSnackbar component is used to display quick messages to users. Snackbars supports positioning, removing delays, and callbacks.
-
 ## Usage
 
 **MSnackbar** displays a temporary and closeable notification to the user in the simplest form.
 
 <snackbars-usage></snackbars-usage>
-
-## API
-
-- [MSnackbar](/api/MSnackbar)
 
 ## Examples
 

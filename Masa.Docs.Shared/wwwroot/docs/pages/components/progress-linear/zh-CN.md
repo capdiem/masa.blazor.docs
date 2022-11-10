@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 进度条
-type: 进度条
-title: Progress linear
-cols: 1
+title: Progress linear（进度条）
+desc: "该组件用于将数据环传递给用户。 也可以将其置于不确定状态来描述加载。"
 related:
   - /components/cards
   - /components/progress-circular
   - /components/lists
 ---
 
-# Progress linear（进度条）
-
-该组件用于将数据环传递给用户。 也可以将其置于不确定状态来描述加载。
-
 ## 使用
 
 最简单的形式， **MProgressLinear** 显示一个水平进度条。使用 `Value` 属性来控制进度。
 
 <progress-linear-usage></progress-linear-usage>
-
-## API
-
-- [MProgressLinear](/api/MProgressLinear)
 
 ## 示例
 

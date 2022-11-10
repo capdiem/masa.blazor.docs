@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 滑块
-type: 滑块
-title: Sliders
-cols: 1
+title: Sliders（滑块）
+desc: "**MSlider** 组件是一个更好的可视化数字输入工具。 它用于收集数字数据。"
 related:
   - /components/forms
   - /components/selects
   - /components/range-sliders
 ---
 
-# Sliders（滑块）
-
-**MSlider** 组件是一个更好的可视化数字输入工具。 它用于收集数字数据。
-
 ## 使用
 
 滑块沿条反映一系列值，用户可以从中选择单个值。非常适合调整音量、亮度或应用图像过滤器等设置。
 
 <sliders-usage></sliders-usage>
-
-## API
-
-- [MSlider](/api/MSlider)
-- [MRangeSlider](/api/MRangeSlider)
 
 ## 示例
 

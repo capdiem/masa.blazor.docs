@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 导航抽屉
-type: 导航抽屉
-title: Navigation drawers
-cols: 1
+title: Navigation drawers（导航抽屉）
+desc: "**MNavigationDrawer** 是用于导航应用程序的组件。 通常被包装在 **MCard** 元素中使用。"
 related:
   - /components/lists
   - /components/icons
   - /getting-started/wireframes
 ---
 
-# Navigation drawers（导航抽屉）
-
-**MNavigationDrawer** 是用于导航应用程序的组件。 通常被包装在 **MCard** 元素中使用。
-
 ## 使用
 
 最简单形式的副标题显示带有默认主题的副标题。
 
 <navigation-drawers-usage></navigation-drawers-usage>
-
-## API
-
-- [MNavigationDrawer](/api/MNavigationDrawer)
 
 ## 注意
 

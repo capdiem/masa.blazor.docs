@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 多行文本框
-type: 多行文本框
-title: Textareas
-cols: 1
+title: Textareas（多行文本框）
+desc: "多行文本框组件用于收集大量文本数据。"
 related:
   - /components/forms
   - /components/selects
   - /components/text-fields
 ---
 
-# Textareas（多行文本框）
-
-多行文本框组件用于收集大量文本数据。
-
 ## 使用
 
 **MTextarea** 最简单的形式是多行文本字段，对于大量文本非常有用。
 
 <textareas-usage></textareas-usage>
-
-## API
-
-- [MTextarea](/api/MTextarea)
 
 ## 示例
 

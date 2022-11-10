@@ -1,38 +1,17 @@
 ---
-category: Components
-subtitle: 列表
-type: 列表
-title: Lists
-cols: 1
+title: Lists（列表）
+desc: "**MList** 组件用于显示信息。 它可以包含头像、内容、操作、列表组标题等等。 列表以易于在集合中识别特定项目的方式显示内容。 它们为组织一组文本和图像提供了一致的样式。"
 related:
   - /components/item-groups
   - /components/list-item-groups
   - /components/subheaders
 ---
 
-# Lists（列表）
-
-**MList** 组件用于显示信息。 它可以包含头像、内容、操作、列表组标题等等。 列表以易于在集合中识别特定项目的方式显示内容。 它们为组织一组文本和图像提供了一致的样式。
-
 ## 使用
 
 列表有三种基本形式。 单行 (默认), 双行 和 三行. 行声明指定了项目的最小高度，也可以使用相同的属性从 **MList** 中进行控制。
 
 <lists-usage></lists-usage>
-
-## API
-
-- [MList](/api/MList)
-- [MListGroup](/api/MListGroup)
-- [MListItem](/api/MListItem)
-- [MListItemAction](/api/MListItemAction)
-- [MListItemActionText](/api/MListItemActionText)
-- [MListItemAvatar](/api/MListItemAvatar)
-- [MListItemContent](/api/MListItemContent)
-- [MListItemGroup](/api/MListItemGroup)
-- [MListItemIcon](/api/MListItemIcon)
-- [MListItemSubtitle](/api/MListItemSubtitle)
-- [MListItemTitle](/api/MListItemTitle)
 
 ## 注意
 

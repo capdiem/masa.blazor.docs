@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 系统栏
-type: 系统栏
-title: System bars
-cols: 1
+title: System bars（系统栏）
+desc: "**MSystemBar** 组件可以用于向用户显示状态。 它看起来像Android系统栏，可以包含图标、空格和一些文本。"
 related:
   - /components/buttons
   - /components/toolbars
   - /components/tabs
 ---
-
-# System bars（系统栏）
-
-**MSystemBar** 组件可以用于向用户显示状态。 它看起来像Android系统栏，可以包含图标、空格和一些文本。
 
 ## 使用
 
@@ -21,10 +14,6 @@ related:
 <system-bars-usage></system-bars-usage>
 
 ## 解剖学
-
-## API
-
-- [MSystemBar](/api/MSystemBar)
 
 ## 示例
 

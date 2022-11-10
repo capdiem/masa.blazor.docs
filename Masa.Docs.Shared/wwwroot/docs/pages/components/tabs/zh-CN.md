@@ -1,31 +1,17 @@
 ---
-category: Components
-subtitle: 选项卡
-type: 选项卡
-title: Tabs
-cols: 1
+title: Tabs（选项卡）
+desc: "**MTabs** 组件用于将内容隐藏在可选择的项目后面。 这也可以用作页面的伪导航，其中选项卡是链接，选项卡项是内容。"
 related:
   - /components/icons
   - /components/toolbars
   - /components/windows
 ---
 
-# Tabs（选项卡）
-
-**MTabs** 组件用于将内容隐藏在可选择的项目后面。 这也可以用作页面的伪导航，其中选项卡是链接，选项卡项是内容。
-
 ## 使用
 
 **MTabs** 组件是 [**MItemGroup**](/components/item-groups) 的样式扩展。 它提供了一个易于使用的接口来组织内容组。
 
 <example file="" />
-
-## API
-
-- [MTabs](/api/MTabs)
-- [MTab](/api/MTab)
-- [MTabItem](/api/MTabItem)
-- [MTabsItems](/api/MTabsItems)
 
 ## 注意
 

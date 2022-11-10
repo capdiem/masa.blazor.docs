@@ -1,18 +1,12 @@
 ---
-category: Components
-type: Grid
-title: Grid system
-cols: 1
+title: Grid System
+desc: "Masa.Blazor comes with a 12 point grid system built using flexbox. The grid is used to create specific layouts within an application’s content. It contains 5 types of media breakpoints that are used for targeting specific screen sizes or orientations, xs, sm, md, lg and xl.
+These resolutions are defined below in the Viewport Breakpoints table and can be modified by customizing the [Breakpoint service](features/breakpoints)"
 related:
   - /stylesandanimations/flex                      
   - /features/breakpoints
   - /stylesandanimations/display-helpers
 ---
-
-# Grid System
-
-Masa.Blazor comes with a 12 point grid system built using flexbox. The grid is used to create specific layouts within an application’s content. It contains 5 types of media breakpoints that are used for targeting specific screen sizes or orientations, xs, sm, md, lg and xl. 
-These resolutions are defined below in the Viewport Breakpoints table and can be modified by customizing the [Breakpoint service](features/breakpoints)
 
 <div
   class="overflow-hidden mb-12 overflow-hidden m-sheet m-sheet--outlined theme--light rounded"
@@ -191,13 +185,6 @@ flexbox, [Read the CSS Tricks flexbox guide](https://css-tricks.com/snippets/css
 for background, terminology, guidelines, and code snippets.
 
 <example file="" />
-
-## API
-
-- [MContainer](/api/MContainer)
-- [MRow](/api/MRow)
-- [MCol](/api/MCol)
-- [MSpacer](/api/MSpacer)
 
 ## Sub-components
 

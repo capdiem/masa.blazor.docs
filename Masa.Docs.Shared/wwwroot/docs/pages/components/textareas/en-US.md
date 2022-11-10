@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Textareas
 title: Textareas
-cols: 1
+desc: "Textarea components are used for collecting large amounts of textual data."
 related:
   - /components/forms
   - /components/selects
   - /components/text-fields
 ---
 
-# Textareas
-
-Textarea components are used for collecting large amounts of textual data.
-
 ## Usage
 
 **MTextarea** in its simplest form is a multi-line text-field, useful for larger amounts of text.
 
 <textareas-usage></textareas-usage>
-
-## API
-
-- [MTextarea](/api/MTextarea)
 
 ## Examples
 

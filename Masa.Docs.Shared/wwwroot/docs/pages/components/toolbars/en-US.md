@@ -1,30 +1,17 @@
 ---
-category: Components
-type: Toolbars
 title: Toolbars
-cols: 1
+desc: "The `MToolbar` component is pivotal to any graphical user interface (GUI), as it generally is the primary source of site navigation. The toolbar component works great in conjunction with [**MNavigationDrawer**](/components/navigation-drawers) and [**MCard**](/components/cards)."
 related:
   - /components/buttons
   - /components/footers
   - /components/tabs
 ---
 
-# Toolbars
-
-The `MToolbar` component is pivotal to any graphical user interface (GUI), as it generally is the primary source of site
-navigation. The toolbar component works great in conjunction with [**MNavigationDrawer**](/components/navigation-drawers) and [**MCard**](/components/cards).
-
 ## Usage
 
 A toolbar is a flexible container that can be used in a number of ways. By default, the toolbar is 64px high on desktop and 56px high on mobile. There are a number of helper components available to use with the toolbar. The `MToolbarTitle` is used for displaying a title and `MToolbarItems` allow `MButton` to extend full height.
 
 <toolbars-usage></toolbars-usage>
-
-## API
-
-- [MToolbar](/api/MToolbar)
-- [MToolbarItems](/api/MToolbarItems)
-- [MToolbarTitle](/api/MToolbarTitle)
 
 ## Caveats
 

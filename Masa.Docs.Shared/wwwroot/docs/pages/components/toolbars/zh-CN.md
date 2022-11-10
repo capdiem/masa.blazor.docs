@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 工具栏
-type: 工具栏
-title: Toolbars
-cols: 1
+title: Toolbars（工具栏）
+desc: "**MToolbar** 组件对于任何 GUI 都是至关重要的，因为它通常是站点导航的主要来源。 工具栏组件与 [**MNavigationDrawer**](/components/navigation-drawers) 和 [**MCard**](/components/cards) 配合使用非常有效。"
 related:
   - /components/buttons
   - /components/footers
   - /components/tabs
 ---
-
-# Toolbars（工具栏）
-
-**MToolbar** 组件对于任何 GUI 都是至关重要的，因为它通常是站点导航的主要来源。 工具栏组件与 [**MNavigationDrawer**](/components/navigation-drawers) 和 [**MCard**](/components/cards) 配合使用非常有效。
 
 ## 使用
 
@@ -21,12 +14,6 @@ related:
 <toolbars-usage></toolbars-usage>
 
 ## 解剖学
-
-## API
-
-- [MToolbar](/api/MToolbar)
-- [MToolbarItems](/api/MToolbarItems)
-- [MToolbarTitle](/api/MToolbarTitle)
 
 ## 注意
 

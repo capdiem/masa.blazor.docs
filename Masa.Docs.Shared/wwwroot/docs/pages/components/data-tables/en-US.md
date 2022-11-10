@@ -1,30 +1,17 @@
 ---
-category: Components
-type: DataTable
 title: Data tables
-cols: 1
+desc: "The MDataTable component is used for displaying tabular data. Features include sorting, searching, pagination, content-editing, and row selection."
 related:
   - /components/data-iterators
   - /components/simple-tables
   - /components/lists
 ---
 
-# Data tables
-
-The MDataTable component is used for displaying tabular data. Features include sorting, searching, pagination, content-editing, and row selection.
-
 ## Usage
 
 The standard data-table will by default render your data as simple rows.
 
 <data-iterators-usage></data-iterators-usage>
-
-## API
-
-- [MDataTable](/api/MDataTable)
-- [MDataTableHeader](/api/MDataTableHeader)
-- [MDataFooter](/api/MDataFooter)
-- [MSimpleCheckbox](/api/MSimpleCheckbox)
 
 ## Examples
 

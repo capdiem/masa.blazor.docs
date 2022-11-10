@@ -1,31 +1,17 @@
 ---
-category: Components
-subtitle: 数据表格
-type: 数据表格
-title: Data tables
-cols: 1
+title: Data tables（数据表格）
+desc: "`MDataTable` 组件用于显示表格数据。 功能包括排序，搜索，分页，内容编辑和行选择。"
 related:
   - /components/data-iterators
   - /components/simple-tables
   - /components/lists
 ---
 
-# Data tables（数据表格）
-
-`MDataTable` 组件用于显示表格数据。 功能包括排序，搜索，分页，内容编辑和行选择。
-
 ## 使用
 
 标准数据表格默认会将数据呈现为简单的行。
 
 <data-tables-usage></data-tables-usage>
-
-## API
-
-- [MDataTable](/api/MDataTable)
-- [MDataTableHeader](/api/MDataTableHeader)
-- [MDataFooter](/api/MDataFooter)
-- [MSimpleCheckbox](/api/MSimpleCheckbox)
 
 ## 示例
 

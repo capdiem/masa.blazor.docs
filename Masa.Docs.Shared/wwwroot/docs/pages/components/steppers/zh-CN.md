@@ -1,32 +1,17 @@
 ---
-category: Components
-subtitle: 步骤条
-type: 步骤条
-title: Steppers
-cols: 1
+title: Steppers（步骤条）
+desc: "**MStepper** 组件通过数字步骤显示进度。"
 related:
   - /components/tabs
   - /components/buttons
   - /components/windows
 ---
 
-# Steppers（步骤条）
-
-**MStepper** 组件通过数字步骤显示进度。
-
 ## 使用
 
 一个步骤组件适用于多种场景，包括购物车、创建记录等等。
 
 <steppers-usage></steppers-usage>
-
-## API
-
-- [MStepper](/api/MStepper)
-- [MStepperContent](/api/MStepperContent)
-- [MStepperHeader](/api/MStepperHeader)
-- [MStepperItems](/api/MStepperItems)
-- [MStepperStep](/api/MStepperStep)
 
 ## 示例
 

@@ -1,27 +1,16 @@
 ---
-category: Components
-type: DataIterators
 title: Data iterators
-cols: 1
+desc: "The MDataIterator component is used for displaying data, and shares a majority of its functionality with the MDataTable component.
+Features include sorting, searching, pagination, and selection."
 related:
   - /components/data-tables
   - /components/simple-tables
   - /components/toolbars
 ---
 
-# Data iterators
-
-The MDataIterator component is used for displaying data, and shares a majority of its functionality with the MDataTable component. 
-Features include sorting, searching, pagination, and selection.
-
 ## Uasge
 
 <data-iterators-usage></data-iterators-usage>
-
-## API
-
-- [MDataIterator](/api/MDataIterator)
-- [MDataFooter](/api/MDataFooter)
 
 ## Examples
 

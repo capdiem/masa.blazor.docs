@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Image
 title: Images
-cols: 1
+desc: "The **MImage** component is packed with features to support rich media."
 related:
   - /components/grid-system
   - /components/aspect-ratios
   - /components/parallax
 ---
 
-# Images
-
-The **MImage** component is packed with features to support rich media.
-
 ## Usage
 
 **MImage** component is used to display a responsive image with lazy-load and placeholder
 
 <images-usage></images-usage>
-
-## API
-
-- [MImage](/api/MImage)
 
 ## Caveats
 

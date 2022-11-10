@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 图像
-type: 图像
-title: Images
-cols: 1
+title: Images（图像）
+desc: "**MImage**组件包含支持丰富媒体的功能。"
 related:
   - /components/grid-system
   - /components/aspect-ratios
   - /components/parallax
 ---
 
-# Images（图像）
-
-**MImage**组件包含支持丰富媒体的功能。
-
 ## 使用
 
 **MImage** 组件用于显示具有延迟加载和占位符的响应图像。
 
 <example file="" />
-
-## API
-
-- [MImage](/api/MImage)
 
 ## 注意
 

@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Menu
 title: Menus
-cols: 1
+desc: "The **MMenu** component shows a menu at the position of the element used to activate it."
 related:
   - /components/dialogs
   - /components/tooltips
   - /stylesandanimations/transitions
 ---
 
-# Menus
-
-The **MMenu** component shows a menu at the position of the element used to activate it.
-
 ## Usage
 
 Remember to put the element that activates the menu in the **ActivatorContent**.
 
 <menus-usage></menus-usage>
-
-## API
-
-- [MMenu](/api/MMenu)
 
 ## Examples
 

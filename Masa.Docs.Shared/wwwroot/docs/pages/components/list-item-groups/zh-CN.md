@@ -1,36 +1,17 @@
 ---
-category: Components
-subtitle: 列表项目组
-type: 列表项目组
-title: List item groups
-cols: 1
+title: List Item Groups（列表项目组）
+desc: "**MListItemGroup** 提供创建一组可选择的 **MListItem** 的能力。**MListItemGroup** 组件利用其核心的 **MItemGroup** 来为交互式列表提供一个简洁的接口。"
 related:
   - /components/lists
   - /components/item-groups
   - /components/cards
 ---
 
-# List Item Groups（列表项目组）
-
-**MListItemGroup** 提供创建一组可选择的 **MListItem** 的能力。**MListItemGroup** 组件利用其核心的 **MItemGroup** 来为交互式列表提供一个简洁的接口。
-
 ## 使用
 
 最简单形式的副标题显示带有默认主题的副标题。
 
 <list-item-groups-usage></list-item-groups-usage>
-
-## API
-
-- [MListGroup](/api/MListGroup)
-- [MListItem](/api/MListItem)
-- [MListItemAction](/api/MListItemAction)
-- [MListItemActionText](/api/MListItemActionText)
-- [MListItemAvatar](/api/MListItemAvatar)
-- [MListItemContent](/api/MListItemContent)
-- [MListItemGroup](/api/MListItemGroup)
-- [MListItemSubtitle](/api/MListItemSubtitle)
-- [MListItemTitle](/api/MListItemTitle)
 
 ## 示例
 

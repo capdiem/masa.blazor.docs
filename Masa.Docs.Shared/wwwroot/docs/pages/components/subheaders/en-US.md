@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Subheader
 title: Subheaders
-cols: 1
+desc: "The `Subheader` component is used to separate sections of lists."
 related:
   - /components/cards
   - /components/grid-system
   - /components/lists
 ---
 
-# Subheaders
-
-The `Subheader` component is used to separate sections of lists.
-
 ## Usage
 
 `Subheaders` in their simplest form display a subheading with default theme.
 
 <subheaders-usage></subheaders-usage>
-
-## API
-
-- [MSubheader](/api/MSubheader)
 
 ## Examples
 

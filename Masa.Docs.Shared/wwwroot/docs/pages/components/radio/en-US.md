@@ -1,29 +1,17 @@
 ---
-category: Components
-type: Radio
 title: Radio
-cols: 1
+desc: "The **MRadio** component is a simple radio button. When combined with the **MRadioGroup** component you can provide groupable functionality to allow users to select from a predefined set of options."
 related:
   - /components/button-groups
   - /components/forms
   - /components/checkboxes
 ---
 
-# Radio
-
-The **MRadio** component is a simple radio button. When combined with the **MRadioGroup** component you can provide
-groupable functionality to allow users to select from a predefined set of options.
-
 ## Usage
 
 Although **MRadio** can be used on its own, it is best used in conjunction with **MRadioGroup** . Using the **@bind-Value** on the **MRadioGroup** you can access the value of the selected radio button inside the group.
 
 <radio-usage></radio-usage>
-
-## API
-
-- [MRadio](/api/MRadio)
-- [MRadioGroup](/api/MRadioGroup)
 
 ## Examples
 

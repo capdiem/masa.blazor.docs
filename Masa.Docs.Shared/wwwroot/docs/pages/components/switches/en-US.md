@@ -1,28 +1,17 @@
 ---
-category: Components
-type: Switch
 title: Switches
-cols: 1
+desc: The **MSwitch** component provides users the ability to choose between two distinct values. These are very similar to a toggle, or on/off switch, though aesthetically different than a checkbox.
 related:
   - /components/checkboxes
   - /components/forms
   - /components/radio
 ---
 
-# Switches
-
-The **MSwitch** component provides users the ability to choose between two distinct values. These are very similar to a
-toggle, or on/off switch, though aesthetically different than a checkbox.
-
 ## Usage
 
 A **MSwitch** in its simplest form provides a toggle between 2 values.
 
 <switches-usage></switches-usage>
-
-## API
-
-- [MSwitch](/api/MSwitch)
 
 ## Examples
 
