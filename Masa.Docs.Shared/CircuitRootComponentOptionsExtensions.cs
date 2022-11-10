@@ -77,5 +77,8 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.snackbars.usages.Usage>("snackbars-usage");
         options.RegisterCustomElement<Examples.steppers.Usage>("steppers-usage");
         options.RegisterCustomElement<Examples.subheaders.Usage>("subheaders-usage");
+        options.RegisterCustomElement<Examples.data_iterators.Usage>("data-iterators-usage");
+        options.RegisterCustomElement<Examples.data_tables.Usage>("data-tables-usage");
+        options.RegisterCustomElement<Examples.simple_tables.Usage>("simple-tables-usage");
     }
 }
