@@ -1,28 +1,17 @@
 ---
-category: Components
-type: ButtonGroup
-title: Button groups
-cols: 1
+title: Button Groups
+desc: "The **MButtonGroup** component is a simple wrapper for **MItemGroup** built specifically to work with **MButton**."
 related:
   - /components/buttons
   - /components/icons
   - /components/selection-controls
 ---
 
-# Button Groups
-
-The **MButtonGroup** component is a simple wrapper for **MItemGroup** built specifically to work with **MButton**.
-
 ## Usage
 
 Toggle buttons allow you to create a styled group of buttons that can be selected or toggled under `@bind-Value(s)`.
 
 <button-groups-usage></button-groups-usage>
-
-## API
-
-- [MButtonGroup](/api/MButtonGroup)
-- [MButton](/api/MButton)
 
 ## Examples
 

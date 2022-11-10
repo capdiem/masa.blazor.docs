@@ -1,28 +1,18 @@
 ---
-category: Components
-type: Chips
 title: Chips
-cols: 1
+desc: "The **MChip** component is used to convey small pieces of information. Using the close property, the chip becomes
+interactive, allowing user interaction. This component is used by the [MChipGroup](/components/chip-groups) for advanced selection options."
 related:
   - /components/avatars
   - /components/icons
   - /components/selects
 ---
 
-# Chips
-
-The **MChip** component is used to convey small pieces of information. Using the close property, the chip becomes
-interactive, allowing user interaction. This component is used by the [MChipGroup](/components/chip-groups) for advanced selection options.
-
 ## Usage
 
 Chips come in the following variations: closeable, filter, outlined, pill. The default slot of v-chip will also accept avatars and icons alongside text.
 
 <chips-usage></chips-usage>
-
-## API
-
-- [MChip](/api/MChip)
 
 ## Examples
 

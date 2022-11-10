@@ -1,22 +1,11 @@
 ---
-category: Components
-subtitle: 边框
-type: 边框
-title: Borders
-cols: 1
+title: Borders (边框)
+desc: "边框组件可以给任何内容添加一个额外的边框。"
 related:
   - /components/cards
   - /components/lists
   - /components/radio
 ---
-
-# Borders (边框)
-
-边框组件可以给任何内容添加一个额外的边框。
-
-## API
-
-- [MBorder](/api/MBorder)
 
 ## 示例
 

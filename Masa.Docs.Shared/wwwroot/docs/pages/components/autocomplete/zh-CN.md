@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 自动补全
-type: 自动补全
-title: Autocompletes
-cols: 1
+title: Autocompletes（自动补全）
+desc: "`MAutocomplete` 组件提供简单且灵活的自动补全功能 且支持查找大规模数据甚至是从API请求的动态数据"
 related:
   - /components/combobox
   - /components/forms
   - /components/selects
 ---
-
-# Autocompletes（自动补全）
-
-`MAutocomplete` 组件提供简单且灵活的自动补全功能 且支持查找大规模数据甚至是从API请求的动态数据
 
 ## 使用
 

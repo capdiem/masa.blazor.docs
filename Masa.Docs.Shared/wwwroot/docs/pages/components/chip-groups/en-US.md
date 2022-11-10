@@ -1,29 +1,18 @@
 ---
-category: Components
-type: ChipGroup
-title: Chip groups
-cols: 1
+title: Chip Groups
+desc: "The **MChipGroup** supercharges the **MChip** component by providing groupable functionality. It is used for creating groups
+of selections using chips."
 related:
   - /components/chips
   - /components/slide-groups
   - /components/item-groups
 ---
 
-# Chip Groups
-
-The **MChipGroup** supercharges the **MChip** component by providing groupable functionality. It is used for creating groups
-of selections using chips.
-
 ## Usage
 
 Chip groups make it easy for users to select filtering options for more complex implementations. By default MChipGroup will overflow to the right but can be changed to a column only mode.
 
 <chip-groups-usage></chip-groups-usage>
-
-## API
-
-- [MChipGroup](/api/MChipGroup)
-- [MChip](/api/MChip)
 
 ## Examples
 

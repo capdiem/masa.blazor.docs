@@ -1,24 +1,14 @@
 ---
-category: Components
-type: DragZone
-title: DragZone
-cols: 1
+title: DragZone（拖放）
+desc: "The `MDragZone` component is based on [Sorttable.js](https://github.com/SortableJS/Sortable) to implement drag and drop functionality"
 tag: js-proxy
 ---
-
-# DragZone（拖放）
-
-The `MDragZone` component is based on [Sorttable.js](https://github.com/SortableJS/Sortable) to implement drag and drop functionality
 
 ## Usage
 
 Drag and drop components and dom objects.
 
 <drag-zone-usage></drag-zone-usage>
-
-## API
-
-- [MDragZone](/api/MDragZone)
 
 <!--alert:info-->
 You need to reference the package of Sorttable.js before using it ：

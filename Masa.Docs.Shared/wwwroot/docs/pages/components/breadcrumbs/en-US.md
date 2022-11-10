@@ -1,28 +1,17 @@
 ---
-category: Components
-type: Breadcrumbs
 title: Breadcrumbs
-cols: 1
+desc: "Breadcrumbs component is suitable for page-level navigation."
 related:
   - /components/buttons
   - /components/navigation-drawers
   - /components/icons
 ---
 
-# Breadcrumbs
-
-Breadcrumbs component is suitable for page-level navigation.
-
 ## Usage
 
 By default, breadcrumbs use a text divider. This can be any string.
 
 <breadcrumbs-usage></breadcrumbs-usage>
-
-## API
-
-- [MBreadcrumbs](/api/MBreadcrumbs)
-- [MBreadcrumbsItem](/api/MBreadcrumbsItem)
 
 ## Caveats
 

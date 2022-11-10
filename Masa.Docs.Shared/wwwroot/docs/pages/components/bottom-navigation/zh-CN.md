@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 底部导航栏
-type: 底部导航栏
-title: Bottom navigation
-cols: 1
+title: Bottom navigation (底部导航栏)
+desc: "`MBottomNavigation` 组件是侧边栏的替代品。 它主要用于移动应用程序，并且有三个变体：**icons**，**text** 和 **shift**。"
 related:
   - /components/buttons
   - /components/icons
   - /components/tabs
 ---
 
-# Bottom navigation (底部导航栏)
-
-`MBottomNavigation` 组件是侧边栏的替代品。 它主要用于移动应用程序，并且有三个变体：**icons**，**text** 和 **shift**。
-
 ## 使用
 
 虽然 **MBottomNavigation** 导航旨在与路由一起使用，但您也可以通过使用**Value**属性以编程方式控制按钮的活动状态。使用 **MBottomNavigation** 为按钮指定其*索引*的缺省值。
 
 <bottom-navigation-usage></bottom-navigation-usage>
-
-## API
-
-- [MBottomNavigation](/api/MBottomNavigation)
 
 ## 示例
 

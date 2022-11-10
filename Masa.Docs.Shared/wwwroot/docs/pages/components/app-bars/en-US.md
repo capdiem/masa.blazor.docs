@@ -1,17 +1,11 @@
 ---
-category: Components
-type: AppBars
 title: App bars
-cols: 1
+desc: "appbar component is pivotal to any graphical user interface (GUI), as it generally is the primary source of site navigation."
 related:
   - /components/buttons
   - /components/icons
   - /components/toolbars
 ---
-
-# App bars
-
-appbar component is pivotal to any graphical user interface (GUI), as it generally is the primary source of site navigation.
 
 ## Usage
 

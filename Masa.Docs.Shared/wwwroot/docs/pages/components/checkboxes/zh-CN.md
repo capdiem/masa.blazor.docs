@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 复选框
-type: 复选框
-title: Checkboxes
-cols: 1
+title: Checkboxes（复选框）
+desc: "**MCheckbox** 组件使用户能够在两个不同的值之间进行选择。它们非常类似于开关，可以用在复杂的表单和检查表中。"
 related:
   - /components/switches
   - /components/forms
   - /components/text-fields
 ---
 
-# Checkboxes（复选框）
-
-**MCheckbox** 组件使用户能够在两个不同的值之间进行选择。它们非常类似于开关，可以用在复杂的表单和检查表中。
-
 ## 使用
 
 最简单形式的 `Checkbox` 提供了两个值之间的切换。
 
 <checkboxes-usage></checkboxes-usage>
-
-## API
-
-- [MCheckbox](/api/MCheckbox)
-- [MSimpleCheckbox](/api/MSimpleCheckbox)
 
 ## 示例
 

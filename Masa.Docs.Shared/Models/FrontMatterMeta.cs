@@ -7,7 +7,7 @@ public class FrontMatterMeta
     [YamlMember(Alias = "title")]
     public string Title { get; set; }
 
-    [YamlMember(Alias = "description")]
+    [YamlMember(Alias = "desc")]
     public string Description { get; set; }
 
     [YamlMember(Alias = "tag")]

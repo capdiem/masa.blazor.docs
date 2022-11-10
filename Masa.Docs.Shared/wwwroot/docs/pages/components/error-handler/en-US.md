@@ -1,13 +1,7 @@
 ---
-category: Components
-type: ErrorHandler
 title: Error handler
-cols: 1
+desc: "The `MErrorHandler` component is used to handle exception information when the `blazor` component data is loaded and rendered."
 ---
-
-# Error handler
-
-The `MErrorHandler` component is used to handle exception information when the `blazor` component data is loaded and rendered.
 
 ## Usage
 
@@ -19,10 +13,6 @@ The `MErrorHandler` component is used to handle exception information when the `
 You can also configure other options to display exception stack or customize exception handling.
 
 <error-handler-usage></error-handler-usage>
-
-## API
-
-- [MErrorHandler](/api/MErrorHandler)
 
 ## Examples
 

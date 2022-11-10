@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Dividers
 title: Dividers
-cols: 1
+desc: "The MDivider component is used to separate sections of lists or layouts."
 related:
   - /components/lists
   - /components/navigation-drawers
   - /components/toolbars
 ---
 
-# Dividers
-
-The MDivider component is used to separate sections of lists or layouts.
-
 ## Usage
 
 Dividers in their simplest form display a horizontal line.
 
 <dividers-usage></dividers-usage>
-
-## API
-
-- [MDivider](/api/MDivider)
 
 ## Examples
 

@@ -1,15 +1,8 @@
 ---
-category: Components
-subtitle: 富文本编辑器
-type: 富文本编辑器
-title: Editor
-cols: 1
+title: Editor（富文本编辑器）
+desc: "基于[Quill](https://quilljs.com/)封装的富文本编辑器"
 tag: js-proxy
 ---
-
-# Editor（富文本编辑器）
-
-基于[Quill](https://quilljs.com/)封装的富文本编辑器
 
 ## 使用
 
@@ -33,10 +26,6 @@ tag: js-proxy
 <script src="https://cdn.masastack.com/npm/quill/1.3.6/quilljs-markdown.js"></script>
 <script src="https://cdn.masastack.com/npm/quill/1.3.6/quill-emoji.js"></script>
 ```
-
-## API
-
-- [MEditor](/api/MEditor)
 
 ## 示例
 

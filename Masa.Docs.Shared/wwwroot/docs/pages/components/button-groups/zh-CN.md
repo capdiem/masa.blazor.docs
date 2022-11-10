@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 按钮组
-type: 按钮组
-title: Button groups
-cols: 1
+title: Button Groups（按钮组）
+desc: "**MButtonGroup** 组件是专门针对 **MButton** 构建的 **MItemGroup** 的简单包装器。"
 related:
   - /components/buttons
   - /components/icons
   - /components/selection-controls
 ---
 
-# Button Groups（按钮组）
-
-**MButtonGroup** 组件是专门针对 **MButton** 构建的 **MItemGroup** 的简单包装器。
-
 ## 使用
 
 切换按钮允许您创建一个样式化的按钮组，可以使用 `@bind-Value(s)` 下选择或切换。
 
 <button-groups-usage></button-groups-usage>
-
-## API
-
-- [MButtonGroup](/api/MButtonGroup)
-- [MButton](/api/MButton)
 
 ## 示例
 

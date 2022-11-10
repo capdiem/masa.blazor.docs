@@ -1,25 +1,14 @@
 ---
-category: Components
-subtitle: 图表
-type: 图表
-title: ECharts
-cols: 1
+title: ECharts（图表）
+desc: "[ECharts](https://echarts.apache.org/examples/zh/index.html)"
 tag: js-proxy
 ---
-
-# ECharts（图表）
-
-[ECharts](https://echarts.apache.org/examples/zh/index.html)
 
 ## 使用
 
 图表使用
 
 <echarts-usage></echarts-usage>
-
-## API
-
-- [MECharts](/api/MECharts)
 
 <!--alert:info-->
 使用前需要先引用ECharts的包：

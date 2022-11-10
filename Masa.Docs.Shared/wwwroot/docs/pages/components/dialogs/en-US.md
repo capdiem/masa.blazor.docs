@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Dialogs
 title: Dialogs
-cols: 1
+desc: "The **Dialog** component inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive."
 related:
   - /components/buttons
   - /components/cards
   - /components/menus
 ---
 
-# Dialogs
-
-The **Dialog** component inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.
-
 ## Usage
 
 A dialog contains two slots, one for its activator and one for its content (default). Good for Privacy Policies.
 
 <dialogs-usage></dialogs-usage>
-
-## API
-
-- [MDialog](/api/MDialog)
 
 ## Examples
 

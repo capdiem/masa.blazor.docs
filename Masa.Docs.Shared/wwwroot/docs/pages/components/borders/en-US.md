@@ -1,21 +1,11 @@
 ---
-category: Components
-type: Border
 title: Borders
-cols: 1
+desc: "The Border component can add an extra border to anything."
 related:
   - /components/cards
   - /components/lists
   - /components/radio
 ---
-
-# Borders
-
-The Border component can add an extra border to anything.
-
-## API
-
-- [MBorder](/api/MBorder)
 
 ## Examples
 

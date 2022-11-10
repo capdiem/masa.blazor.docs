@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 对话框
-type: 对话框
-title: Dialogs
-cols: 1
+title: Dialogs（对话框）
+desc: "**Dialog** 组件通知用户有关特定任务，且可能包含关键信息、需要决策或涉及多个任务。减少使用对话框的频率，因为它们具有干扰性。"
 related:
   - /components/buttons
   - /components/cards
   - /components/menus
 ---
 
-# Dialogs（对话框）
-
-**Dialog** 组件通知用户有关特定任务，且可能包含关键信息、需要决策或涉及多个任务。减少使用对话框的频率，因为它们具有干扰性。
-
-
 ## 使用
 
 对话框包含两个插槽，一个用于它的激活器，另一个用于它的内容（默认）。 有利于隐私政策。
 
 <dialogs-usage></dialogs-usage>
-
-## API
-
-- [MDialog](/api/MDialog)
 
 ## 示例
 

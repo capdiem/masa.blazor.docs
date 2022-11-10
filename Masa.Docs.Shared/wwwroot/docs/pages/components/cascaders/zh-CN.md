@@ -1,28 +1,16 @@
 ---
-category: Components
-subtitle: 级联菜单
-type: 级联菜单
-title: Cascaders
-cols: 1
+title: Cascaders（级联菜单）
 related:
 - /components/treeview
 - /components/forms
 - /components/selects
 ---
 
-# Cascaders（级联菜单）
-
-级联选择器
-
 ## 使用
 
 级联选择器用于选择省市区
 
 <cascaders-usage></cascaders-usage>
-
-## API
-
-- [MCascader](/api/MCascader)
 
 ## 示例
 

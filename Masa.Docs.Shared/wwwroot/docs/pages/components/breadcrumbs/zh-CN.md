@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 面包屑导航
-type: 面包屑导航
-title: Breadcrumbs
-cols: 1
+title: Breadcrumbs（面包屑导航）
+desc: "Breadcrumbs 组件适用于页面层级导航"
 related:
   - /components/buttons
   - /components/navigation-drawers
   - /components/icons
 ---
 
-# Breadcrumbs（面包屑导航）
-
-Breadcrumbs 组件适用于页面层级导航
-
 ## 使用
 
 默认情况下，面包屑导航使用文本分隔符。 也可以是任何字符串。
 
 <breadcrumbs-usage></breadcrumbs-usage>
-
-## API
-
-- [MBreadcrumbs](/api/MBreadcrumbs)
-- [MBreadcrumbsItem](/api/MBreadcrumbsItem)
 
 ## 注意
 

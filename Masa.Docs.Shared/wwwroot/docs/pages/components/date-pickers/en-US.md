@@ -1,17 +1,11 @@
 ---
-category: Components
-type: DatePickers
 title: Date pickers
-cols: 1
+desc: "**MDatePicker** is a fully featured date selection component that lets users select a date, or range of dates."
 related:
   - /components/buttons
   - /components/text-fields
   - /components/time-pickers
 ---
-
-# Date pickers
-
-**MDatePicker** is a fully featured date selection component that lets users select a date, or range of dates.
 
 ## Usage
 
@@ -20,10 +14,6 @@ By default they are emitting input event when the day (for date picker) or month
 but with `Reactive` prop they can update the model even after clicking year/month.
 
 <date-pickers-usage></date-pickers-usage>
-
-## API
-
-- [MDatePicker](/api/MDatePicker)
 
 ## Caveats
 

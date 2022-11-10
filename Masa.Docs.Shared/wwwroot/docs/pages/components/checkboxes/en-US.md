@@ -1,28 +1,17 @@
 ---
-category: Components
-type: Checkboxes
 title: Checkboxes
-cols: 1
+desc: "The **MCheckbox** component provides users the ability to choose between two distinct values. These are very similar to a switch and can be used in complex forms and checklists."
 related:
   - /components/switches
   - /components/forms
   - /components/text-fields
 ---
 
-# Checkboxes
-
-The **MCheckbox** component provides users the ability to choose between two distinct values. These are very similar to a switch and can be used in complex forms and checklists.
-
 ## Usage
 
 A `Checkbox` in its simplest form provides a toggle between 2 values.
 
 <checkboxes-usage></checkboxes-usage>
-
-## API
-
-- [MCheckbox](/api/MCheckbox)
-- [MSimpleCheckbox](/api/MSimpleCheckbox)
 
 ## Examples
 

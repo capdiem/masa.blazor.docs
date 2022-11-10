@@ -1,29 +1,17 @@
 ---
-category: Components
-subtitle: 纸片组
-type: 纸片组
-title: Chip groups
-cols: 1
+title: Chip Groups（纸片组）
+desc: "**MChipGroup** 通过提供可分组的功能来增强 **MChip** 组件。 它使用纸片来创建选择组。"
 related:
   - /components/chips
   - /components/slide-groups
   - /components/item-groups
 ---
 
-# Chip Groups（纸片组）
-
-**MChipGroup** 通过提供可分组的功能来增强 **MChip** 组件。 它使用纸片来创建选择组。
-
 ## 使用
 
 纸片组使得用户可以很容易地为更复杂的实现选择过滤选项。 默认情况下 **MChipGroup** 会溢出到右边, 但可以更改为只允许 `Column` 的模式。
 
 <chip-groups-usage></chip-groups-usage>
-
-## API
-
-- [MChipGroup](/api/MChipGroup)
-- [MChip](/api/MChip)
 
 ## 示例
 

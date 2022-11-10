@@ -1,24 +1,14 @@
 ---
-category: Components
-type: ECharts
 title: ECharts
-cols: 1
+desc: "[ECharts](https://echarts.apache.org/examples/en/index.html)"
 tag: js-proxy
 ---
-
-# ECharts
-
-[ECharts](https://echarts.apache.org/examples/en/index.html)
 
 ## Usage
 
 Examples
 
 <echarts-usage></echarts-usage>
-
-## API
-
-- [MECharts](/api/MECharts)
 
 <!--alert:info-->
 You need to reference the package of ECharts before using it:

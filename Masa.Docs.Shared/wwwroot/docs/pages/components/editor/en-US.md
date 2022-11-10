@@ -1,14 +1,8 @@
 ---
-category: Components
-type: Editor
 title: Editor
-cols: 1
+desc: "Rich text editor based on [Quill](https://quilljs.com/) encapsulation"
 tag: js-proxy
 ---
-
-# Editor
-
-Rich text editor based on [Quill](https://quilljs.com/) encapsulation
 
 ## Usage
 
@@ -32,10 +26,6 @@ Examples
 <script src="https://cdn.masastack.com/npm/quill/1.3.6/quilljs-markdown.js"></script>
 <script src="https://cdn.masastack.com/npm/quill/1.3.6/quill-emoji.js"></script>
 ```
-
-## API
-
-- [MEditor](/api/MEditor)
 
 ## Examples
 

@@ -1,17 +1,11 @@
 ---
-category: Components
-type: Banners
 title: Banners
-cols: 1
+desc: "The component is used to send intermittent messages of 1-2 actions to the user. It has two variables, single-line and multi-line (implied). These icons can be used with your messages and actions."
 related:
   - /components/alerts
   - /components/icons
   - /components/snackbars
 ---
-
-# Banners
-
-The component is used to send intermittent messages of 1-2 actions to the user. It has two variables, single-line and multi-line (implied). These icons can be used with your messages and actions.
 
 ## Usage
 
@@ -20,11 +14,6 @@ Banners can have 1-2 lines of text, actions and icon.
 <banners-usage></banners-usage>
 
 ## Anatomy
-
-## API
-
-- [MBanner](/api/MBanner)
-
 
 ## Examples
 

@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 底部工作表
-type: 底部工作表
-title: Bottom sheets
-cols: 1
+title: Bottom sheets（底部工作表）
+desc: "底部表单是一个经过修改的 `MDialog` , 从屏幕的底部滑出，类似于 `MBottomNavigation`。 底部导航组件用于按钮和特定的应用程序级操作，而底部工作表可以包含任何内容。"
 related:
   - /components/dialogs
   - /components/lists
   - /components/menus
 ---
 
-# Bottom sheets（底部工作表）
-
-底部表单是一个经过修改的 `MDialog` , 从屏幕的底部滑出，类似于 `MBottomNavigation`。 底部导航组件用于按钮和特定的应用程序级操作，而底部工作表可以包含任何内容。
-
 ## 使用
 
 在这里，我们将显示一个示例操作列表，它可能出现在应用程序中。
 
 <usage name="">
-
-## API
-
-- [MBottomSheet](/api/MBottomSheet)
 
 ## 示例
 

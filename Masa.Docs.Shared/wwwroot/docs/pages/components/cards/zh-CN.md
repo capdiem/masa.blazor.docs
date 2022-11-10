@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 卡片
-type: 卡片
-title: Cards
-cols: 1
+title: Cards（卡片）
+desc: "**MCard** 组件是一个可用于从面板到静态图像的多功能组件。 **MCard** 组件有许多帮助程序组件来尽可能简单地进行标记。 没有列出选项的组件使用Blazor的功能组件来更快渲染并充当标记糖以使建筑变得更加容易。"
 related:
   - /components/buttons
   - /components/images
   - /stylesandanimations/text-and-typography
 ---
-
-# Cards（卡片）
-
-**MCard** 组件是一个可用于从面板到静态图像的多功能组件。 **MCard** 组件有许多帮助程序组件来尽可能简单地进行标记。 没有列出选项的组件使用Blazor的功能组件来更快渲染并充当标记糖以使建筑变得更加容易。
 
 ## 使用
 
@@ -21,14 +14,6 @@ related:
 <cards-usage></cards-usage>
 
 ## 解剖学
-
-## API
-
-- [MCard](/api/MCard)
-- [MCardActions](/api/MCardActions)
-- [MCardSubtitle](/api/MCardSubtitle)
-- [MCardText](/api/MCardText)
-- [MCardTitle](/api/MCardTitle)
 
 ## 功能组件
 

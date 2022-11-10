@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 纸片
-type: 纸片
-title: Chips
-cols: 1
+title: Chips（纸片）
+desc: "**MChip** 组件用于传送小信息。 使用 `Close` 属性，纸片将变为交互式，允许用户进行交互。 此组件由 [MChipGroup](/components/chip-groups) 用于高级选择选项。"
 related:
   - /components/avatars
   - /components/icons
   - /components/selects
 ---
 
-# Chips（纸片）
-
-**MChip** 组件用于传送小信息。 使用 `Close` 属性，纸片将变为交互式，允许用户进行交互。 此组件由 [MChipGroup](/components/chip-groups) 用于高级选择选项。
-
 ## 使用
 
 纸片有以下几种变化：封闭式、过滤式、轮廓式、药丸式。 **MChip** 的默认插槽也接受文本旁边的头像和图标。
 
 <chips-usage></chips-usage>
-
-## API
-
-- [MChip](/api/MChip)
 
 ## 示例
 

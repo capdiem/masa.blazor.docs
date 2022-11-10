@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 日期选择器
-type: 日期选择器
-title: Date pickers
-cols: 1
+title: Date pickers（日期选择器）
+desc: "**MDatePicker** 是一个功能齐全的日期选择组件, 它让用户选择一个日期或日期范围。"
 related:
   - /components/buttons
   - /components/text-fields
   - /components/time-pickers
 ---
 
-# Date pickers（日期选择器）
-
-**MDatePicker** 是一个功能齐全的日期选择组件, 它让用户选择一个日期或日期范围。
-
 ## 使用
 
 日期选择器有两种方向变化，纵向（默认）和横向。 默认情况下，当日期（用于日期选择器）或月份（用于月份选择器）选中时它们将发出`input`事件，但使用`Reactive`，它们甚至可以在单击年/月之后更新模型。
 
 <date-pickers-usage></date-pickers-usage>
-
-## API
-
-- [MDatePicker](/api/MDatePicker)
 
 ## 注意
 

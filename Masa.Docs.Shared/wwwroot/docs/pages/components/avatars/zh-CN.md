@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 头像
-type: 头像
-title: Avatars
-cols: 1
+title: Avatars（头像）
+desc: "**MAvatar** 组件通常用于显示用户个人资料图片。 此组件允许您动态添加设置响应图像、图标和文字的边框半径。 `Tile` 变量可用来显示无边框半径的头像。"
 related:
   - /components/badges
   - /components/icons
   - /components/lists
 ---
-
-# Avatars（头像）
-
-**MAvatar** 组件通常用于显示用户个人资料图片。 此组件允许您动态添加设置响应图像、图标和文字的边框半径。 `Tile` 变量可用来显示无边框半径的头像。
 
 ## 使用
 

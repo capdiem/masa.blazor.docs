@@ -1,14 +1,8 @@
 ---
-category: Components
-subtitle: 异常处理
-type: 异常处理
-title: Error handler
+title: Error handler（异常处理）
+desc: "`MErrorHandler`组件用来处理`blazor`组件数据加载和render时的异常信息。"
 cols: 1
 ---
-
-# Error handler（异常处理）
-
-`MErrorHandler`组件用来处理`blazor`组件数据加载和render时的异常信息。
 
 ## 使用
 
@@ -19,10 +13,6 @@ cols: 1
 3. MASA Blazor组件非生命周期方法产生的异常，都可以处理，默认展示`Exception.Message`，也可以配置其它选项显示异常堆栈或自定义处理异常
 
 <error-handler-usage></error-handler-usage>
-
-## API
-
-- [MErrorHandler](/api/MErrorHandler)
 
 ## 示例
 

@@ -1,18 +1,11 @@
 ---
-category: Components
-subtitle: 按钮
-type: 按钮
-title: Buttons
-cols: 1
+title: Buttons（按钮）
+desc: "**MButton**（按钮）组件采 Material Design 设计主题风格，并增加众多的配置选项替换了标准的 html 按钮。 任何颜色助手类都可以用来改变背景或文字颜色。"
 related:
   - /components/button-groups
   - /components/icons
   - /components/floating-action-buttons
 ---
-
-# Buttons（按钮）
-
-**MButton**（按钮）组件采 Material Design 设计主题风格，并增加众多的配置选项替换了标准的 html 按钮。 任何颜色助手类都可以用来改变背景或文字颜色。
 
 ## 使用
 
@@ -21,11 +14,6 @@ related:
 <buttons-usage></buttons-usage>
 
 ## Anatomy
-
-## API
-
-- [MButton](/api/MButton)
-- [MButtonGroup](/api/MButtonGroup)
 
 ## 注意
 

@@ -1,27 +1,17 @@
 ---
-category: Components
-type: BottomNavigation
 title: Bottom navigation
-cols: 1
+desc: "The **MBottomNavigation** component is an alternative to the sidebar. It is primarily used for mobile applications and comes in three variants,  `icons` and `text`, and `shift`."
 related:
   - /components/buttons
   - /components/icons
   - /components/tabs
 ---
- 
-# Bottom navigation
-
-The **MBottomNavigation** component is an alternative to the sidebar. It is primarily used for mobile applications and comes in three variants,  `icons` and `text`, and `shift`.
 
 ## Usage
 
 While **MBottomNavigation** is meant to be used with router, you can also programmatically control the active state of the buttons by using the value property. A button is given a default value of its *index* with **MBottomNavigation**.
 
 <bottom-navigation-usage></bottom-navigation-usage>
-
-## API
-
-- [MBottomNavigation](/api/MBottomNavigation)
 
 ## Examples
 

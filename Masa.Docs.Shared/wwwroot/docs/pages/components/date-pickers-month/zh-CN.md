@@ -1,28 +1,17 @@
 ---
-category: Components
-subtitle: 月份选择器
-type: 月份选择器
-title: Date pickers month
-cols: 1
+title: Date pickers month（月份选择器）
+desc: "**MDatePicker**  可以用作一个独立的月份选择器组件。"
 related:
   - /components/date-pickers
   - /components/menus
   - /components/time-pickers
 ---
 
-# Date pickers month（月份选择器）
-
-**MDatePicker**  可以用作一个独立的月份选择器组件。
-
 ## 使用
 
 月份选择器有两种方向变化：纵向 (默认) 和横向。
 
 <date-pickers-month-usage></date-pickers-month-usage>
-
-## API
-
-- [MDatePicker](/api/MDatePicker)
 
 ## 注意
 

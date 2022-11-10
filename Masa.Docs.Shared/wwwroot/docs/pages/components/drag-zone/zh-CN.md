@@ -1,25 +1,14 @@
 ---
-category: Components
-subtitle: 拖放
-type: 拖放
-title: DragZone
-cols: 1
+title: DragZone（拖放）
+desc: "**MDragZone** 组件基于[Sorttable.js](https://github.com/SortableJS/Sortable)实现的可拖放功能"
 tag: js-proxy
 ---
-
-# DragZone（拖放）
-
-**MDragZone** 组件基于[Sorttable.js](https://github.com/SortableJS/Sortable)实现的可拖放功能
 
 ## 使用
 
 拖拽组件和dom对象。
 
 <drag-zone-usage></drag-zone-usage>
-
-## API
-
-- [MDragZone](/api/MDragZone)
 
 <!--alert:info-->
 使用前需要引入 `Sorttable.js`：

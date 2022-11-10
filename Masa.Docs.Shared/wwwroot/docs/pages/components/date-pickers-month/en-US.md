@@ -1,27 +1,17 @@
 ---
-category: Components
-type: DatePickersMonth
 title: Date pickers month
-cols: 1
+desc: "**MDatePicker** can be used as a standalone month picker component."
 related:
   - /components/date-pickers
   - /components/menus
   - /components/time-pickers
 ---
 
-# Date pickers month
-
-**MDatePicker** can be used as a standalone month picker component.
-
 ## Usage
 
 Month pickers come in two orientation variations, portrait (default) and landscape.
 
 <date-pickers-month-usage></date-pickers-month-usage>
-
-## API
-
-- [MDatePicker](/api/MDatePicker)
 
 ## Caveats
 

@@ -1,27 +1,17 @@
 ---
-category: Components
-type: Cascaders
 title: Cascaders
-cols: 1
+desc: "The **MCascader** component is used for multiple select link."
 related:
 - /components/treeview
 - /components/forms
 - /components/selects
 ---
 
-# Cascaders
-
-The **MCascader** component is used for multiple select link.
-
 ## Usage
 
 The cascade selector is used to select provinces and municipalities
 
 <cascaders-usage></cascaders-usage>
-
-## API
-
-- [MCascader](/api/MCascader)
 
 ## Examples
 
