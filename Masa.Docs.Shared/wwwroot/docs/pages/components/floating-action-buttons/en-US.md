@@ -12,7 +12,7 @@ related:
 
 Floating action buttons can be attached to material to signify a promoted action in your application. The default size will be used in most cases, whereas the `Small` variant can be used to maintain continuity with similar sized elements.
 
-<floating-action-button-usage></floating-action-button-usage>
+<floating-action-buttons-usage></floating-action-buttons-usage>
 
 ## Examples
 

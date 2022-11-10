@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.editor
+namespace Masa.Docs.Shared.Examples.Editor
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

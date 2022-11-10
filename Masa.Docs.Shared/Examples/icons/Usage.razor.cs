@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.icons
+namespace Masa.Docs.Shared.Examples.Icons
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

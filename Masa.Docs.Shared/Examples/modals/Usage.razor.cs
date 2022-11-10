@@ -1,7 +1,7 @@
 ﻿using Masa.Blazor.Presets;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.modals;
+namespace Masa.Docs.Shared.Examples.Modals;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

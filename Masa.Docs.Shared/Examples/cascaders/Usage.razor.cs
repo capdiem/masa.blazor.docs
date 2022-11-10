@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.cascaders
+namespace Masa.Docs.Shared.Examples.Cascaders
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

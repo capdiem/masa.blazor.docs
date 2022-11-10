@@ -1,4 +1,4 @@
-﻿namespace Masa.Docs.Shared.Examples.chips;
+﻿namespace Masa.Docs.Shared.Examples.Chips;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

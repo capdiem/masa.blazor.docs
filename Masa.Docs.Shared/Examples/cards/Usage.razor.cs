@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.cards;
+namespace Masa.Docs.Shared.Examples.Cards;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

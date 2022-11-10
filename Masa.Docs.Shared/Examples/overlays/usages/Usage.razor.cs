@@ -1,5 +1,5 @@
 ﻿
-namespace Masa.Docs.Shared.Examples.overlays.usages;
+namespace Masa.Docs.Shared.Examples.Overlays.Usages;
 
 public class Usage : Components.Usage
 {

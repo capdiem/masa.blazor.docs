@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.menus;
+namespace Masa.Docs.Shared.Examples.Menus;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

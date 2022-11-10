@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.dividers
+namespace Masa.Docs.Shared.Examples.Dividers
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

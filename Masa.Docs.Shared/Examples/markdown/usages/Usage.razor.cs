@@ -1,10 +1,9 @@
-﻿using Masa.Docs.Shared.Examples.editor;
-
-namespace Masa.Docs.Shared.Examples.markdown.usages;
+﻿
+namespace Masa.Docs.Shared.Examples.Markdown.usages;
 
 public class Usage : Components.Usage
 {
-    public Usage() : base(typeof(Markdown))
+    public Usage() : base(typeof(BMarkdown))
     {
     }
 }

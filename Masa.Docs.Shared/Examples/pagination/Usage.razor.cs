@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.pagination;
+namespace Masa.Docs.Shared.Examples.Pagination;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

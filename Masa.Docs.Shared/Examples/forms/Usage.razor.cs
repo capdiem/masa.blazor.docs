@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.forms
+namespace Masa.Docs.Shared.Examples.Forms
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {
