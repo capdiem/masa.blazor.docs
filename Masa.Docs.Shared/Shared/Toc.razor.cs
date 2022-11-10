@@ -12,6 +12,7 @@ public partial class Toc : NextTickComponentBase
     [Inject] private AppService AppService { get; set; } = null!;
     [Inject] private IJSRuntime JsRuntime { get; set; } = null!;
     [Inject] private NavigationManager NavigationManager { get; set; } = null!;
+    [Inject] private I18n I18n { get; set; } = null!;
 
     private string? _activeHash;
     private List<MarkdownItTocContent> _toc = new();

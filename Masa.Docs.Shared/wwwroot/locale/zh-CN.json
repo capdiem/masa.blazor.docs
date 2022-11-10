@@ -7,7 +7,18 @@
   "installation": "安装",
   "ui-components": "UI组件",
   "alerts": "Alerts（提示框）",
-  
+
+  "props": "属性",
+  "contents": "插槽",
+  "events": "事件",
+  "tag":{
+    "preset": "预置",
+    "service": "服务",
+    "new": "新增",
+    "updated": "更新",
+    "js-proxy": "JS代理"
+  },
+
   "Home": "首页",
   "Docs": "文档",
   "Blog": "博客",
@@ -71,15 +82,5 @@
   "The Email field is not a valid e-mail address.": "电子邮件字段不是有效的电子邮件地址。",
   "ComponentPages": "组件页面",
   "NextPage": "下一页",
-  "PreviousPage": "上一页",
-  "props": "属性",
-  "contents": "插槽",
-  "events": "事件",
-  "tag":{
-    "preset": "预置",
-    "service": "服务",
-    "new": "新增",
-    "updated": "更新",
-    "js-proxy": "JS代理"
-  }
+  "PreviousPage": "上一页"
 }

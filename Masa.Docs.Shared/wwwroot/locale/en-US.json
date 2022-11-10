@@ -7,6 +7,17 @@
   "ui-components": "UI components",
   "alerts": "Alerts",
 
+  "props": "Props",
+  "contents": "Contents",
+  "events": "Events",
+  "tag": {
+    "preset": "preset",
+    "service": "service",
+    "new": "new",
+    "updated": "updated",
+    "js-proxy": "JS proxy"
+  },
+
   "Home": "Home",
   "Docs": "Docs",
   "Blog": "Blog",
@@ -63,14 +74,4 @@
   "ComponentPages": "Component Pages",
   "NextPage": "Next Page",
   "PreviousPage": "Previous Page",
-  "props": "Props",
-  "contents": "Contents",
-  "events": "Events",
-  "tag": {
-    "preset": "preset",
-    "service": "service",
-    "new": "new",
-    "updated": "updated",
-    "js-proxy": "JS proxy"
-  }
 }

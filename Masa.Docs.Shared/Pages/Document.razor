@@ -5,12 +5,7 @@
             Tag="section">
     <MResponsive MaxWidth="960"
                  Class="mx-auto overflow-visible">
-        <MMarkdownIt Source="@_md"
-                     OnTocParsed="@OnTocParsed"
-                     Html
-                     Linkify
-                     Typographer
-                     HeaderSections
-                     Key="document" />
+        <DocumentMarkdownIt Source="@_md"
+                            OnTocParsed="@OnTocParsed" />
     </MResponsive>
 </MContainer>

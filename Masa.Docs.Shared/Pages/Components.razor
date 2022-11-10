@@ -34,14 +34,9 @@
                     <Apis Data="@_apiData"></Apis>
                 </ShowTransitionElement>
                 <ShowTransitionElement Tag="div" Value="@(!IsApiTab)">
-                    <MMarkdownIt Source="@_md"
-                                 OnFrontMatterParsed="@OnFrontMatterParsed"
-                                 OnTocParsed="@OnTocParsed"
-                                 Html
-                                 Linkify
-                                 Typographer
-                                 HeaderSections
-                                 Key="document" />
+                    <DocumentMarkdownIt Source="@_md"
+                                        OnTocParsed="@OnTocParsed"
+                                        OnFrontMatterParsed="@OnFrontMatterParsed" />
 
                     @if (_frontMatterMeta is not null)
                     {
