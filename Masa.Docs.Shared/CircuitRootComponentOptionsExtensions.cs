@@ -80,5 +80,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.DataTables.Usage>("data-tables-usage");
         options.RegisterCustomElement<Examples.SimpleTables.Usage>("simple-tables-usage");
         options.RegisterCustomElement<Examples.Tabs.Usage>("tabs-usage");
+        options.RegisterCustomElement<Examples.Timelines.Usage>("timelines-usage");
     }
 }
