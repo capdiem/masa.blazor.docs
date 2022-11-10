@@ -84,5 +84,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.treeview.Usage>("treeview-usage");
         options.RegisterCustomElement<Examples.virtual_scroll.Usages.Usage>("virtual-scroll-usage");
         options.RegisterCustomElement<Examples.aspect_ratios.Usage>("aspect-ratios-usage");
+        options.RegisterCustomElement<Examples.block_text.Usage>("block-text-usage");
     }
 }

@@ -34,6 +34,7 @@
           "system-bars"
         ]
       },
+      "block-text",
       "borders",
       "bottom-navigation",
       "bottom-sheets",
