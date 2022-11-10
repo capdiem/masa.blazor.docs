@@ -33,5 +33,8 @@ public interface IDefaultItem<TItem>
 
     List<TItem>? Children { get; }
 
-    bool HasChildren => Children is not null && Children.Any();
+    bool HasChildren()
+    {
+        return Children is not null && Children.Any();
+    }
 }

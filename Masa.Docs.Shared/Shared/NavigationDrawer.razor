@@ -19,7 +19,7 @@
 
     [Parameter]
     public bool RTL { get; set; }
-    
+
     [CascadingParameter]
     public CultureInfo Culture { get; set; } = null!;
 
@@ -32,7 +32,23 @@
         if (firstRender)
         {
             Navs = await AppService.GetNavs();
+            SetHref(Navs);
             StateHasChanged();
+        }
+    }
+
+    private void SetHref(List<NavItem> navItems, string? segment = null)
+    {
+        foreach (var navItem in navItems)
+        {
+            if (((IDefaultItem<NavItem>)navItem).HasChildren())
+            {
+                SetHref(navItem.Children, navItem.Segment);
+            }
+            else
+            {
+                navItem.Href = segment + "/" + navItem.Segment;
+            }
         }
     }
 

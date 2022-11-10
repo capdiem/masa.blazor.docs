@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using System.Globalization;
 using System.Net;
 using Microsoft.AspNetCore.Components.Routing;
 
@@ -15,12 +15,17 @@ public partial class Document : IDisposable
     [Inject]
     private AppService AppService { get; set; } = null!;
 
+    [CascadingParameter]
+    private CultureInfo Culture { get; set; } = null!;
+
     [Parameter]
     public string Category { get; set; } = null!;
 
     [Parameter] public string Page { get; set; } = null!;
 
     private string? _md;
+    private CultureInfo? _prevCulture;
+    private string? _prevAbsolutePath;
 
     protected override void OnInitialized()
     {
@@ -29,21 +34,39 @@ public partial class Document : IDisposable
         NavigationManager.LocationChanged += NavigationManagerOnLocationChanged;
     }
 
+    protected override async Task OnParametersSetAsync()
+    {
+        await base.OnParametersSetAsync();
+        if (_prevCulture is not null && !Equals(_prevCulture, Culture))
+        {
+            _prevCulture = Culture;
+            await ReadDocumentAsync();
+        }
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
 
         if (firstRender)
         {
-            await ReadDocumentAsync();
+            _prevCulture = Culture;
+            _prevAbsolutePath = NavigationManager.GetAbsolutePath();
 
+            await ReadDocumentAsync();
             StateHasChanged();
         }
     }
 
     private async void NavigationManagerOnLocationChanged(object? sender, LocationChangedEventArgs e)
     {
-        await ReadDocumentAsync();
+        var absolutePath = NavigationManager.GetAbsolutePath();
+        if (_prevAbsolutePath != absolutePath)
+        {
+            _prevAbsolutePath = absolutePath;
+            await ReadDocumentAsync();
+        }
+
         await InvokeAsync(StateHasChanged);
     }
 
@@ -56,7 +79,6 @@ public partial class Document : IDisposable
     {
         try
         {
-            Debug.WriteLine("read document...");
             _md = await DocService.ReadDocumentAsync(Category, Page);
         }
         catch (HttpRequestException e)

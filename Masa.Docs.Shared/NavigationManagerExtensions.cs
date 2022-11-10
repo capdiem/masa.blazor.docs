@@ -12,4 +12,10 @@ public static class NavigationManagerExtensions
         var uri = new Uri(navigationManager.Uri);
         navigationManager.Replace($"{uri.AbsolutePath}{hash}");
     }
+
+    public static string GetAbsolutePath(this NavigationManager navigationManager)
+    {
+        var uri = new Uri(navigationManager.Uri);
+        return uri.AbsolutePath;
+    }
 }

@@ -1,4 +1,5 @@
-﻿@typeparam TItem where TItem : IDefaultItem<TItem>
+﻿@inject I18n I18n
+@typeparam TItem where TItem : IDefaultItem<TItem>
 
 <MListGroup Group="@GenGroup(Item.Children)"
             AppendIcon="mdi-menu-down"
@@ -9,7 +10,7 @@
         <MListItemContent>
             @if (Item.Title is not null)
             {
-                <MListItemTitle>@Item.Title</MListItemTitle>
+                <MListItemTitle>@I18n.T(Item.Title)</MListItemTitle>
             }
         </MListItemContent>
     </ActivatorContent>
@@ -27,7 +28,7 @@
             {
                 <MDivider Inset Class="mt-3 mb-2 ml-16"></MDivider>
             }
-            else if (child.HasChildren)
+            else if (child.HasChildren())
             {
                 <DefaultListGroup Item="@child" SubGroup></DefaultListGroup>
             }
@@ -59,8 +60,8 @@
         foreach (var item in items)
         {
             groups.AddRange(GenGroup(item.Children));
-            if (item.HasChildren) continue;
-            // groups.Add($"{baseSegment}/{item.Segment}");
+            if (item.HasChildren()) continue;
+            groups.Add(item.Href);
         }
 
         return groups;

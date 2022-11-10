@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Net;
+﻿using System.Net;
 using System.Text.RegularExpressions;
 using Masa.Docs.Shared.ApiGenerator;
 using Microsoft.AspNetCore.Components.Routing;
@@ -128,7 +127,6 @@ public partial class Components : IDisposable
     {
         try
         {
-            Debug.WriteLine("read document...");
             _md = await DocService.ReadDocumentAsync("components", Page);
         }
         catch (HttpRequestException e)
@@ -146,8 +144,6 @@ public partial class Components : IDisposable
         {
             return;
         }
-
-        Debug.WriteLine("read api...");
 
         var name = Page;
 
