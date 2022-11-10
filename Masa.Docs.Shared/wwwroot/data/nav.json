@@ -126,7 +126,9 @@
         ]
       },
       "tabs",
-      "timelines"
+      "timelines",
+      "toast",
+      "tooltips"
     ]
   }
 ]

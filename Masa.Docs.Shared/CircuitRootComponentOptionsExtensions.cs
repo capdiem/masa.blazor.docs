@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.Web;
+﻿using Masa.Docs.Shared.Examples.Toast.Usages;
+using Microsoft.AspNetCore.Components.Web;
 using System;
 
 namespace Masa.Docs.Shared;
@@ -81,5 +82,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.SimpleTables.Usage>("simple-tables-usage");
         options.RegisterCustomElement<Examples.Tabs.Usage>("tabs-usage");
         options.RegisterCustomElement<Examples.Timelines.Usage>("timelines-usage");
+        options.RegisterCustomElement<Examples.Toast.Usages.Usage>("toast-usage");
+        options.RegisterCustomElement<Examples.Tooltips.Usage>("tooltips-usage");
     }
 }

@@ -36,14 +36,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Examples\Timelines\examples\**" />
-    <Content Remove="Examples\Timelines\examples\**" />
-    <EmbeddedResource Remove="Examples\Timelines\examples\**" />
-    <ExamplesSourceFile Remove="Examples\Timelines\examples\**" />
-    <None Remove="Examples\Timelines\examples\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\github\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
   </ItemGroup>
 
