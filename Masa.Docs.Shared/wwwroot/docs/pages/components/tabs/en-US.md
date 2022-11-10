@@ -19,7 +19,7 @@ for a page, where the tabs are links and the tab-items are the content.
 The **MTabs** component is a styled extension of [**MItemGroup**](/components/item-groups). It provides an easy to use
 interface for organizing groups of content.
 
-<example file="" />
+<tabs-usage></tabs-usage>
 
 ## API
 

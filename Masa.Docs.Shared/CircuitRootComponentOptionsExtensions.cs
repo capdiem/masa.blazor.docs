@@ -79,5 +79,6 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.DataIterators.Usage>("data-iterators-usage");
         options.RegisterCustomElement<Examples.DataTables.Usage>("data-tables-usage");
         options.RegisterCustomElement<Examples.SimpleTables.Usage>("simple-tables-usage");
+        options.RegisterCustomElement<Examples.Tabs.Usage>("tabs-usage");
     }
 }

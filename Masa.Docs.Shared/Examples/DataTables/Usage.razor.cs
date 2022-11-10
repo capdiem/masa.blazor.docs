@@ -14,8 +14,8 @@ public class Usage : Masa.Docs.Shared.Components.Usage
         {
             { nameof(MDataTable<Dessert>.Headers), _headers },
             { nameof(MDataTable<Dessert>.Items), _desserts },
-            //{ nameof(MDataTable<string>.ItemsPerPage), 5 },
-            //{ nameof(MDataTable<string>.Class), "elevation-1" },
+            { nameof(MDataTable<Dessert>.ItemsPerPage), 5 },
+            { nameof(MDataTable<Dessert>.Class), "elevation-1" },
         };
     }
 

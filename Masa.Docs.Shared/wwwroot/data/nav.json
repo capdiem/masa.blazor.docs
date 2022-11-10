@@ -124,7 +124,8 @@
           "data-tables",
           "simple-tables"
         ]
-      }
+      },
+      "tabs"
     ]
   }
 ]
