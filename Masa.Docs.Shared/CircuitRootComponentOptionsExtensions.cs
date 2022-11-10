@@ -82,5 +82,7 @@ public static class CircuitRootComponentOptionsExtensions
         options.RegisterCustomElement<Examples.timelines.Usage>("timelines-usage");
         options.RegisterCustomElement<Examples.toast.Usages.Usage>("toast-usage");
         options.RegisterCustomElement<Examples.tooltips.Usage>("tooltips-usage");
+        options.RegisterCustomElement<Examples.treeview.Usage>("treeview-usage");
+        options.RegisterCustomElement<Examples.virtual_scroll.Usages.Usage>("virtual-scroll-usage");
     }
 }

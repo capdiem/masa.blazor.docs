@@ -36,6 +36,33 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\treeview\examples\**" />
+    <Compile Remove="Examples\virtual-scroll\examples\**" />
+    <Content Remove="Examples\treeview\examples\**" />
+    <Content Remove="Examples\virtual-scroll\examples\**" />
+    <EmbeddedResource Remove="Examples\treeview\examples\**" />
+    <EmbeddedResource Remove="Examples\virtual-scroll\examples\**" />
+    <ExamplesSourceFile Remove="Examples\treeview\examples\**" />
+    <ExamplesSourceFile Remove="Examples\virtual-scroll\examples\**" />
+    <None Remove="Examples\treeview\examples\**" />
+    <None Remove="Examples\virtual-scroll\examples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\docs\pages\components\virtual-scroll\en-US.md" />
+    <Content Remove="wwwroot\docs\pages\components\virtual-scroll\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ExamplesSourceFile Remove="Examples\virtual-scroll\Usages\UsageWrapper.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\virtual-scroll\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\virtual-scroll\zh-CN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\github\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
   </ItemGroup>
 
