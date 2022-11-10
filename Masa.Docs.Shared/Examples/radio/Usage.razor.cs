@@ -1,4 +1,4 @@
-﻿namespace Masa.Docs.Shared.Examples.Radio;
+﻿namespace Masa.Docs.Shared.Examples.radio;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

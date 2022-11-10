@@ -1,4 +1,4 @@
-﻿namespace Masa.Docs.Shared.Examples.Alerts;
+﻿namespace Masa.Docs.Shared.Examples.alerts;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

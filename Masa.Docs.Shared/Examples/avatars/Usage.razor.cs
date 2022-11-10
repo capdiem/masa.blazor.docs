@@ -1,4 +1,4 @@
-﻿namespace Masa.Docs.Shared.Examples.Avatars
+﻿namespace Masa.Docs.Shared.Examples.avatars
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

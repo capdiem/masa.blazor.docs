@@ -1,5 +1,5 @@
 ﻿
-namespace Masa.Docs.Shared.Examples.Markdown.usages;
+namespace Masa.Docs.Shared.Examples.markdown.usages;
 
 public class Usage : Components.Usage
 {

@@ -1,6 +1,6 @@
 ﻿using Masa.Blazor;
 
-namespace Masa.Docs.Shared.Examples.Textareas;
+namespace Masa.Docs.Shared.Examples.textareas;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

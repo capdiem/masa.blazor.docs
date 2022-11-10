@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Masa.Docs.Shared.Examples.Dividers
+﻿namespace Masa.Docs.Shared.Examples.dividers
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

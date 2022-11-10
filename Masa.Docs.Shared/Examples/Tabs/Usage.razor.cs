@@ -1,7 +1,4 @@
-﻿using Masa.Blazor.Presets;
-using Microsoft.AspNetCore.Components.Web;
-
-namespace Masa.Docs.Shared.Examples.Tabs;
+﻿namespace Masa.Docs.Shared.Examples.tabs;
 
 public class Usage : Components.Usage
 {

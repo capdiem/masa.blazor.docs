@@ -1,6 +1,6 @@
 ﻿using Masa.Blazor.Presets;
 
-namespace Masa.Docs.Shared.Examples.Toast.Usages;
+namespace Masa.Docs.Shared.Examples.toast.Usages;
 
 public class Usage : Components.Usage
 {

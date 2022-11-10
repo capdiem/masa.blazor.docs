@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.Web;
-
-namespace Masa.Docs.Shared.Examples.Tooltips;
+﻿namespace Masa.Docs.Shared.Examples.tooltips;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

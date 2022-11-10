@@ -1,6 +1,6 @@
 ﻿using Masa.Blazor;
 
-namespace Masa.Docs.Shared.Examples.Selects;
+namespace Masa.Docs.Shared.Examples.selects;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

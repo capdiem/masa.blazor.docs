@@ -1,7 +1,7 @@
 ﻿using Masa.Blazor.Presets;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.Snackbars.Usages;
+namespace Masa.Docs.Shared.Examples.snackbars.Usages;
 
 public class Usage : Components.Usage
 {
