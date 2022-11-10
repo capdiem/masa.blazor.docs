@@ -36,16 +36,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Examples\aspect-ratios\examples\**" />
     <Compile Remove="Examples\treeview\examples\**" />
     <Compile Remove="Examples\virtual-scroll\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <Content Remove="Examples\aspect-ratios\examples\**" />
     <Content Remove="Examples\treeview\examples\**" />
     <Content Remove="Examples\virtual-scroll\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <EmbeddedResource Remove="Examples\aspect-ratios\examples\**" />
     <EmbeddedResource Remove="Examples\treeview\examples\**" />
     <EmbeddedResource Remove="Examples\virtual-scroll\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <ExamplesSourceFile Remove="Examples\aspect-ratios\examples\**" />
     <ExamplesSourceFile Remove="Examples\treeview\examples\**" />
     <ExamplesSourceFile Remove="Examples\virtual-scroll\examples\**" />
+    <None Remove="Examples\aspect-ratios\examples\**" />
     <None Remove="Examples\treeview\examples\**" />
     <None Remove="Examples\virtual-scroll\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,10 +63,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ExamplesSourceFile Remove="Examples\aspect-ratios\Usages\UsageWrapper.razor" />
     <ExamplesSourceFile Remove="Examples\virtual-scroll\Usages\UsageWrapper.razor" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\aspect-ratios\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\aspect-ratios\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\virtual-scroll\en-US.md" />
     <None Include="wwwroot\docs\pages\components\virtual-scroll\zh-CN.md" />
   </ItemGroup>
