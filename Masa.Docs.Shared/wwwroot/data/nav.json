@@ -128,7 +128,9 @@
       "tabs",
       "timelines",
       "toast",
-      "tooltips"
+      "tooltips",
+      "treeview",
+      "virtual-scroll"
     ]
   }
 ]
