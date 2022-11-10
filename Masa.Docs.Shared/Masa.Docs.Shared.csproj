@@ -68,6 +68,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\docs\pages\components\application\en-US.md" />
+    <None Include="wwwroot\docs\pages\components\application\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\aspect-ratios\en-US.md" />
     <None Include="wwwroot\docs\pages\components\aspect-ratios\zh-CN.md" />
     <None Include="wwwroot\docs\pages\components\virtual-scroll\en-US.md" />

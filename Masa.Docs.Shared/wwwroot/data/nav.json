@@ -20,6 +20,7 @@
     "group": "components",
     "items": [
       "alerts",
+      "application",
       "aspect-ratios",
       "avatars",
       "badges",
