@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.steppers
+namespace Masa.Docs.Shared.Examples.Steppers
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

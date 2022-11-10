@@ -1,7 +1,7 @@
 ﻿using BlazorComponent;
 using Masa.Blazor;
 
-namespace Masa.Docs.Shared.Examples.autocomplete;
+namespace Masa.Docs.Shared.Examples.Autocomplete;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

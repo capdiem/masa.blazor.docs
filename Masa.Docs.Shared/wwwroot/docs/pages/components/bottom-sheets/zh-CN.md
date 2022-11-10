@@ -11,7 +11,7 @@ related:
 
 在这里，我们将显示一个示例操作列表，它可能出现在应用程序中。
 
-<usage name="">
+<bottom-sheets-usage></bottom-sheets-usage>
 
 ## 示例
 

@@ -1,4 +1,4 @@
-﻿namespace Masa.Docs.Shared.Examples.buttons;
+﻿namespace Masa.Docs.Shared.Examples.Buttons;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

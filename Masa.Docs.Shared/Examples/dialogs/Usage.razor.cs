@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 
-namespace Masa.Docs.Shared.Examples.dialogs;
+namespace Masa.Docs.Shared.Examples.Dialogs;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {

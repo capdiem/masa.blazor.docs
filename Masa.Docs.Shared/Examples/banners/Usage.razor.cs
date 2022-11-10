@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Masa.Docs.Shared.Examples.banners
+namespace Masa.Docs.Shared.Examples.Banners
 {
     public class Usage : Masa.Docs.Shared.Components.Usage
     {

@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="wwwroot\locale\en-US.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -37,6 +33,10 @@
 
   <ItemGroup>
     <ExamplesSourceFile Include="Examples\**\*.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\github\MASA.Blazor\src\Masa.Blazor\Masa.Blazor.csproj" />
   </ItemGroup>
 
   <Target Name="CopyExmaplesToTxt" AfterTargets="Build">
