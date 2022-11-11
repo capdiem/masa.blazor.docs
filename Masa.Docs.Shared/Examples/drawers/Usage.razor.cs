@@ -1,9 +1,9 @@
 ﻿using Masa.Blazor.Presets;
-namespace Masa.Docs.Shared.Examples.modals;
+namespace Masa.Docs.Shared.Examples.drawers;
 
 public class Usage : Masa.Docs.Shared.Components.Usage
 {
-    public Usage() : base(typeof(PModal))
+    public Usage() : base(typeof(PDrawer))
     {
     }
 
@@ -16,10 +16,10 @@ public class Usage : Masa.Docs.Shared.Components.Usage
     {
         return new Dictionary<string, object>()
         {
-            { nameof(PModal.Title),"Title"},
-            { nameof(PModal.Width),(StringNumber)500},
+            { nameof(PDrawer.Title),"Title"},
+            { nameof(PDrawer.Width),(StringNumber)500},
             {
-                nameof(PModal.ActivatorContent), new RenderFragment<ActivatorProps>(context => builder =>
+                nameof(PDrawer.ActivatorContent), new RenderFragment<ActivatorProps>(context => builder =>
                 {
                     builder.OpenComponent<MButton>(0);
                     builder.AddMultipleAttributes(1, context.Attrs);
