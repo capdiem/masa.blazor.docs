@@ -38,33 +38,47 @@
   <ItemGroup>
     <Compile Remove="Examples\aspect-ratios\examples\**" />
     <Compile Remove="Examples\block-text\examples\**" />
+    <Compile Remove="Examples\carousels\props\**" />
+    <Compile Remove="Examples\carousels\usage\**" />
     <Compile Remove="Examples\drawers\examples\**" />
     <Compile Remove="Examples\treeview\examples\**" />
     <Compile Remove="Examples\virtual-scroll\examples\**" />
     <Compile Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <Compile Remove="wwwroot\docs\pages\components\carousels\doc\**" />
     <Content Remove="Examples\aspect-ratios\examples\**" />
     <Content Remove="Examples\block-text\examples\**" />
+    <Content Remove="Examples\carousels\props\**" />
+    <Content Remove="Examples\carousels\usage\**" />
     <Content Remove="Examples\drawers\examples\**" />
     <Content Remove="Examples\treeview\examples\**" />
     <Content Remove="Examples\virtual-scroll\examples\**" />
     <Content Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <Content Remove="wwwroot\docs\pages\components\carousels\doc\**" />
     <EmbeddedResource Remove="Examples\aspect-ratios\examples\**" />
     <EmbeddedResource Remove="Examples\block-text\examples\**" />
+    <EmbeddedResource Remove="Examples\carousels\props\**" />
+    <EmbeddedResource Remove="Examples\carousels\usage\**" />
     <EmbeddedResource Remove="Examples\drawers\examples\**" />
     <EmbeddedResource Remove="Examples\treeview\examples\**" />
     <EmbeddedResource Remove="Examples\virtual-scroll\examples\**" />
     <EmbeddedResource Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <EmbeddedResource Remove="wwwroot\docs\pages\components\carousels\doc\**" />
     <ExamplesSourceFile Remove="Examples\aspect-ratios\examples\**" />
     <ExamplesSourceFile Remove="Examples\block-text\examples\**" />
+    <ExamplesSourceFile Remove="Examples\carousels\props\**" />
+    <ExamplesSourceFile Remove="Examples\carousels\usage\**" />
     <ExamplesSourceFile Remove="Examples\drawers\examples\**" />
     <ExamplesSourceFile Remove="Examples\treeview\examples\**" />
     <ExamplesSourceFile Remove="Examples\virtual-scroll\examples\**" />
     <None Remove="Examples\aspect-ratios\examples\**" />
     <None Remove="Examples\block-text\examples\**" />
+    <None Remove="Examples\carousels\props\**" />
+    <None Remove="Examples\carousels\usage\**" />
     <None Remove="Examples\drawers\examples\**" />
     <None Remove="Examples\treeview\examples\**" />
     <None Remove="Examples\virtual-scroll\examples\**" />
     <None Remove="wwwroot\docs\pages\components\aspect-ratios\examples\**" />
+    <None Remove="wwwroot\docs\pages\components\carousels\doc\**" />
   </ItemGroup>
 
   <ItemGroup>
