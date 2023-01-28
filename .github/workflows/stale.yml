@@ -1,0 +1,15 @@
+name: 'Close stale issues'
+on:
+  schedule:
+    - cron: '0 10 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v7
+        with:
+          days-before-pr-stale: -1
+          days-before-issue-stale: 1
+          days-before-close: -1
+          stale-issue-message: 'This issue is stale because it has been open for 1 days with no activity.'
