@@ -1,7 +1,8 @@
 name: 'Close stale issues'
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '13 10 * * *'
+    - cron: '15 18 * * *'
 
 jobs:
   stale:
@@ -9,6 +10,7 @@ jobs:
     steps:
       - uses: actions/stale@v7
         with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-pr-stale: -1
           days-before-issue-stale: 1
           days-before-close: -1
