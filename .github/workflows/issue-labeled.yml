@@ -12,7 +12,7 @@ jobs:
         if: github.event.label.name == 'help wanted'
         uses: actions-cool/issues-helper@v3.3.3
         with:
-          actions: "create-commment"
+          actions: "create-comment"
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
